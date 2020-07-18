@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Red vs. White</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="jumbotron card-image" id="redwhite">
+        <div class="row">
+            <nav class="dropdown">
+                <a class="dropbtn" href="index.html">PerfectlyPaired</a>
+                <div class="dropdown-content">
+                    <a href="quality.html">White vs. Red Wine</a>
+                    <a href="reviews.html">Find My Wine</a>
+                </div>
+            </nav>
+        </div>
+        <div class="container" id="header-redwhite">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="color: rgb(252, 252, 241); font-size: 100px;">Red vs. White: </h1>
+                    <hr>
+                    <h2>Can We Predict Your Type?</h2> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="memo">
+        <div class="row">
+            <h3><strong>Having trouble choosing between red and white wine?</strong>
+                <br>Take our Machine Learning test to predict your preferences.
+            </h3>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="options">
+            <div class="card" id="test">
+                <div class="card-header text-center">
+                    <h3>Take the Test!</h3> 
+                </div>
+                <div class="card-body">
+                    <p>Tartness (Fixed Acid):</p>
+                    <br>
+                    <div class="tartness"> 
+                        <p>spectrum of 4.6 to 15.9)</p>
+                    </div>
+                    <hr>
+                </div>
+                <div class="card-body">
+                    <p>Sourness (Volatile Acid):</p>
+                    <br>
+                    <div class="sourness"> 
+                        <p>(spectrum of .12 to 1.58)</p>
+                    </div>
+                    <hr>
+                </div>
+                <div class="card-body">
+                    <p>Freshness (Citric Acid):</p>
+                    <br>
+                    <div class="Freshness"> 
+                        <p>(spectrum of 0 to 1)</p>
+                    </div>
+                    <hr>
+                </div>
+                <div class="card-body">
+                    <p>Sweetness (Residual Sugar):</p>
+                    <br>
+                    <div class="sweetness"> 
+                        <p>(spectrum of 0.5 to 15.5)</p>
+                    </div>
+                    <hr>
+                </div>
+                <div class="card-body">
+                    <p>pH (Still trynna think of an equivalent):</p>
+                    <br>
+                    <div class="ph"> 
+                        <p>(spectrum of 2.74 to 4.01)</p>
+                    </div>
+                    <hr>
+                </div>
+                <div class="card-body">
+                    <p>Alcohol %:</p>
+                    <br>
+                    <div class="alcohol"> 
+                        <p>(spectrum of 8.4 to 14.9)</p>
+                    </div>
+                    <hr>
+                    <a type="button" class="btn btn-primary" id="button-choice" href="reviews.html" role="button">Submit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="options">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h3>See Your Prediction!</h3> 
+                </div>
+                <div class="card-body">
+                    <h4>Result:</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
