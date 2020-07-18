@@ -1,0 +1,92 @@
+,variety,description,description_split,is_red,is_white
+1,Agiorgitiko,63,63,0.0,
+2,Aglianico,359,359,0.0,
+15,Alvarinho,137,137,,1.0
+24,Arneis,86,86,,1.0
+27,Assyrtiko,18,18,,1.0
+38,Barbera,721,721,0.0,
+48,Bonarda,105,105,0.0,
+53,Brachetto,15,15,0.0,
+58,Cabernet Franc,1353,1353,0.0,
+67,Cabernet Sauvignon,9472,9472,0.0,
+81,Cannonau,31,31,0.0,
+82,Carignan,77,77,0.0,
+92,Carricante,37,37,,1.0
+95,Catarratto,29,29,,1.0
+100,Chambourcin,18,18,0.0,1.0
+103,Charbono,26,26,0.0,
+104,Chardonnay,11753,11753,,1.0
+114,Chenin Blanc,591,591,,1.0
+120,Cinsault,41,41,0.0,
+123,Coda di Volpe,18,18,,1.0
+127,Cortese,73,73,,1.0
+128,Corvina,22,22,0.0,
+133,Dolcetto,180,180,0.0,
+134,Dornfelder,27,27,0.0,
+143,Falanghina,89,89,,1.0
+147,Feteasca Neagra,7,7,0.0,
+149,Fiano,151,151,,1.0
+150,Frappato,39,39,0.0,
+152,Friulano,122,122,,1.0
+154,Furmint,55,55,,1.0
+156,Gaglioppo,15,15,0.0,
+157,Gamay,1025,1025,0.0,
+159,Garganega,270,270,,1.0
+171,Godello,81,81,,1.0
+173,Graciano,43,43,0.0,
+180,Grenache,651,651,0.0,
+199,Inzolia,30,30,,1.0
+209,Lagrein,80,80,0.0,
+218,Macabeo,23,23,,1.0
+225,Malbec,2652,2652,0.0,
+237,Malvasia,44,44,0.0,1.0
+251,Marsanne,65,65,,1.0
+266,Merlot,3102,3102,0.0,
+278,Monica,4,4,0.0,
+279,Montepulciano,215,215,0.0,
+311,Nebbiolo,2804,2804,0.0,
+313,Negroamaro,80,80,0.0,
+315,Nerello Mascalese,117,117,0.0,
+316,Nero d'Avola,365,365,0.0,
+320,Norton,16,16,0.0,
+333,Pecorino,54,54,,1.0
+337,Petit Verdot,269,269,0.0,
+338,Petite Sirah,770,770,0.0,
+341,Picpoul,18,18,,1.0
+342,Piedirosso,20,20,0.0,
+347,Pinot Blanc,442,442,,1.0
+351,Pinot Meunier,45,45,0.0,
+353,Pinot Noir,13272,13272,0.0,
+357,Pinotage,137,137,0.0,
+358,Plavac Mali,17,17,0.0,
+369,Primitivo,222,222,0.0,
+381,Red Blend,8946,8946,0.0,
+382,Refosco,11,11,0.0,
+385,Ribolla Gialla,87,87,,1.0
+387,Riesling,5189,5189,,1.0
+389,Rkatsiteli,33,33,,1.0
+391,Roditis,4,4,,1.0
+401,Roussanne,168,168,,1.0
+408,Sagrantino,104,104,0.0,
+409,Sangiovese,2707,2707,0.0,
+414,Saperavi,37,37,0.0,
+417,Sauvignon Blanc,4967,4967,,1.0
+424,Savatiano,5,5,,1.0
+425,Scheurebe,25,25,,1.0
+430,Seyval Blanc,16,16,0.0,
+449,Sylvaner,53,53,,1.0
+466,Tannat,178,178,0.0,
+471,Tempranillo,1810,1810,0.0,
+480,Teroldego,32,32,0.0,
+501,Touriga Nacional,200,200,0.0,
+515,Turbiana,157,157,,1.0
+524,Verdejo,294,294,,1.0
+528,Verdicchio,164,164,,1.0
+531,Vermentino,232,232,,1.0
+532,Vernaccia,138,138,,1.0
+535,Vidal Blanc,55,55,0.0,1.0
+537,Vilana,4,4,,1.0
+539,Viognier,996,996,,1.0
+547,Viura,107,107,,1.0
+553,White Blend,2360,2360,,1.0
+563,Zinfandel,2714,2714,0.0,
