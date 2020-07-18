@@ -28,8 +28,8 @@
         <div class="container" id="header-redwhite">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 style="color: rgb(252, 252, 241); font-size: 100px;">Red vs. White: </h1>
-                    <hr>
+                    <h1 style="color: rgb(252, 252, 241); font-size: 100px;">Red vs. White<hr></h1>
+                    
                     <h2>Can We Predict Your Type?</h2> 
                 </div>
             </div>
@@ -50,50 +50,70 @@
                 </div>
                 <div class="card-body">
                     <p>Tartness (Fixed Acid):</p>
-                    <br>
-                    <div class="tartness"> 
-                        <p>spectrum of 4.6 to 15.9)</p>
+                    <div class="slidecontainer">
+                        <input type="range" min="3.8" max="15.9" value="9.85" step="0.01" class="slider" id="fixed_acidity">
                     </div>
+                        <h5 id="left">Not Tart</h5> <h5 id="right">Very Tart</h5>
                     <hr>
-                </div>
-                <div class="card-body">
                     <p>Sourness (Volatile Acid):</p>
-                    <br>
-                    <div class="sourness"> 
+                    <div class="slidecontainer">
+                        <input type="range" min="0.08" max="1.58" value="0.83" step="0.001" class="slider" id="volatile_acidity">
+                    </div>
                         <p>(spectrum of .12 to 1.58)</p>
-                    </div>
                     <hr>
-                </div>
-                <div class="card-body">
                     <p>Freshness (Citric Acid):</p>
-                    <br>
-                    <div class="Freshness"> 
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="1.66" value="0.83" step="0.01" class="slider" id="citric_acid">
+                    </div>
                         <p>(spectrum of 0 to 1)</p>
-                    </div>
                     <hr>
-                </div>
-                <div class="card-body">
                     <p>Sweetness (Residual Sugar):</p>
-                    <br>
-                    <div class="sweetness"> 
+                    <div class="slidecontainer">
+                        <input type="range" min="11.95" max="65.8" value="38.875" step="0.01" class="slider" id="residual_sugar">
+                    </div>
                         <p>(spectrum of 0.5 to 15.5)</p>
-                    </div>
                     <hr>
-                </div>
-                <div class="card-body">
-                    <p>pH (Still trynna think of an equivalent):</p>
-                    <br>
-                    <div class="ph"> 
-                        <p>(spectrum of 2.74 to 4.01)</p>
+                    <p>Chlorides:</p>
+                    <div class="slidecontainer">
+                        <input type="range" min="0.009" max="0.611" value="0.31" step="0.001" class="slider" id="chlorides">
                     </div>
-                    <hr>
-                </div>
-                <div class="card-body">
-                    <p>Alcohol %:</p>
-                    <br>
-                    <div class="alcohol"> 
                         <p>(spectrum of 8.4 to 14.9)</p>
+                    <hr>
+                    <p>Free Sulfur Dioxide:</p>
+                    <div class="slidecontainer">
+                        <input type="range" min="1.0" max="289" value="145" step="0.5" class="slider" id="free_-sulfur_dioxide">
                     </div>
+                        <p>(spectrum of 8.4 to 14.9)</p>
+                    <hr>
+                    <p>Total Sulfur Dioxide:</p>
+                    <div class="slidecontainer">
+                        <input type="range" min="6.0" max="440" value="223" step="0.5" class="slider" id="total_sulfur_dioxide">
+                    </div>
+                        <p>(spectrum of 8.4 to 14.9)</p>
+                    <hr>
+                    <p>Density:</p>
+                    <div class="slidecontainer">
+                        <input type="range" min=".98711" max="1.00241" value="0.994760" step="0.00001" class="slider" id="total_sulfur_dioxide">
+                    </div>
+                        <p>(spectrum of 8.4 to 14.9)</p>
+                    <hr>
+                    <p>pH:</p>
+                    <div class="slidecontainer">
+                        <input type="range" min="2.72" max="4.01" value="3.365" step="0.01" class="slider" id="ph">
+                    </div>
+                        <p>(spectrum of 2.74 to 4.01)</p>
+                    <hr>
+                    <p>Sulphates:</p>
+                    <div class="slidecontainer">
+                        <input type="range" min=".22" max="2" value="1.11" step="0.01" class="slider" id="sulphates">
+                    </div>
+                        <p>(spectrum of 2.74 to 4.01)</p>
+                    <hr>
+                    <p>Alcohol %:</p>
+                    <div class="slidecontainer">
+                        <input type="range" min="8" max="14.9" value="11.45" step="0.001" class="slider" id="alcohol">
+                    </div>
+                        <p>(spectrum of 8.4 to 14.9)</p>
                     <hr>
                     <a type="button" class="btn btn-primary" id="button-choice" href="reviews.html" role="button">Submit</a>
                 </div>
