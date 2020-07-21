@@ -1,0 +1,304 @@
+/* @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+  }
+*/
+
+#adjective {
+    margin: 5%;
+}
+
+#analysis {
+    position: static; 
+    height: 55vh;
+    width: 100%;
+    padding-top: 0%;
+    background-image: url("https://www.goodcore.co.uk/blog/wp-content/uploads/2019/08/what-is-coding-1024x439.png");
+    background-size: cover;
+    box-shadow: 0px 5px 5px grey;
+    margin: auto;
+    z-index: 0;
+}
+
+body {
+    font-family: "system-ui";
+    background-color: rgb(243, 243, 243);
+}
+
+/* #border {
+    padding-left: 40px; 
+    padding-right: 40px;
+    border: 2px solid black;
+    background-color: white  
+}
+*/
+
+.btn {
+    width: 40%;
+    text-align: center;
+    background-color: rgb(24, 22, 122);
+    font-weight: bold;
+    padding: .5em
+}
+
+.card {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: black;
+    width: 30%;
+    align-content: center;
+    vertical-align: middle;
+    box-shadow: 2px 2px 4px grey, -2px -2px 4px grey;
+    border: .25px solid black;
+}
+
+.card-deck {
+    text-align: center;
+    margin: auto;
+    color: black;
+}
+
+.card-header {
+    background-color: rgb(172, 5, 5, .75);
+    border-bottom: .5px solid black;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    color: white;
+    font-size: 20px;
+    border: none;
+    background-color: none;
+  }
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 16px;
+  }  
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: none;
+    min-width: 150px;
+    z-index: 1;
+  }
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding-left: 1%;
+  }
+
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    color: rgb(252, 189, 107);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    color: rgb(179, 5, 5);
+    text-decoration: none;
+}
+
+h1, h2 {
+    color: white;
+    text-shadow: 2px 2px rgb(87, 86, 86);
+    font-family: "system-ui";
+    font-weight: 350;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    color: black;
+    padding-bottom: 2%
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin-top: 12%;
+}
+
+#header-redwhite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin-top: 5%;
+}
+
+#home {
+    position: static; 
+    height: 80vh;
+    width: 100%;
+    padding-top: 0%;
+    background-image: url("https://images3.alphacoders.com/265/thumb-1920-265889.jpg");
+    background-size: cover;
+    box-shadow: 0px 5px 5px grey;
+    margin: auto;
+    z-index: 0;
+}
+
+#home-card {
+    margin-bottom: 20px;
+}
+
+input[type=button] {
+    background-color: transparent;
+    border: none
+}
+
+.jumbotron {
+    border-bottom: .5px solid black;
+}
+
+#left {
+    float: left;
+}
+
+#memo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;;
+}
+
+.navbar, .navbar-brand {
+    background: none;
+    position: relative;
+    vertical-align: text-top;
+    text-align: left;
+    float: left;
+    font-family: "system-ui";
+    color: white;
+    text-shadow: 1px 1px grey;
+}
+
+#options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin-top: 2%;
+}
+
+
+#redwhite {
+    position: static; 
+    height: 55vh;
+    width: 100%;
+    padding-top: 0%;
+    background-image: url("https://wineonmytime.com/wp-content/uploads/2019/09/Can-You-Mix-Red-and-White-Wine-Hero.png");
+    background-size: cover;
+    box-shadow: 0px 5px 5px grey;
+    margin: auto;
+    z-index: 0;
+}
+
+#reviews {
+    position: static; 
+    height: 55vh;
+    width: 100%;
+    padding-top: 0%;
+    background-image: url("https://www.marketviewliquor.com/blog/wp-content/uploads/2018/01/Wine-Bottle-Sizes-Image.jpg");
+    background-size: cover;
+    box-shadow: 0px 5px 5px grey;
+    margin: auto;
+    z-index: 0;
+}
+
+#right {
+    float: right;
+}
+
+#select-text {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding-top: 0;
+    padding-bottom: 3%;
+    height: 100%;
+}
+
+#select-wine {
+    font-size: 16pt;
+    background-color: rgb(172, 5, 5, .75);
+    border: .75pt solid black;
+    border-radius: 4px;
+    padding: 1em
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+  
+  /* The slider itself */
+.slider {
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+  
+  /* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    cursor: pointer; /* Cursor on hover */
+}
+  
+.slider::-moz-range-thumb {
+    cursor: pointer; /* Cursor on hover */
+}
+
+#test {
+    width: 70%;
+    text-align: center;
+    color: black;
+    align-content: center;
+    vertical-align: middle;
+}
+
+#test-card {
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+#top-memo {
+    font-size: 30px
+}
+
+#word-cloud {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
