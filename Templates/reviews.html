@@ -13,8 +13,9 @@
 
     <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
     <script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
-    <script src="reviews_sr_1.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="static/reviews.js"></script>
+    <!-- <script src="static/reviews_sr_1.js"></script> -->
+    <link rel="stylesheet" href="static/style.css">
 
 </head>
 
@@ -22,11 +23,11 @@
     <div class="jumbotron card-image" id="reviews">
         <div class="row">
             <nav class="dropdown">
-                <a class="dropbtn" href="index.html">PerfectlyPaired</a>
+                <a class="dropbtn" href="/">PerfectlyPaired</a>
                 <div class="dropdown-content">
-                    <a href="quality.html">White vs. Red Wine</a>
-                    <a href="reviews.html">Find My Wine</a>
-                    <a href="analysis.html">Behind the Scenes</a>
+                    <a href="/quality">White vs. Red Wine</a>
+                    <a href="/reviews">Find My Wine</a>
+                    <a href="/analysis">Behind the Scenes</a>
                 </div>
             </nav>
         </div>
@@ -83,18 +84,31 @@
                 <br>
                 <p>Explanation</p>
                 <hr>
-                <h4>Choose adjectives to describe your ideal wine <strong>taste</strong>.</h4>
-                <div class="card-deck" id="taste">
+                    <h4>Choose adjectives to describe your ideal wine <strong>taste</strong>.</h4>
+                    <div class="card-deck" id="taste">
+                    </div>
+                    <hr>
+                    <h4>Choose adjectives to describe your ideal wine <strong>feel</strong>.</h4>
+                    <div class="card-deck" id="feel">
+                    </div>
+                    <hr>
+                    <div class="card-body">
+                        <button class="btn btn-primary" id="button-type" href="/reviews" onclick="submitChoices()">Submit</button>
+                        <br>
+                        <br>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="options">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h3>See Your Prediction!</h3> 
                 </div>
-                <hr>
-                <h4>Choose adjectives to describe your ideal wine <strong>feel</strong>.</h4>
-                <div class="card-deck" id="feel">
-                </div>
-                <hr>
                 <div class="card-body">
-                    <a type="button" class="btn btn-primary" id="button-type" href="reviews.html" role="button">Submit</a>
-                    <br>
-                    <br>
+                    <div id='wine_type_result'>
+                    </div>
                 </div>
             </div>
         </div>
