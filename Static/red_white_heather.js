@@ -92,36 +92,6 @@ function submit() {
   
   let text_x = [];
 
-  // var fixed_acidity = d3.select("#fixed_acidity").property("value");
-  // text_x.push(parseFloat(fixed_acidity));
-  
-  // var volatile_acidity = d3.select("#volatile_acidity").property("value");
-  // text_x.push(parseFloat(volatile_acidity));
-
-  // var citric_acid = d3.select("#citric_acid").property("value");
-  // text_x.push(parseFloat(citric_acid));
-
-  // var residual_sugar = d3.select("#residual_sugar").property("value");
-  // text_x.push(parseFloat(residual_sugar));
-  
-  // var chlorides = d3.select("#chlorides").property("value");
-  // text_x.push(parseFloat(chlorides));
-
-  // var free_sulfur_dioxide = d3.select("#free_sulfur_dioxide").property("value");
-  // text_x.push(parseFloat(free_sulfur_dioxide));
-
-  // var total_sulfur_dioxide = d3.select("#total_sulfur_dioxide").property("value");
-  // text_x.push(parseFloat(total_sulfur_dioxide));
-
-  // var density = d3.select("#density").property("value");
-  // text_x.push(parseFloat(density));
-
-  // var ph = d3.select("#ph_level").property("value");
-  // text_x.push(parseFloat(ph));
-
-  // var sulphates = d3.select("#sulphates").property("value");
-  // text_x.push(parseFloat(sulphates));
-
   var alcohol = d3.select("#alcohol").property("value");
   text_x.push(alcohol);
   var fixed_acidity = d3.select("#fixed_acidity").property("value");
@@ -154,15 +124,15 @@ function submit() {
   var sulphates = d3.select("#sulphates").property("value");
   text_x.push(sulphates);
 
-  var alcohol = d3.select("#alcohol").property("value");
-  text_x.push(alcohol);
+  // var alcohol = d3.select("#alcohol").property("value");
+  // text_x.push(alcohol);
   
   
-
+  text_x = text_x.join(' ')
   
   console.log(text_x)
   
-  fetch(`/quality?characteristics=${stringify(text_x)}`).then(data=>data.json()).then(d=>{
+  fetch(`/predict_quality?characteristics=${text_x}`).then(data=>data.json()).then(d=>{
       console.log(d.wine_selection)
       document.getElementById('result_redwhite').innerHTML=`<h3>${d.wine_selection}</h3>`
   }) 

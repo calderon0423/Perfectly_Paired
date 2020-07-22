@@ -157,13 +157,13 @@ def predictType():
     result = nbModel.predict(X_new)
     return jsonify({'wine_type': result[0]})
 
-@app.route('/quality')
+@app.route('/predict_quality')
 def redwhitepredict():
     # user input
     parser = reqparse.RequestParser()
     parser.add_argument('characteristics', type=str, required=True, help="This is expecting a selection of wine characteristics", action='append')
     args = parser.parse_args()
-    characteristics = args['characteristics']
+    characteristics = args['characteristics'][0].split(' ')
 
     # test_x = request.get_json()
     # print(test_x)
@@ -181,7 +181,7 @@ def redwhitepredict():
     #run model with user input
     result_characteristics = redorwhite_model.predict_classes([user_input_characteristics])
     # out = np.argmax(redorwhite_model.predict(test_x), axis=-1)
-    result_characteristics = result_characteristics[0]
+    result_characteristics = "White" if result_characteristics[0] ==0 else "Red"
     return jsonify({'wine_selection': result_characteristics})
 
 # @app.route('/quality', methods = ['GET', 'POST'])
