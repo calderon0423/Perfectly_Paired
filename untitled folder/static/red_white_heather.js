@@ -88,71 +88,75 @@ slider11.oninput = function() {
 }
 
 //SELECT ALL VALUES FOR EACH PHYSIOCHEMICAL PROPERTY AND PUT THEM IN A LIST TO FEED INTO MODEL
-var text_x = [];
-
 function submit() {
+  
+  var text_x = [];
 
   var fixed_acidity = d3.select("#fixed_acidity").property("value");
-  //var fixed_acidity = d3.select("#tart").property("value");
   text_x.push(fixed_acidity);
-  //d3.select("#fixed_acidity").value = "";
   
   var volatile_acidity = d3.select("#volatile_acidity").property("value");
-  //var volatile_acidity = d3.select("#sour").property("value");
   text_x.push(volatile_acidity);
-  //d3.select("#volatile_acidity").node().value = "";
 
   var citric_acid = d3.select("#citric_acid").property("value");
-  //var citric_acid = d3.select("#fresh").property("value");
   text_x.push(citric_acid);
-  //d3.select("#citric_acid").node().value = "";
 
   var residual_sugar = d3.select("#residual_sugar").property("value");
-  //var residual_sugar = d3.select("#sweet").property("value");
   text_x.push(residual_sugar);
-  //d3.select("#residual_sugar").node().value = "";
-
+  
   var chlorides = d3.select("#chlorides").property("value");
-  //var chlorides = d3.select("#chlor").property("value");
   text_x.push(chlorides);
-  //d3.select("#chlorides").node().value = "";
 
   var free_sulfur_dioxide = d3.select("#free_sulfur_dioxide").property("value");
-  //var free_sulfur_dioxide = d3.select("#free_sulfur").property("value");
   text_x.push(free_sulfur_dioxide);
-  //d3.select("#free_sulfur_dioxide").node().value = "";
 
   var total_sulfur_dioxide = d3.select("#total_sulfur_dioxide").property("value");
-  //var total_sulfur_dioxide = d3.select("#total_sulfur").property("value");
   text_x.push(total_sulfur_dioxide);
-  //d3.select("#total_sulfur_dioxide").node().value = "";
 
   var density = d3.select("#density").property("value");
-  //var density = d3.select("#den").property("value");
   text_x.push(density);
-  //d3.select("#density").node().value = "";
-  
+
   var ph = d3.select("#ph_level").property("value");
-  //var ph = d3.select("#ph").property("value");
   text_x.push(ph);
-  //d3.select("#ph_level").node().value = "";
 
   var sulphates = d3.select("#sulphates").property("value");
-  //var sulphates = d3.select("#sulp").property("value");
   text_x.push(sulphates);
-  //d3.select("#sulphates").node().value = "";
 
   var alcohol = d3.select("#alcohol").property("value");
-  //var alcohol = d3.select("#alc").property("value");
   text_x.push(alcohol);
-  //d3.select("#alcohol").node().value = "";
   
-  text_x = text_x
+  console.log(text_x)
+
+  fetch('http://127.0.0.1:5000/redwhitepredict', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({data: text_x})
+  })
+  .then(resp => resp.json())
+  .then(d => {
+    console.log(d);
+    console.log(d.wine_selection);
+    var selection = d.wine_selection; 
+    if (selection === "1") {
+      selection = "White";
+      selection_str = JSON.stringify(selection);
+      selection_str = selection_str.replace(/"/g,"");
+    }
+    else {
+      selection = "Red";
+      selection_str = JSON.stringify(selection);
+      selection_str = selection_str.replace(/"/g,"");
+    }
+    var result = d3.select("h4");
+    result.text("Result: " + selection_str)
+  });
+
 }
 
-fetch('/predict_red_white').then(data=>data.json()).then(d=>{
-  console.log(d);
-}); 
+
+
 
 
 

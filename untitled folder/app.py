@@ -49,8 +49,9 @@ mongoDB = ('mongodb:///?Server=localhost&Port=27017&Database=wine_db')
 # Flask Routes
 #################################################
 
-
+from flask_cors import CORS 
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/")
 def welcome():
@@ -85,23 +86,30 @@ def red_white():
     return jsonify(response)
 
 
-
+###################################################################
+## THIS PART IS THE RED VS WHITE BASED ON PHYSIOCHEMICAL PROPERTIES ##
 
 @app.route('/redorwhite')
 def dashboard():
     return render_template('/index.html')
 
-@app.route('/predict_red_white', methods = ['GET', 'POST'])
-def predict():
+@app.route('/redwhitepredict', methods = ['GET', 'POST'])
+def redwhitepredict():
+    # enter user input in html 
+    test_x = request.get_json()
+    print(test_x)
+    test_x = test_x["data"]
+    print(test_x)
+    test_x = [[float(i) for i in test_x]]
 
-    
-#  Load the model
-redorwhite_model = load_model('/Users/heathertzou/Desktop/HEATHER/Data Analytics Bootcamp/FINAL_PROJECT/redvswhite_FLASK/Resources/redorwhite_model_trained.h5')
+    #  Load the model
+    redorwhite_model = load_model('/Users/heathertzou/Desktop/HEATHER/Data Analytics Bootcamp/FINAL_PROJECT/redvswhite_FLASK/Resources/redorwhite_model_trained.h5')
 
-#predict the wine class based on model and save output to 'out'
-out = redorwhite_model.predict_classes(test_x)
-out = out[0]
-return jsonify({'wine_selection': str(out)})
+    # #predict the wine class based on model and save output to 'out'
+    #out = redorwhite_model.predict_classes(test_x)
+    out = np.argmax(redorwhite_model.predict(test_x), axis=-1)
+    out = out[0]
+    return jsonify({'wine_selection': str(out)})
 
 
 if __name__ == "__main__":
