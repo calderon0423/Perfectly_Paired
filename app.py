@@ -69,7 +69,30 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-#reviews route 
+@app.route('/quality')
+def quality():
+    return render_template('quality.html')
+
+@app.route('/reviews')
+def reviews():
+    return render_template('reviews.html')
+
+@app.route('/analysis')
+def analysis():
+    return render_template('analysis.html')
+
+@app.route('/red_wine')
+def redWine():
+    return render_template('red_wine.html')
+
+@app.route('/white_wine')
+def whiteWine():
+    return render_template('white_wine.html')
+
+@app.route('/reviewscode')
+def reviewsCode():
+    return render_template('reviewscode.html')
+ 
 @app.route('/reviewsdata')
 def reviewsData():
     reviews_documents = reviews_collection.find()
@@ -82,7 +105,7 @@ def reviewsData():
 
 #red_white_wines route 
 @app.route('/red_white_wines_data')
-def red_white():
+def redWhiteData():
     red_white_documents = red_white_collection.find()
     response = []
     for document in red_white_documents:
@@ -134,9 +157,7 @@ def predictType():
     return jsonify({'wine_type': result[0]})
     # return render_template("index.html")
 
-@app.route('/reviews')
-def reviews():
-    return render_template('reviews.html')
+
 
 if __name__ == "__main__":
     app.run(debug=True)
