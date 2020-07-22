@@ -144,6 +144,7 @@ function submitChoices() {
         choices.push(item.value)
       })
      choices = choices.join(' ')
+     console.log(choices)
      fetch(`/predict_type?adjectives=${choices}`).then(data=>data.json()).then(d=>{
          console.log(d.wine_type)
          document.getElementById('wine_type_result').innerHTML=`<h3>${d.wine_type}</h3>`

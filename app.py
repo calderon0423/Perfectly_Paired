@@ -113,26 +113,25 @@ def redWhiteData():
         response.append(document)
     return jsonify(response)
 
-@app.route('/predict_red_white')
-def predict():
-    # whenever the predict method is called, we're going
-    # to input the user psychochemical characteristics 
+# @app.route('/predict_red_white')
+# def predict():
+#     # whenever the predict method is called, we're going
+#     # to input the user psychochemical characteristics 
     
-    # enter user input in html 
-    # test_x= request.get_data()
-    # test_x = [[test_x]]
-    test_x = [[0.15702479, 0.128     , 0.38211382, 0.08742331, 0.0951586 ,
-        0.11805556, 0.40552995, 0.13109697, 0.29133858, 0.13483146,
-        0.25120773]]
+#     # enter user input in html 
+#     # test_x= request.get_data()
+#     # test_x = [[test_x]]
+#     test_x = [[0.15702479, 0.128     , 0.38211382, 0.08742331, 0.0951586 ,
+#         0.11805556, 0.40552995, 0.13109697, 0.29133858, 0.13483146,
+#         0.25120773]]
 
-    #  Load the model
-    redorwhite_model = load_model('Red_and_White_Analysis/redorwhite_model_trained.h5')
-    # redorwhite_model=pickle.load(open('Red_and_White_Analysis/redorwhite_model_trained.h5', 'rb'))
+#     #  Load the model
+#     redorwhite_model = load_model('Red_and_White_Analysis/redorwhite_model_trained.h5')
 
-    #predict the wine class based on model and save output to 'out'
-    out = redorwhite_model.predict_classes(test_x)
-    out = out[0]
-    return jsonify({'wine_selection': out})
+#     #predict the wine class based on model and save output to 'out'
+#     out = redorwhite_model.predict_classes(test_x)
+#     out = out[0]
+#     return jsonify({'wine_selection': out})
 
 @app.route('/predict_type')
 def predictType():
@@ -142,20 +141,66 @@ def predictType():
     args = parser.parse_args()
     adjectives = args['adjectives']
 
+    #load model .h5 files 
     vectorizer_file = "tokenizer.h5"
     tokenizer_file = "vectorizer.h5"
     NBModel = 'sentiment_scoring.h5'
 
-    user_input=adjectives
     vectorizer = pickle.load(open('Naive_sentiment_model/'+vectorizer_file, 'rb'))
     tokenizer = pickle.load(open('Naive_sentiment_model/'+tokenizer_file, 'rb'))
     nbModel = pickle.load(open('Naive_sentiment_model/'+NBModel, 'rb'))
-
+    
+    #run model with user_input argument 
+    user_input=adjectives
     X_new = vectorizer.transform(user_input)
     X_new = tokenizer.transform(X_new)
     result = nbModel.predict(X_new)
     return jsonify({'wine_type': result[0]})
-    # return render_template("index.html")
+
+@app.route('/quality')
+def redwhitepredict():
+    # user input
+    parser = reqparse.RequestParser()
+    parser.add_argument('characteristics', type=str, required=True, help="This is expecting a selection of wine characteristics", action='append')
+    args = parser.parse_args()
+    characteristics = args['characteristics']
+
+    # test_x = request.get_json()
+    # print(test_x)
+    # test_x = test_x["data"]
+    # print(test_x)
+    # test_x = [[float(i) for i in test_x]]
+
+    #  Load the model
+    redorwhite_model = load_model('Red_and_White_Analysis/redorwhite_model_trained.h5')
+
+    # #predict the wine class based on model and save output to 'out'
+    user_input_characteristics=[float(i) for i in characteristics]
+    print(user_input_characteristics)
+
+    #run model with user input
+    result_characteristics = redorwhite_model.predict_classes([user_input_characteristics])
+    # out = np.argmax(redorwhite_model.predict(test_x), axis=-1)
+    result_characteristics = result_characteristics[0]
+    return jsonify({'wine_selection': result_characteristics})
+
+# @app.route('/quality', methods = ['GET', 'POST'])
+# def redwhitepredict():
+#     # enter user input in html 
+#     test_x = request.get_json()
+#     print(test_x)
+#     test_x = test_x["data"]
+#     print(test_x)
+#     test_x = [[float(i) for i in test_x]]
+
+#     #  Load the model
+#     redorwhite_model = load_model('Red_and_White_Analysis/redorwhite_model_trained.h5')
+
+#     # #predict the wine class based on model and save output to 'out'
+#     #out = redorwhite_model.predict_classes(test_x)
+#     out = np.argmax(redorwhite_model.predict(test_x), axis=-1)
+#     out = out[0]
+#     return jsonify({'wine_selection': str(out)})
 
 
 

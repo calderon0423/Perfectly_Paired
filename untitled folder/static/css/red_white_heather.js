@@ -90,7 +90,7 @@ slider11.oninput = function() {
 //SELECT ALL VALUES FOR EACH PHYSIOCHEMICAL PROPERTY AND PUT THEM IN A LIST TO FEED INTO MODEL
 function submit() {
   
-  var text_x = [];
+  let text_x = [];
 
   var fixed_acidity = d3.select("#fixed_acidity").property("value");
   text_x.push(fixed_acidity);
@@ -124,34 +124,40 @@ function submit() {
 
   var alcohol = d3.select("#alcohol").property("value");
   text_x.push(alcohol);
-  
+  text_x = text_x.join(',')
   console.log(text_x)
+  
+  fetch(`/quality?characteristics=${text_x}`).then(data=>data.json()).then(d=>{
+      console.log(d.wine_selection)
+      document.getElementById('result_redwhite').innerHTML=`<h3>${d.wine_selection}</h3>`
+  }) 
 
-  fetch('http://127.0.0.1:5000/redwhitepredict', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({data: text_x})
-  })
-  .then(resp => resp.json())
-  .then(d => {
-    console.log(d);
-    console.log(d.wine_selection);
-    var selection = d.wine_selection; 
-    if (selection === "1") {
-      selection = "White";
-      selection_str = JSON.stringify(selection);
-      selection_str = selection_str.replace(/"/g,"");
-    }
-    else {
-      selection = "Red";
-      selection_str = JSON.stringify(selection);
-      selection_str = selection_str.replace(/"/g,"");
-    }
-    var result = d3.select("h4");
-    result.text("Result: " + selection_str)
-  });
+
+  // fetch('http://127.0.0.1:5000/redwhitepredict', {
+  //   method: 'POST',
+  //   headers: {
+  //     'Content-Type': 'application/json'
+  //   },
+  //   body: JSON.stringify({data: text_x})
+  // })
+  // .then(resp => resp.json())
+  // .then(d => {
+  //   console.log(d);
+  //   console.log(d.wine_selection);
+  //   var selection = d.wine_selection; 
+  //   if (selection === "1") {
+  //     selection = "White";
+  //     selection_str = JSON.stringify(selection);
+  //     selection_str = selection_str.replace(/"/g,"");
+  //   }
+  //   else {
+  //     selection = "Red";
+  //     selection_str = JSON.stringify(selection);
+  //     selection_str = selection_str.replace(/"/g,"");
+  //   }
+  //   var result = d3.select("h4");
+  //   result.text("Result: " + selection_str)
+  // });
 
 }
 
