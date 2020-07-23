@@ -1,17 +1,15 @@
 import sys
 import os
 import pandas as pd 
-import tensorflow as tf 
-import keras 
-from keras.models import model_from_json, load_model
+#import tensorflow as tf 
+#import keras 
+#from keras.models import model_from_json, load_model
 import numpy as np 
 import pickle 
 import flask 
 from flask import Flask, render_template, jsonify, request
 from pymongo import MongoClient
 from flask_restful import reqparse
-
-
 
 #read in csv file 
 # df = pd.read_csv('/Users/angelicacalderon/repos/Perfectly_Paired/Resources/winemag-data-130k-v2.csv', low_memory=False)
@@ -133,56 +131,56 @@ def redWhiteData():
 #     out = out[0]
 #     return jsonify({'wine_selection': out})
 
-@app.route('/predict_type')
-def predictType():
-    #user input 
-    parser = reqparse.RequestParser()
-    parser.add_argument('adjectives', type=str, required=True, help="This is expecting a selection of wine adjectives", action='append')
-    args = parser.parse_args()
-    adjectives = args['adjectives']
+#@app.route('/predict_type')
+#def predictType():
+#    #user input 
+#    parser = reqparse.RequestParser()
+#    parser.add_argument('adjectives', type=str, required=True, help="This is expecting a selection of wine adjectives", action='append')
+#    args = parser.parse_args()
+#    adjectives = args['adjectives']#
 
-    #load model .h5 files 
-    vectorizer_file = "tokenizer.h5"
-    tokenizer_file = "vectorizer.h5"
-    NBModel = 'sentiment_scoring.h5'
+#    #load model .h5 files 
+#    vectorizer_file = "tokenizer.h5"
+#    tokenizer_file = "vectorizer.h5"
+#    NBModel = 'sentiment_scoring.h5'#
 
-    vectorizer = pickle.load(open('Naive_sentiment_model/'+vectorizer_file, 'rb'))
-    tokenizer = pickle.load(open('Naive_sentiment_model/'+tokenizer_file, 'rb'))
-    nbModel = pickle.load(open('Naive_sentiment_model/'+NBModel, 'rb'))
-    
-    #run model with user_input argument 
-    user_input=adjectives
-    X_new = vectorizer.transform(user_input)
-    X_new = tokenizer.transform(X_new)
-    result = nbModel.predict(X_new)
-    return jsonify({'wine_type': result[0]})
+#    vectorizer = pickle.load(open('Naive_sentiment_model/'+vectorizer_file, 'rb'))
+#    tokenizer = pickle.load(open('Naive_sentiment_model/'+tokenizer_file, 'rb'))
+#    nbModel = pickle.load(open('Naive_sentiment_model/'+NBModel, 'rb'))
+#    
+#    #run model with user_input argument 
+#    user_input=adjectives
+#    X_new = vectorizer.transform(user_input)
+#    X_new = tokenizer.transform(X_new)
+#    result = nbModel.predict(X_new)
+#    return jsonify({'wine_type': result[0]})
 
-@app.route('/predict_quality')
-def redwhitepredict():
-    # user input
-    parser = reqparse.RequestParser()
-    parser.add_argument('characteristics', type=str, required=True, help="This is expecting a selection of wine characteristics", action='append')
-    args = parser.parse_args()
-    characteristics = args['characteristics'][0].split(' ')
+#@app.route('/predict_quality')
+#def redwhitepredict():
+#    # user input
+#    parser = reqparse.RequestParser()
+#    parser.add_argument('characteristics', type=str, required=True, help="This is expecting a selection of wine characteristics", action='append')
+#    args = parser.parse_args()
+#    characteristics = args['characteristics'][0].split(' ')#
 
-    # test_x = request.get_json()
-    # print(test_x)
-    # test_x = test_x["data"]
-    # print(test_x)
-    # test_x = [[float(i) for i in test_x]]
+#    # test_x = request.get_json()
+#    # print(test_x)
+#    # test_x = test_x["data"]
+#    # print(test_x)
+#    # test_x = [[float(i) for i in test_x]]#
 
-    #  Load the model
-    redorwhite_model = load_model('Red_and_White_Analysis/redorwhite_model_trained.h5')
+#    #  Load the model
+#    redorwhite_model = load_model('Red_and_White_Analysis/redorwhite_model_trained.h5')#
 
-    # #predict the wine class based on model and save output to 'out'
-    user_input_characteristics=[float(i) for i in characteristics]
-    print(user_input_characteristics)
+#    # #predict the wine class based on model and save output to 'out'
+#    user_input_characteristics=[float(i) for i in characteristics]
+#    print(user_input_characteristics)#
 
-    #run model with user input
-    result_characteristics = redorwhite_model.predict_classes([user_input_characteristics])
-    # out = np.argmax(redorwhite_model.predict(test_x), axis=-1)
-    result_characteristics = "White" if result_characteristics[0] ==0 else "Red"
-    return jsonify({'wine_selection': result_characteristics})
+#    #run model with user input
+#    result_characteristics = redorwhite_model.predict_classes([user_input_characteristics])
+#    # out = np.argmax(redorwhite_model.predict(test_x), axis=-1)
+#    result_characteristics = "White" if result_characteristics[0] ==0 else "Red"
+#    return jsonify({'wine_selection': result_characteristics})
 
 # @app.route('/quality', methods = ['GET', 'POST'])
 # def redwhitepredict():

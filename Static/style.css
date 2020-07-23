@@ -6,19 +6,45 @@
   }
 */
 
+/* Had to put this & #adjs before .active so border + color would show when clicked*/
+.card {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: black;
+    width: 30%;
+    align-content: center;
+    vertical-align: middle;
+    box-shadow: 2px 2px 4px grey, -2px -2px 4px grey;
+    border: .25px solid black;
+}
+
+#adjs:hover {
+    background-color: rgb(245, 209, 130, .60);
+    cursor: pointer;
+    border: 1.5px solid black;
+    font-weight: bolder;
+}
+
+.active {
+    background-color: #f8c15a;
+    cursor: pointer;
+    border: 1.5px solid black;
+    font-weight: bold;
+}
+
+.show {
+    background-color: #f8c15a;
+    cursor: pointer;
+    border: 1.5px solid black;
+}
+
 #adjective {
     margin: 5%;
 }
 
 #adjs {
     font-size: 16px;
-}
-
-#adjs:hover, .active {
-    background-color: rgb(248, 196, 99, .75);
-    cursor: pointer;
-    border: 1.5px solid black;
-    font-weight: bolder;
 }
 
 #analysis {
@@ -57,7 +83,7 @@ body {
 .btn {
     width: 40%;
     text-align: center;
-    background-color: rgb(68, 171, 255);
+    background-color: rgb(14, 103, 206);
     font-weight: bold;
     padding: .5em
 }
@@ -67,18 +93,6 @@ body {
     padding-top: 1%;
     padding-bottom: 1%;
     font-size: 18px
-}
-
-.card {
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    color: black;
-    width: 30%;
-    align-content: center;
-    vertical-align: middle;
-    box-shadow: 2px 2px 4px grey, -2px -2px 4px grey;
-    border: .25px solid black;
 }
 
 .card-deck {

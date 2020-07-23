@@ -84,6 +84,14 @@ function buildAdjectives() {
                         .attr("class", "card m-4 shadow")
                         .attr("id", "adjs")
                         .attr("style", "min-width: 25%")
+                        .on("click",function(){
+                            if (this.classList.contains("show")) {
+                                d3.select(this).attr("class", "card m-4 shadow noshow")
+                            } 
+                            else {
+                                d3.select(this).attr('class', 'card m-4 shadow show')
+                            } 
+                        })
                         .each(function(x) {
                             d3.select(this).append("div")
                                             .attr("class", "card-body wine_adjectives")
@@ -113,6 +121,14 @@ function buildAdjectives() {
                         .attr("class", "card m-4 shadow")
                         .attr("id", "adjs")
                         .attr("style", "min-width: 25%")
+                        .on("click",function(){
+                            if (this.classList.contains("show")) {
+                                d3.select(this).attr("class", "card m-4 shadow noshow")
+                            } 
+                            else {
+                                d3.select(this).attr('class', 'card m-4 shadow show')
+                            } 
+                        })
                         .each(function(x) {
                             d3.select(this).append("div")
                                             .attr("class", "card-body wine_adjectives")
