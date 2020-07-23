@@ -10,6 +10,17 @@
     margin: 5%;
 }
 
+#adjs {
+    font-size: 16px;
+}
+
+#adjs:hover, .active {
+    background-color: rgb(248, 196, 99, .75);
+    cursor: pointer;
+    border: 1.5px solid black;
+    font-weight: bolder;
+}
+
 #analysis {
     position: static; 
     height: 55vh;
@@ -27,6 +38,14 @@ body {
     background-color: rgb(243, 243, 243);
 }
 
+#bottom-memo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    height: 50px
+}
+
 /* #border {
     padding-left: 40px; 
     padding-right: 40px;
@@ -38,9 +57,16 @@ body {
 .btn {
     width: 40%;
     text-align: center;
-    background-color: rgb(24, 22, 122);
+    background-color: rgb(68, 171, 255);
     font-weight: bold;
     padding: .5em
+}
+
+#button {
+    width: 30%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 18px
 }
 
 .card {
@@ -62,7 +88,7 @@ body {
 }
 
 .card-header {
-    background-color: rgb(172, 5, 5, .75);
+    background-color: rgb(172, 5, 5, .90);
     border-bottom: .5px solid black;
 }
 
@@ -130,7 +156,18 @@ h3 {
     justify-content: center;
     vertical-align: middle;
     color: black;
-    padding-bottom: 2%
+    padding-bottom: 2%;
+    font-size: 28px;
+}
+
+h4 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    color: black;
+    padding-bottom: 2%;
+    font-size: 26px;
 }
 
 #header {
@@ -163,6 +200,12 @@ h3 {
 
 #home-card {
     margin-bottom: 20px;
+    font-size: 35px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 input[type=button] {
@@ -196,6 +239,16 @@ input[type=button] {
     text-shadow: 1px 1px grey;
 }
 
+#obj-body {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+#objective {
+    width: 85%
+}
+
 #options {
     display: flex;
     align-items: center;
@@ -204,6 +257,10 @@ input[type=button] {
     margin-top: 2%;
 }
 
+p {
+    font-weight: bold;
+    font-size: 20px;
+}
 
 #redwhite {
     position: static; 
@@ -212,6 +269,18 @@ input[type=button] {
     padding-top: 0%;
     background-image: url("https://wineonmytime.com/wp-content/uploads/2019/09/Can-You-Mix-Red-and-White-Wine-Hero.png");
     background-size: cover;
+    box-shadow: 0px 5px 5px grey;
+    margin: auto;
+    z-index: 0;
+}
+
+#redwine {
+    position: static; 
+    height: 55vh;
+    width: 100%;
+    padding-top: 0%;
+    background-image: url("https://wallpaperaccess.com/full/468014.jpg");
+    background-size: 100% 55vh;
     box-shadow: 0px 5px 5px grey;
     margin: auto;
     z-index: 0;
@@ -292,12 +361,14 @@ input[type=button] {
     font-weight: 400;
 }
 
-.active {
-    color: red; 
-}
-
 #top-memo {
     font-size: 30px
+}
+
+tspan {
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 #word-cloud {
@@ -306,6 +377,15 @@ input[type=button] {
     margin: 0;
     padding: 0;
 }
-.active {
-    color: red; 
+
+#whitewine {
+    position: static; 
+    height: 55vh;
+    width: 100%;
+    padding-top: 0%;
+    background-image: url("https://static.vinepair.com/wp-content/uploads/2015/09/aligote-social.jpg");
+    background-size: 100% 55vh;
+    box-shadow: 0px 5px 5px grey;
+    margin: auto;
+    z-index: 0;
 }

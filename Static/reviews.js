@@ -82,7 +82,8 @@ function buildAdjectives() {
     tastes.forEach(word => {
         taste_selector.append("div")
                         .attr("class", "card m-4 shadow")
-                        .attr("style", "min-width: 20%")
+                        .attr("id", "adjs")
+                        .attr("style", "min-width: 25%")
                         .each(function(x) {
                             d3.select(this).append("div")
                                             .attr("class", "card-body wine_adjectives")
@@ -110,7 +111,8 @@ function buildAdjectives() {
     feels.forEach(word => {
         feel_selector.append("div")
                         .attr("class", "card m-4 shadow")
-                        .attr("style", "min-width: 20%")
+                        .attr("id", "adjs")
+                        .attr("style", "min-width: 25%")
                         .each(function(x) {
                             d3.select(this).append("div")
                                             .attr("class", "card-body wine_adjectives")
@@ -147,7 +149,7 @@ function submitChoices() {
      console.log(choices)
      fetch(`/predict_type?adjectives=${choices}`).then(data=>data.json()).then(d=>{
          console.log(d.wine_type)
-         document.getElementById('wine_type_result').innerHTML=`<h3>${d.wine_type}</h3>`
+         document.getElementById('wine_type_result').innerHTML=`<h3>${d.wine_type}id="variety_result"</h3>`
      }) 
 }
 
