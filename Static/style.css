@@ -61,7 +61,7 @@
 }
 
 body {
-    font-family: "system-ui";
+    font-family: "Mulish", sans-serif;
     background-color: rgb(243, 243, 243);
 }
 
@@ -86,7 +86,12 @@ body {
     text-align: center;
     background-color: rgb(14, 103, 206);
     font-weight: bold;
-    padding: .5em
+    padding: .5em;
+    border: .5px solid rgb(11, 83, 167)
+}
+
+.btn:hover {
+    background-color: rgb(35, 28, 128);
 }
 
 #button {
@@ -160,10 +165,13 @@ body {
 h1, h2 {
     color: white;
     text-shadow: 2px 2px rgb(87, 86, 86);
-
-    font-weight: 350;
+    font-weight: 700;
     text-align: center;
     font-family: 'Mulish', sans-serif;
+}
+
+h2 {
+    font-weight: 500
 }
 
 h3 {
@@ -173,7 +181,8 @@ h3 {
     vertical-align: middle;
     color: black;
     padding-bottom: 2%;
-    font-size: 28px;
+    font-size: 30px;
+    font-weight: 700
 }
 
 h4 {
@@ -242,7 +251,7 @@ input[type=button] {
     display: flex;
     align-items: center;
     justify-content: center;
-    vertical-align: middle;;
+    vertical-align: middle;
 }
 
 .navbar, .navbar-brand {
@@ -291,6 +300,20 @@ p {
     z-index: 0;
 }
 
+#redwhitecode {
+    position: static; 
+    height: 55vh;
+    width: 100%;
+    padding-top: 0%;
+    background-image: url("https://www.wallpapers4u.org/wp-content/uploads/glass_wine_bottles_jams_20662_1920x1080.jpg");
+    background-size: cover;
+    box-shadow: 0px 5px 5px grey;
+    margin: auto;
+    z-index: 0;
+}
+
+/*https://s2.best-wallpaper.net/wallpaper/1920x1080/1702/Three-bottles-wine-corkscrew-grapes-glass-cup_1920x1080.jpg - redwhitecode option*/
+
 #redwine {
     position: static; 
     height: 55vh;
@@ -315,6 +338,18 @@ p {
     z-index: 0;
 }
 
+#reviewscode {
+    position: static; 
+    height: 55vh;
+    width: 100%;
+    padding-top: 0%;
+    background-image: url("https://wallpapercrafter.com/uploads/posts/52257-a-macro-shot-of-a-pile-of-wine-bottle-corks____wine-bottle-corks.jpg");
+    background-size: cover;
+    box-shadow: 0px 5px 5px grey;
+    margin: auto;
+    z-index: 0;
+} 
+
 #right {
     float: right;
 }
@@ -329,11 +364,11 @@ p {
 }
 
 #select-wine {
-    font-size: 16pt;
-    background-color: rgb(172, 5, 5, .75);
+    font-size: 25px;
+    background-color: rgb(172, 5, 5, .90);
     border: .75pt solid black;
     border-radius: 4px;
-    padding: 1em
+    padding: 15px
 }
 
 .slidecontainer {
@@ -370,7 +405,7 @@ span {
 }
 
 #test {
-    width: 70%;
+    width: 85%;
     text-align: center;
     color: black;
     align-content: center;
@@ -423,10 +458,6 @@ span {
     background: rgb(236, 236, 236);
     border-color: rgb(0, 0, 0);
     text-decoration: none;
-}
-
-#top-memo {
-    font-size: 30px
 }
 
 tspan {

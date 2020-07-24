@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/style.css">
 
 </head>
@@ -52,11 +52,11 @@
         <div class="row" id="options">
             <div class="card" id="objective">
                 <div class="card-header">
-                    <h2 id="home-card"><strong>Cleaning the white wine dataset</strong></h2>
+                    <h2 id="home-card"><strong>Cleaning the White Wine Dataset</strong></h2>
                 </div>
                 <div class="card-deck text-center">
-                    <img class="card-image-top" src="../White_Analysis/BTS_Images/Data_Quality_Assesment/Drop_NA_2.png">
-                    <img class="card-image-top" src="../White_Analysis/BTS_Images/Data_Quality_Assesment/Remove_Outliers_4.png">
+                    <img class="card-image-top" src="{{url_for('static', filename='Drop_NA_2.png')}}">
+                    <img class="card-image-top" src="{{url_for('static', filename='Remove_Outliers_4.png')}}">
                     <div class="card-body">
                         <h5 id="obj-body">After removing missing values from the dataset, we needed to identify and remove outliers
                                          that could skew the analysis. Removing outliers shrunk our dataset from 4898 to 4469 values..</h5>
@@ -69,11 +69,13 @@
         <div class="row" id="options">
             <div class="card" id="objective">
                 <div class="card-header">
-                    <h2 id="home-card"><strong>Testing assumptions for Multiple Regression Analysis</strong></h2>
+                    <h2 id="home-card"><strong>Testing Assumptions for Multiple Regression Analysis</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <img class="card-image-top" src="../White_Analysis/BTS_Images/Model_Exploration/Multiple_Regression/Seaborn_viz_6b.png">
-                    <img class="card-image-top" src="../White_Analysis/BTS_Images/Model_Exploration/Multiple_Regression/Multicollinearity_VIF_5.png">
+                    <div class="card-body">
+                        <img class="card-image-top" src="{{url_for('static', filename='Seaborn_viz_6b.png')}}">
+                        <img class="card-image-top" src="{{url_for('static', filename='Multicollinearity_VIF_5.png')}}">
+                    </div>
                     <div class="card-body">
                         <h5 id="obj-body">Through a variable inflation factor analysis and seaborn heatmap, we assessed how 
                                         codependent the factors were with one another (excludes the target, quality). Density and residual 
@@ -95,7 +97,7 @@
                     <h2 id="home-card"><strong>Multiple Regression Analysis</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <img class="card-image-top" src="../White_Analysis/BTS_Images/Model_Exploration/Multiple_Regression/MR_A_Results_1.png">
+                    <img class="card-image-top" src="{{url_for('static', filename='MR_A_Results_1.png')}}">
                     <div class="card-body">
                         <h5 id="obj-body">The first MR model used all 11 factors, scaled using MinMaxScaler, with a testing score of 30%. 
                                         The second model used the Principle Component Analysis to transform the existing factors to two factors 
@@ -114,7 +116,7 @@
                     <h2 id="home-card"><strong>Original Regression</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <img class="card-image-top" src="../White_Analysis/BTS_Images/Model_Exploration/Multiple_Regression/Ordinal_Reg_10.png">
+                    <img class="card-image-top" src="{{url_for('static', filename='Ordinal_Reg_10.png')}}">
                     <div class="card-body">
                         <h5 id="obj-body">Three types of ordinal regressions were tested (logistic, ridge and least absolute deviation). The ordinal 
                                         regression was a natural fit since the target variable is ordinal. However, only one of the model’s came close 
@@ -132,7 +134,7 @@
                     <h2 id="home-card"><strong>Model Summary</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <img class="card-image-top" src="../White_Analysis/BTS_Images/Model_Exploration/Multiple_Regression/Model_Summary_11.png">
+                    <img class="card-image-top" src="{{url_for('static', filename='Model_Summary_11.png')}}">
                     <div class="card-body">
                         <h5 id="obj-body">The original regression model proved strongest (testing score: 52%), although it is still relatively weak for a predictive model. 
                             This make’s sense since the target variable is ordinal, not continuous. For the purpose of this exercise, 52% is enough to show some predictive 
@@ -154,7 +156,7 @@
         <div class="row" id="options">
             <div class="card" id="objective">
                 <div class="card-header">
-                    <h2 id="home-card"><strong>Model Summary</strong></h2>
+                    <h2 id="home-card"><strong>Test Scores by Different Regression Models</strong></h2>
                 </div>
                 <div class="card-deck">
                     <div class="card-body">
@@ -183,10 +185,12 @@
     </div>
     <div class="container">
         <div class="col-md-12 text-center">
-            <a type="button" class="btn btn-primary" id="button" href="/red_wine" style="margin: auto" role="button">Previous: Red Wine</a>
-            <a type="button" class="btn btn-primary" id="button" href="/reviewscode" style="margin: auto" role="button">Next: Wine Reviews</a>
+            <a type="button" class="btn btn-primary" id="button" href="/red_wine" style="margin-right: 1%" role="button"><b>Previous:</b> Red Wine</a>
+            <a type="button" class="btn btn-primary" id="button" href="/reviewscode" style="margin-left: 1%" role="button"><b>Next:</b> Wine Reviews</a>
         </div>
     </div>
+    <br>
+    <br>
 </body>
 
 </html>

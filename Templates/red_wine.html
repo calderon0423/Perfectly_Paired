@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/style.css">
     
 
@@ -54,10 +54,10 @@
         <div class="row" id="options">
             <div class="card" id="objective">
                 <div class="card-header">
-                    <h2 id="home-card"><strong>Exploring the red wine dataset</strong></h2>
+                    <h2 id="home-card"><strong>Exploring the Red Wine Dataset</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <img class="card-image-top" id="red1" src="../Red_Analysis/Red_Pics/red-1.png">
+                    <img class="card-image-top" id="red1" src="{{url_for('static', filename='red-1.png')}}"/>
                     <div class="card-body">
                         <h5 id="obj-body">There are 1599 records in this dataset. 
                             There are in total 12 variables, of which “quality” is our target that has a scale of 0-10.</h5>
@@ -70,10 +70,10 @@
         <div class="row" id="options">
             <div class="card" id="objective">
                 <div class="card-header">
-                    <h2 id="home-card"><strong>Distribution of each variable</strong></h2>
+                    <h2 id="home-card"><strong>Distribution of Each Variable</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <img class="card-image-top" id="red1" src="../Red_Analysis/Red_Pics/red-2.png">
+                    <img class="card-image-top" id="red1" src="{{url_for('static', filename='red-2.png')}}">
                 </div>
             </div>
         </div>
@@ -82,10 +82,10 @@
         <div class="row" id="options">
             <div class="card" id="objective">
                 <div class="card-header">
-                    <h2 id="home-card"><strong>Correlation between each independent variable and quality</strong></h2>
+                    <h2 id="home-card"><strong>Correlation between Each Independent Variable and Quality</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <img class="card-image-top" id="red1" src="../Red_Analysis/Red_Pics/red-3.png">
+                    <img class="card-image-top" id="red1" src="{{url_for('static', filename='red-3.png')}}">
                 </div>
             </div>
         </div>
@@ -94,10 +94,10 @@
         <div class="row" id="options">
             <div class="card" id="objective">
                 <div class="card-header">
-                    <h2 id="home-card"><strong>Visualizing the correlation between each variable using seaborn heatmap</strong></h2>
+                    <h2 id="home-card"><strong>Visualizing the Correlation between Each Variable Using Seaborn Heatmap</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <img class="card-image-top" id="red1" src="../Red_Analysis/Red_Pics/red-4.png">
+                    <img class="card-image-top" id="red1" src="{{url_for('static', filename='red-4.png')}}">
                 </div>
             </div>
         </div>
@@ -109,7 +109,7 @@
                     <h2 id="home-card"><strong>Test Scores by Different Regression Models</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <img class="card-image-top" id="red1" src="../Red_Analysis/Red_Pics/red-5.png">
+                    <img class="card-image-top" id="red1" src="{{url_for('static', filename='red-5.png')}}">
                     <div class="card-body">
                         <h5 id="obj-body">For each model, data was split into training and testing data and were scaled and normalized using MinMaxScaler, which transforms each feature so that it lies within the range 0 and 1. <br>
                             Multiple Linear Regression: With Scikit-Learn, we created a model using Linear Regression, fitted the model to the training data, and quantified the model using the scaled data. Score came out to ~0.372, which is very low and weak.<br>
@@ -132,7 +132,7 @@
 
     <div class="container">
         <div class="col-md-12 text-center">
-            <a type="button" class="btn btn-primary" id="button-type" href="/white_wine" style="margin: auto" role="button">Next: White Wine</a>
+            <a type="button" class="btn btn-primary" id="button" href="/white_wine" style="margin: auto" role="button"><b>Next:</b> White Wine</a>
         </div>
     </div>
     <br>
