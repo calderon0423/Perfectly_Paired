@@ -1,12 +1,13 @@
-/* @font-face {
-    font-family: 'Open Sans';
+ /*@font-face {
+    font-family: 'Lobster' cursive;
     font-style: normal;
     font-weight: 400;
-    src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
-  }m
+    src: local('Lobster cursive'), local('Lobster cursive'), url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+  }
 */
-
 /* Had to put this & #adjs before .active so border + color would show when clicked*/
+
+
 .card {
     text-align: center;
     margin-top: 2%;
@@ -159,9 +160,10 @@ body {
 h1, h2 {
     color: white;
     text-shadow: 2px 2px rgb(87, 86, 86);
-    font-family: "system-ui";
+
     font-weight: 350;
     text-align: center;
+    font-family: 'Mulish', sans-serif;
 }
 
 h3 {
@@ -190,6 +192,7 @@ h4 {
     justify-content: center;
     vertical-align: middle;
     margin-top: 12%;
+    font-family: 'Lobster' cursive;
 }
 
 #header-redwhite {
