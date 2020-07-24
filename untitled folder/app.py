@@ -18,39 +18,40 @@ from pymongo import MongoClient
 # df = df.rename(columns = {'region_1': 'region_one', 'region_2': 'region_two'})
 # df.to_csv('/Users/angelicacalderon/repos/Perfectly_Paired/Resources/winemag-data-130k-v2.csv',index=False)
 
-conn = 'mongodb://localhost:27017'
-client = MongoClient(conn)
+# conn = 'mongodb://localhost:27017'
+# client = MongoClient(conn)
 
-#connect to MongoDB wine_db
-db = client['wine_db']
+# #connect to MongoDB wine_db
+# db = client['wine_db']
 
-#create collections 
-reviews_collection = db['reviews']
-red_white_collection = db['red_white']
+# #create collections 
+# reviews_collection = db['reviews']
+# red_white_collection = db['red_white']
 
-#drop collection if available to remove duplicates
-db.reviews_collection.drop()
-db.red_white_collection.drop()
+# #drop collection if available to remove duplicates
+# db.reviews_collection.drop()
+# db.red_white_collection.drop()
 
-#define function to read csv file as json 
-def csv_to_json(filename, header=True):
-    data = pd.read_csv(filename,low_memory=False)
-    return data.to_dict('records')
+# #define function to read csv file as json 
+# def csv_to_json(filename, header=True):
+#     data = pd.read_csv(filename,low_memory=False)
+#     return data.to_dict('records')
 
-#insert json file to collections 
-reviews_collection.insert_many(csv_to_json('/Users/heathertzou/Desktop/HEATHER/Data Analytics Bootcamp/FINAL_PROJECT/redvswhite_FLASK/Resources/winemag-data-130k-v2.csv'))
-red_white_collection.insert_many(csv_to_json('/Users/heathertzou/Desktop/HEATHER/Data Analytics Bootcamp/FINAL_PROJECT/redvswhite_FLASK/Resources/red_wine_combined.csv'))
+# #insert json file to collections 
+# reviews_collection.insert_many(csv_to_json('/Users/heathertzou/Desktop/HEATHER/Data Analytics Bootcamp/FINAL_PROJECT/redvswhite_FLASK/Resources/winemag-data-130k-v2.csv'))
+# red_white_collection.insert_many(csv_to_json('/Users/heathertzou/Desktop/HEATHER/Data Analytics Bootcamp/FINAL_PROJECT/redvswhite_FLASK/Resources/red_wine_combined.csv'))
 
-#connect to mongoDB wine db 
-mongoDB = ('mongodb:///?Server=localhost&Port=27017&Database=wine_db')
+# #connect to mongoDB wine db 
+# mongoDB = ('mongodb:///?Server=localhost&Port=27017&Database=wine_db')
 
 
 #################################################
 # Flask Routes
 #################################################
 
-
+from flask_cors import CORS 
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/")
 def welcome():
@@ -85,23 +86,30 @@ def red_white():
     return jsonify(response)
 
 
-
+###################################################################
+## THIS PART IS THE RED VS WHITE BASED ON PHYSIOCHEMICAL PROPERTIES ##
 
 @app.route('/redorwhite')
 def dashboard():
     return render_template('/index.html')
 
-@app.route('/predict_red_white', methods = ['GET', 'POST'])
-def predict():
+@app.route('/redwhitepredict', methods = ['GET', 'POST'])
+def redwhitepredict():
+    # enter user input in html 
+    test_x = request.get_json()
+    print(test_x)
+    test_x = test_x["data"]
+    print(test_x)
+    test_x = [[float(i) for i in test_x]]
 
-    
-#  Load the model
-redorwhite_model = load_model('/Users/heathertzou/Desktop/HEATHER/Data Analytics Bootcamp/FINAL_PROJECT/redvswhite_FLASK/Resources/redorwhite_model_trained.h5')
+    #  Load the model
+    redorwhite_model = load_model('Resources/redorwhite_model_trained.h5')
 
-#predict the wine class based on model and save output to 'out'
-out = redorwhite_model.predict_classes(test_x)
-out = out[0]
-return jsonify({'wine_selection': str(out)})
+    # #predict the wine class based on model and save output to 'out'
+    #out = redorwhite_model.predict_classes(test_x)
+    out = np.argmax(redorwhite_model.predict(test_x), axis=-1)
+    out = out[0]
+    return jsonify({'wine_selection': str(out)})
 
 
 if __name__ == "__main__":
