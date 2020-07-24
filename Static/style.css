@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: 400;
     src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
-  }
+  }m
 */
 
 /* Had to put this & #adjs before .active so border + color would show when clicked*/
@@ -362,6 +362,10 @@ p {
     cursor: pointer; /* Cursor on hover */
 }
 
+span {
+    font-weight: 400;
+}
+
 #test {
     width: 70%;
     text-align: center;
@@ -373,6 +377,49 @@ p {
 #test-card {
     margin-bottom: 20px;
     font-weight: 400;
+}
+
+.tool + .tooltip > .tooltip-inner {
+    background-color: #f3b239; 
+    color: black; 
+    border: 1px solid rgb(0, 0, 0); 
+    padding: 10px;
+    font-size: 12px;
+    max-width: 400px;
+    opacity: 1
+  }
+
+/* Tooltip on left */
+.tool + .tooltip.top > .tooltip-arrow {
+    border-left: 5px solid rgb(0, 0, 0);
+    }
+
+.tool:before
+{
+    content: '?';
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: 200;
+    text-align: center;
+    width: 2.4ex;
+    height: 2.4ex;
+    font-size: 1.4ex;
+    line-height: 1.8ex;
+    border-radius: 3ex;
+    margin-right: 4px;
+    padding: 1.5px;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.tool:hover:before
+{
+    color: rgb(0, 0, 0);
+    background: rgb(236, 236, 236);
+    border-color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 
 #top-memo {
