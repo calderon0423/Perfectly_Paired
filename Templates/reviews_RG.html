@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Find My Wine</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
+    <script src="static/reviews_RG.js"></script>
+    <!-- <script src="static/reviews_sr_1.js"></script> -->
+    <link rel="stylesheet" href="static/style.css">
+
+</head>
+
+<body>
+    <div class="jumbotron card-image" id="reviews">
+        <div class="row">
+            <nav class="dropdown">
+                <a class="dropbtn" href="/">PerfectlyPaired</a>
+                <div class="dropdown-content">
+                    <a href="/quality">White vs. Red Wine</a>
+                    <a href="/reviews">Find My Wine</a>
+                    <a href="/analysis">Behind the Scenes</a>
+                </div>
+            </nav>
+        </div>
+        <div class="container-fluid" id="header-redwhite">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="color: rgb(252, 252, 241); font-size: 100px;">Wine Reviews</h1>
+                    <hr>
+                    <h2>Let Us Find Your Ideal Wine</h2> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid" id="memo">
+        <div class="row" id="border">
+            <h3><strong>Can't find the words to describe your favorite wine?</strong>
+                <br><br>Use our interactive word cloud to find out more.
+            </h3>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4" id="select-text">
+                    <h2 id="select-wine"><strong>Select a Wine:</strong></h2>
+                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="word-cloud" id="word-cloud" style="height: 300px;">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid" id="memo">
+        <div class="row" id="border" style="margin-top: 3%;">
+            <h3><strong>Need help choosing a wine?</strong>
+                <br><br>Take our Machine Learning test to find your favorite.
+            </h3>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="options">
+            <div class="card" id="test">
+                <div class="card-header">
+                    <h2 id="home-card"><strong>Take the Test!</strong></h2> 
+                </div>
+                <br>
+                <p>Explanation</p>
+                <hr>
+                    <h4>Choose adjectives to describe your ideal wine <strong>taste</strong>.</h4>
+                    <div class="card-deck" id="taste">
+                    </div>
+                    <hr>
+                    <h4>Choose adjectives to describe your ideal wine <strong>feel</strong>.</h4>
+                    <div class="card-deck" id="feel">
+                    </div>
+                    <hr>
+                    <h4>Which <strong>country</strong> would your wine ideally be from?</h4>
+                    <div class="card-deck" id="country">
+                    </div>
+                    <hr>
+                    <h4>Which <strong>province</strong> would your wine ideally be from?</h4>
+                    <div class="card-deck" id="province">
+                    </div>
+                    <hr>
+                    <div class="card-body">
+                        <button class="btn btn-primary" id="button-type" href="/reviews" onclick="submitChoices()">Submit</button>
+                        <br>
+                        <br>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="options">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h3>See Your Prediction!</h3> 
+                </div>
+                <div class="card-body">
+                    <div id='wine_type_result'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+
+</body
+              
+
+
+    
+
