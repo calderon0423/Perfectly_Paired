@@ -1,13 +1,51 @@
-/* @font-face {
-    font-family: 'Open Sans';
+ /*@font-face {
+    font-family: 'Lobster' cursive;
     font-style: normal;
     font-weight: 400;
-    src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+    src: local('Lobster cursive'), local('Lobster cursive'), url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
   }
 */
+/* Had to put this & #adjs before .active so border + color would show when clicked*/
+
+
+.card {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: black;
+    width: 30%;
+    align-content: center;
+    vertical-align: middle;
+    box-shadow: 2px 2px 4px grey, -2px -2px 4px grey;
+    border: .25px solid black;
+}
+
+#adjs:hover {
+    background-color: rgb(245, 209, 130, .60);
+    cursor: pointer;
+    border: 1.5px solid black;
+    font-weight: bolder;
+}
+
+.active {
+    background-color: #f8c15a;
+    cursor: pointer;
+    border: 1.5px solid black;
+    font-weight: bold;
+}
+
+.show {
+    background-color: #f8c15a;
+    cursor: pointer;
+    border: 1.5px solid black;
+}
 
 #adjective {
     margin: 5%;
+}
+
+#adjs {
+    font-size: 16px;
 }
 
 #analysis {
@@ -23,8 +61,16 @@
 }
 
 body {
-    font-family: "system-ui";
+    font-family: "Mulish", sans-serif;
     background-color: rgb(243, 243, 243);
+}
+
+#bottom-memo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    height: 50px
 }
 
 /* #border {
@@ -38,21 +84,21 @@ body {
 .btn {
     width: 40%;
     text-align: center;
-    background-color: rgb(24, 22, 122);
+    background-color: rgb(14, 103, 206);
     font-weight: bold;
-    padding: .5em
+    padding: .5em;
+    border: .5px solid rgb(11, 83, 167)
 }
 
-.card {
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    color: black;
+.btn:hover {
+    background-color: rgb(35, 28, 128);
+}
+
+#button {
     width: 30%;
-    align-content: center;
-    vertical-align: middle;
-    box-shadow: 2px 2px 4px grey, -2px -2px 4px grey;
-    border: .25px solid black;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 18px
 }
 
 .card-deck {
@@ -62,7 +108,7 @@ body {
 }
 
 .card-header {
-    background-color: rgb(172, 5, 5, .75);
+    background-color: rgb(172, 5, 5, .90);
     border-bottom: .5px solid black;
 }
 
@@ -119,9 +165,13 @@ body {
 h1, h2 {
     color: white;
     text-shadow: 2px 2px rgb(87, 86, 86);
-    font-family: "system-ui";
-    font-weight: 350;
+    font-weight: 700;
     text-align: center;
+    font-family: 'Mulish', sans-serif;
+}
+
+h2 {
+    font-weight: 500
 }
 
 h3 {
@@ -130,7 +180,19 @@ h3 {
     justify-content: center;
     vertical-align: middle;
     color: black;
-    padding-bottom: 2%
+    padding-bottom: 2%;
+    font-size: 30px;
+    font-weight: 700
+}
+
+h4 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    color: black;
+    padding-bottom: 2%;
+    font-size: 26px;
 }
 
 #header {
@@ -139,6 +201,7 @@ h3 {
     justify-content: center;
     vertical-align: middle;
     margin-top: 12%;
+    font-family: 'Lobster' cursive;
 }
 
 #header-redwhite {
@@ -163,6 +226,12 @@ h3 {
 
 #home-card {
     margin-bottom: 20px;
+    font-size: 35px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 input[type=button] {
@@ -182,7 +251,7 @@ input[type=button] {
     display: flex;
     align-items: center;
     justify-content: center;
-    vertical-align: middle;;
+    vertical-align: middle;
 }
 
 .navbar, .navbar-brand {
@@ -196,6 +265,16 @@ input[type=button] {
     text-shadow: 1px 1px grey;
 }
 
+#obj-body {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+#objective {
+    width: 85%
+}
+
 #options {
     display: flex;
     align-items: center;
@@ -204,6 +283,10 @@ input[type=button] {
     margin-top: 2%;
 }
 
+p {
+    font-weight: bold;
+    font-size: 20px;
+}
 
 #redwhite {
     position: static; 
@@ -212,6 +295,32 @@ input[type=button] {
     padding-top: 0%;
     background-image: url("https://wineonmytime.com/wp-content/uploads/2019/09/Can-You-Mix-Red-and-White-Wine-Hero.png");
     background-size: cover;
+    box-shadow: 0px 5px 5px grey;
+    margin: auto;
+    z-index: 0;
+}
+
+#redwhitecode {
+    position: static; 
+    height: 55vh;
+    width: 100%;
+    padding-top: 0%;
+    background-image: url("https://www.wallpapers4u.org/wp-content/uploads/glass_wine_bottles_jams_20662_1920x1080.jpg");
+    background-size: cover;
+    box-shadow: 0px 5px 5px grey;
+    margin: auto;
+    z-index: 0;
+}
+
+/*https://s2.best-wallpaper.net/wallpaper/1920x1080/1702/Three-bottles-wine-corkscrew-grapes-glass-cup_1920x1080.jpg - redwhitecode option*/
+
+#redwine {
+    position: static; 
+    height: 55vh;
+    width: 100%;
+    padding-top: 0%;
+    background-image: url("https://wallpaperaccess.com/full/468014.jpg");
+    background-size: 100% 55vh;
     box-shadow: 0px 5px 5px grey;
     margin: auto;
     z-index: 0;
@@ -229,6 +338,18 @@ input[type=button] {
     z-index: 0;
 }
 
+#reviewscode {
+    position: static; 
+    height: 55vh;
+    width: 100%;
+    padding-top: 0%;
+    background-image: url("https://wallpapercrafter.com/uploads/posts/52257-a-macro-shot-of-a-pile-of-wine-bottle-corks____wine-bottle-corks.jpg");
+    background-size: cover;
+    box-shadow: 0px 5px 5px grey;
+    margin: auto;
+    z-index: 0;
+} 
+
 #right {
     float: right;
 }
@@ -243,11 +364,11 @@ input[type=button] {
 }
 
 #select-wine {
-    font-size: 16pt;
-    background-color: rgb(172, 5, 5, .75);
+    font-size: 25px;
+    background-color: rgb(172, 5, 5, .90);
     border: .75pt solid black;
     border-radius: 4px;
-    padding: 1em
+    padding: 15px
 }
 
 .slidecontainer {
@@ -279,8 +400,12 @@ input[type=button] {
     cursor: pointer; /* Cursor on hover */
 }
 
+span {
+    font-weight: 400;
+}
+
 #test {
-    width: 70%;
+    width: 85%;
     text-align: center;
     color: black;
     align-content: center;
@@ -292,12 +417,53 @@ input[type=button] {
     font-weight: 400;
 }
 
-.active {
-    color: red; 
+.tool + .tooltip > .tooltip-inner {
+    background-color: #f3b239; 
+    color: black; 
+    border: 1px solid rgb(0, 0, 0); 
+    padding: 10px;
+    font-size: 12px;
+    max-width: 400px;
+    opacity: 1
+  }
+
+/* Tooltip on left */
+.tool + .tooltip.top > .tooltip-arrow {
+    border-left: 5px solid rgb(0, 0, 0);
+    }
+
+.tool:before
+{
+    content: '?';
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: 200;
+    text-align: center;
+    width: 2.4ex;
+    height: 2.4ex;
+    font-size: 1.4ex;
+    line-height: 1.8ex;
+    border-radius: 3ex;
+    margin-right: 4px;
+    padding: 1.5px;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    text-decoration: none;
 }
 
-#top-memo {
-    font-size: 30px
+.tool:hover:before
+{
+    color: rgb(0, 0, 0);
+    background: rgb(236, 236, 236);
+    border-color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+tspan {
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 #word-cloud {
@@ -306,6 +472,15 @@ input[type=button] {
     margin: 0;
     padding: 0;
 }
-.active {
-    color: red; 
+
+#whitewine {
+    position: static; 
+    height: 55vh;
+    width: 100%;
+    padding-top: 0%;
+    background-image: url("https://static.vinepair.com/wp-content/uploads/2015/09/aligote-social.jpg");
+    background-size: 100% 55vh;
+    box-shadow: 0px 5px 5px grey;
+    margin: auto;
+    z-index: 0;
 }

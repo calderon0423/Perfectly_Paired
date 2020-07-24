@@ -10,10 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-
-    <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
-    <script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
-    <script src="static/reviews.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/style.css">
 
 </head>
@@ -40,14 +37,126 @@
         </div>
     </div>
     <hr>
-    <div class="container text-center">
-        Stuff
-    </div>
-    <hr>
-    <div class="container">
-        <div class="col-md-12 text-center">
-            <a type="button" class="btn btn-primary" id="button-type" href="/white_wine" style="margin: auto" role="button">Previous: White Wine</a>
-            <a type="button" class="btn btn-primary" id="button-type" href="/red_wine" style="margin: auto" role="button">Next: Red Wine</a>
+    <div class="container-fluid">
+        <div class="row" id="options">
+            <div class="card" id="objective">
+                <div class="card-header">
+                    <h2 id="home-card"><strong>Objective</strong></h2>
+                </div>
+                <div class="card-body">
+                    <h5 id="obj-body">Building a model to predict the ideal wine based on the adjectives that user selected to describe the taste and feel.</h5>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="container-fluid">
+        <div class="row" id="options">
+            <div class="card" id="objective">
+                <div class="card-header">
+                    <h2 id="home-card"><strong>Exploring the Wine Reviews Dataset</strong></h2>
+                </div>
+                <div class="card-deck">
+                    <img class="card-image-top" id="red1" src="{{url_for('static', filename='wr-1.png')}}">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="options">
+            <div class="card" id="objective">
+                <div class="card-header">
+                    <h2 id="home-card"><strong>Data Pre-Processing</strong></h2>
+                </div>
+                <div class="card-deck">
+                    <div class="card-body">
+                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-2a.png')}}"/>
+                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-2b.png')}}"/>
+                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-2c.png')}}"/>
+                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-2d.png')}}"/>
+                    </div>
+                    <div class="card-body">
+                        <h5 id="obj-body">Data pre-processing to bring the text into a form that is predictable and analyzable: <br><br>
+                                           1. Count Vectorizer: Text preprocessing, tokenizing and filtering of stopwords<br>
+                                           2. Transformer: Transform our count-matrix to a tf-idf representation “Term Frequency times Inverse Document Frequency”.
+                            </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="options">
+            <div class="card" id="objective">
+                <div class="card-header">
+                    <h2 id="home-card"><strong>Training the Model: Multinomial vs. Complement Naïve Bayes</strong></h2>
+                </div>
+                <div class="card-deck">
+                    <div class="card-body">
+                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-3a.png')}}"/>
+                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-3b.png')}}"/>
+                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-3c.png')}}"/>
+                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-3d.png')}}"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="options">
+            <div class="card" id="objective">
+                <div class="card-header">
+                    <h2 id="home-card"><strong>Saving the Model: Complement NB </strong></h2>
+                </div>
+                <div class="card-deck">
+                    <div class="card-body">
+                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-4a.png')}}"/>
+                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-4b.png')}}"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="options">
+            <div class="card" id="objective">
+                <div class="card-header">
+                    <h2 id="home-card"><strong>Model: Deep Learning</strong></h2>
+                </div>
+                <div class="card-deck">
+                    <div class="card-body">
+                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-5a.png')}}"/>
+                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-5b.png')}}"/>
+                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-5c.png')}}"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="options">
+            <div class="card" id="objective">
+                <div class="card-header">
+                    <h2 id="home-card"><strong>Model Summary</strong></h2>
+                </div>
+                <div class="card-deck">
+                    <div class="card-body">
+                        <h5 id="obj-body"><b>Models:</b><br>Of the models used - Multinomial NB, Complement NB, Deep Learning - Deep learning performed the best due to the complexity of the dataset. <br><br>
+                            <b>Challenges:</b><br>Because of the complexity and size of data, deep learning worked very slowly. That’s why we could not test as many variations as we would have liked in order to find the best parameters. 
+                            We could have used hyperparameter tuning to find the highest accuracy.<br><br>
+                            <b>Assumptions:</b><br>We trained the model based on wine selection and reviews of only nineteen tasters, yet assumed the results were a general fact rather than subjective taste.  
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-12 text-center">
+            <a type="button" class="btn btn-primary" id="button" href="/white_wine" style="margin: auto" role="button"><b>Previous:</b> White Wine</a>
+            <a type="button" class="btn btn-primary" id="button" href="/red_wine" style="margin: auto" role="button"><b>Next:</b> Red Wine</a>
+        </div>
+    </div>
+    <br>
+    <br>
 </body>
+</html>

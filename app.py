@@ -7,7 +7,7 @@ from keras.models import model_from_json, load_model
 import numpy as np 
 import pickle 
 import flask 
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template, jsonify, request, url_for
 from pymongo import MongoClient
 from flask_restful import reqparse
 
@@ -92,6 +92,10 @@ def whiteWine():
 @app.route('/reviewscode')
 def reviewsCode():
     return render_template('reviewscode.html')
+
+@app.route('/redwhitecode')
+def redWhiteCode():
+    return render_template('redwhitecode.html')
  
 @app.route('/reviewsdata')
 def reviewsData():
