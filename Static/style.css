@@ -8,7 +8,7 @@
     align-content: center;
     vertical-align: middle;
     box-shadow: 2px 2px 4px grey, -2px -2px 4px grey;
-    border: .25px solid black;
+    border: 1px solid black;
 }
 
 #adjs:hover {
@@ -80,21 +80,23 @@ body {
 .btn {
     width: 40%;
     text-align: center;
-    background-color: rgb(14, 103, 206);
+    background-color: rgb(26, 42, 185);
     font-weight: bold;
     padding: .5em;
-    border: .5px solid rgb(11, 83, 167)
+    border: .80px solid rgb(0, 0, 0)
 }
 
 .btn:hover {
-    background-color: rgb(35, 28, 128);
+    background-color: rgb(20, 13, 121);
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 2px 2px 4px grey, -2px -2px 4px grey;
 }
 
 #button {
     width: 30%;
     padding-top: 1%;
     padding-bottom: 1%;
-    font-size: 18px
+    font-size: 20px
 }
 
 .card-deck {
@@ -160,7 +162,7 @@ body {
 
 h1, h2 {
     color: white;
-    text-shadow: 2px 2px rgb(87, 86, 86);
+    text-shadow: 2px 2px rgb(58, 58, 58);
     font-weight: 700;
     text-align: center;
     font-family: 'Mulish', sans-serif;
@@ -177,7 +179,7 @@ h3 {
     vertical-align: middle;
     color: black;
     padding-bottom: 2%;
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 700
 }
 
@@ -276,7 +278,7 @@ input[type=button] {
     align-items: center;
     justify-content: center;
     vertical-align: middle;
-    margin-top: 2%;
+    
 }
 
 p {
@@ -301,7 +303,7 @@ p {
     height: 55vh;
     width: 100%;
     padding-top: 0%;
-    background-image: url("https://www.wallpapers4u.org/wp-content/uploads/glass_wine_bottles_jams_20662_1920x1080.jpg");
+    background-image: url("https://img.onmanorama.com/content/dam/mm/en/food/in-season/images/2019/11/8/wine.jpg");
     background-size: cover;
     box-shadow: 0px 5px 5px grey;
     margin: auto;
@@ -459,7 +461,7 @@ span {
 tspan {
     color: black;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 35px;
 }
 
 #word-cloud {
