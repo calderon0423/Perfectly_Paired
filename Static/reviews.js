@@ -40,7 +40,6 @@ function buildWordCloud(selection) {
        //  chart.colorRange().length('80%');
        // display the word cloud chart
        chart.container("word-cloud");
-       chart.tooltip().format("{%yPercentOfTotal}% ({%value})\n\n{%custom_field}");
       
        chart.draw();
     })
