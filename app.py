@@ -7,7 +7,7 @@ from keras.models import model_from_json, load_model
 import numpy as np 
 import pickle 
 import flask 
-from flask import Flask, render_template, jsonify, request, url_for
+from flask import Flask, render_template, jsonify, request, url_for, send_from_directory
 from pymongo import MongoClient
 from flask_restful import reqparse
 import json
@@ -176,6 +176,10 @@ def name():
     return json.dumps(data)
 
 
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 
 if __name__ == "__main__":
