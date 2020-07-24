@@ -1,13 +1,4 @@
- /*@font-face {
-    font-family: 'Lobster' cursive;
-    font-style: normal;
-    font-weight: 400;
-    src: local('Lobster cursive'), local('Lobster cursive'), url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-  }
-*/
 /* Had to put this & #adjs before .active so border + color would show when clicked*/
-
-
 .card {
     text-align: center;
     margin-top: 2%;
@@ -26,6 +17,11 @@
     border: 1.5px solid black;
     font-weight: bolder;
 }
+
+/*#ac_layer_5h, #ac_path_5b, #ac_layer_63 {
+    visibility: hidden;
+    display: none;
+}*/
 
 .active {
     background-color: #f8c15a;

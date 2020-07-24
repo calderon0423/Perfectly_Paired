@@ -35,11 +35,13 @@ function buildWordCloud(selection) {
        // set an array of angles at which the words will be laid out
        chart.angles([0])
        // enable a color range
-       chart.colorRange(true);
+       // chart.colorRange(true);
        // set the color range length
-       chart.colorRange().length('80%');
+       //  chart.colorRange().length('80%');
        // display the word cloud chart
        chart.container("word-cloud");
+       chart.tooltip().format("{%yPercentOfTotal}% ({%value})\n\n{%custom_field}");
+      
        chart.draw();
     })
 };
@@ -135,8 +137,6 @@ function buildAdjectives() {
 };
 
 buildAdjectives();
-
-d3.select(window).on("load", buildAdjectives);
 
 function submitChoices() {
     let choices = []
