@@ -92,7 +92,6 @@ function submit() {
   
   let text_x = [];
 
-
   var fixed_acidity = d3.select("#fixed_acidity").property("value");
   text_x.push(fixed_acidity);
   
@@ -125,7 +124,6 @@ function submit() {
 
   var alcohol = d3.select("#alcohol").property("value");
   text_x.push(alcohol);
-  
   
   text_x = text_x.join(' ')
   
