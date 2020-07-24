@@ -109,15 +109,29 @@ def predict():
 
 @app.route('/predict_wine_variety')
 def predict_variety():
-    # whenever the predict method is called, we're going
-    # to input the user psychochemical characteristics 
-    
-    # enter user input in html 
-    # test_x= request.get_data()
-    # test_x = [[test_x]]
+    #user input 
+    parser = reqparse.RequestParser()
+    parser.add_argument('adjectives', type=str, required=True, help="This is expecting a selection of wine adjectives", action='append')
+    args = parser.parse_args()
+    adjectives = args['adjectives']
+    parser.add_argument('country', type=str, required=True, help="This is expecting one selection of country", action='append')
+    args = parser.parse_args()
+    country = args['country']
+    parser.add_argument('province', type=str, required=True, help="This is expecting one selection of province", action='append')
+    args = parser.parse_args()
+    country = args['province']
+    parser.add_argument('points_grouped', type=str, required=True, help="This is expecting one selection of province", action='append')
+    args = parser.parse_args()
+    points_grouped = args['points_grouped']
 
-    test_x = [["ripe", "crisp", "Italy", "Tuscany"]]
-    test_points = 4
+    user_input=[]
+    for adj in adjectives:
+        user_input.append(adj)
+    for c in country:
+        user_input.append(c)
+    for p in province:
+        user_input.append(p)
+
     variables = ['White', 'Red', 'ripe', 'crisp', 'mature', 'tropical', 'rich', 'sweet', 'fresh', 'honeyed', 'fruity', 'smooth',
     'soft', 'bright', 'dry', 'earthy', 'rubbery', 'savory', 'vanilla', 'bitter', 'intense', 'traditional', 'nutty', 'Argentina',
     'Australia', 'Austria', 'Brazil', 'Bulgaria', 'Canada', 'Chile', 'Croatia', 'Cyprus', 'Czech Republic', 'Egypt', 'England', 
@@ -169,14 +183,14 @@ def predict_variety():
     input_dict = {}
 
     for name in variables:
-        if name in test_x:
+        if name in user_input:
             input_dict[name] = [1]
         else:
             input_dict[name] = [0]
         
-    input_dict['points_grouped'] = [test_points]
+    input_dict['points_grouped'] = [points_grouped]
     
-    test_df = pd.DataFrame.from_dict(input_dict, orient='columns')
+    input_df = pd.DataFrame.from_dict(input_dict, orient='columns')
 
 
     #  Load the model
@@ -186,8 +200,8 @@ def predict_variety():
     X_scaler = load(open('/Users/richagautam/Desktop/X_scaler.sklearn', 'rb'))
 
     #predict the wine class based on model and save output to 'out'
-    test_scaled = X_scaler.transform(test_df)
-    out = variety_model.predict(test_scaled)
+    input_scaled = X_scaler.transform(input_df)
+    out = variety_model.predict(input_scaled)
     out = out[0]
     return jsonify({'wine_selection': str(out)})
 
