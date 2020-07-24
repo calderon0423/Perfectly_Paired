@@ -10,6 +10,7 @@ import flask
 from flask import Flask, render_template, jsonify, request, url_for
 from pymongo import MongoClient
 from flask_restful import reqparse
+import json
 
 
 
@@ -117,25 +118,6 @@ def redWhiteData():
         response.append(document)
     return jsonify(response)
 
-# @app.route('/predict_red_white')
-# def predict():
-#     # whenever the predict method is called, we're going
-#     # to input the user psychochemical characteristics 
-    
-#     # enter user input in html 
-#     # test_x= request.get_data()
-#     # test_x = [[test_x]]
-#     test_x = [[0.15702479, 0.128     , 0.38211382, 0.08742331, 0.0951586 ,
-#         0.11805556, 0.40552995, 0.13109697, 0.29133858, 0.13483146,
-#         0.25120773]]
-
-#     #  Load the model
-#     redorwhite_model = load_model('Red_and_White_Analysis/redorwhite_model_trained.h5')
-
-#     #predict the wine class based on model and save output to 'out'
-#     out = redorwhite_model.predict_classes(test_x)
-#     out = out[0]
-#     return jsonify({'wine_selection': out})
 
 @app.route('/predict_type')
 def predictType():
@@ -148,7 +130,7 @@ def predictType():
     #load model .h5 files 
     vectorizer_file = "tokenizer.h5"
     tokenizer_file = "vectorizer.h5"
-    NBModel = 'sentiment_scoring.h5'
+    NBModel = 'dl_v2_h5'
 
     vectorizer = pickle.load(open('Naive_sentiment_model/'+vectorizer_file, 'rb'))
     tokenizer = pickle.load(open('Naive_sentiment_model/'+tokenizer_file, 'rb'))
@@ -169,12 +151,6 @@ def redwhitepredict():
     args = parser.parse_args()
     characteristics = args['characteristics'][0].split(' ')
 
-    # test_x = request.get_json()
-    # print(test_x)
-    # test_x = test_x["data"]
-    # print(test_x)
-    # test_x = [[float(i) for i in test_x]]
-
     #  Load the model
     redorwhite_model = load_model('Red_and_White_Analysis/redorwhite_model_trained.h5')
 
@@ -184,27 +160,21 @@ def redwhitepredict():
 
     #run model with user input
     result_characteristics = redorwhite_model.predict_classes([user_input_characteristics])
-    # out = np.argmax(redorwhite_model.predict(test_x), axis=-1)
     result_characteristics = "White" if result_characteristics[0] ==0 else "Red"
     return jsonify({'wine_selection': result_characteristics})
 
-# @app.route('/quality', methods = ['GET', 'POST'])
-# def redwhitepredict():
-#     # enter user input in html 
-#     test_x = request.get_json()
-#     print(test_x)
-#     test_x = test_x["data"]
-#     print(test_x)
-#     test_x = [[float(i) for i in test_x]]
+@app.route('/winelist')
+def changename():
+    with open('./Resources/variety_adj.json') as f:
+        data = json.load(f)
+    return json.dumps(data)
 
-#     #  Load the model
-#     redorwhite_model = load_model('Red_and_White_Analysis/redorwhite_model_trained.h5')
+@app.route('/wordcloud')
+def name():
+    with open('./Resources/frequency_dict.json') as f:
+        data = json.load(f)
+    return json.dumps(data)
 
-#     # #predict the wine class based on model and save output to 'out'
-#     #out = redorwhite_model.predict_classes(test_x)
-#     out = np.argmax(redorwhite_model.predict(test_x), axis=-1)
-#     out = out[0]
-#     return jsonify({'wine_selection': str(out)})
 
 
 

@@ -92,8 +92,7 @@ function submit() {
   
   let text_x = [];
 
-  var alcohol = d3.select("#alcohol").property("value");
-  text_x.push(alcohol);
+
   var fixed_acidity = d3.select("#fixed_acidity").property("value");
   text_x.push(fixed_acidity);
   
@@ -124,8 +123,8 @@ function submit() {
   var sulphates = d3.select("#sulphates").property("value");
   text_x.push(sulphates);
 
-  // var alcohol = d3.select("#alcohol").property("value");
-  // text_x.push(alcohol);
+  var alcohol = d3.select("#alcohol").property("value");
+  text_x.push(alcohol);
   
   
   text_x = text_x.join(' ')
