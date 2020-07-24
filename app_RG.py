@@ -12,6 +12,9 @@ import flask
 from flask import Flask, render_template, jsonify, request
 from pymongo import MongoClient
 
+import pickle
+from pickle import load
+
 
 #read in csv file 
 # df = pd.read_csv('/Users/angelicacalderon/repos/Perfectly_Paired/Resources/winemag-data-130k-v2.csv', low_memory=False)
@@ -61,6 +64,7 @@ def welcome():
         f"<a href = '/reviews' target='_blank'>/Wine Reviews</a><br/>"
         f"<a href = '/red_white_wines' target='_blank'>/Red & White Wines</a><br/>"
         f"<a href = '/predict_red_white' target='_blank'>/Red & White Prediction</a><br/>"
+        f"<a href = '/predict_wine_variety' target='_blank'>/Wine Variety Prediction</a><br/>"
     )
 
 #reviews route 
@@ -104,20 +108,86 @@ def predict():
     return jsonify({'wine_selection': str(out)})
 
 @app.route('/predict_wine_variety')
-def predict():
+def predict_variety():
     # whenever the predict method is called, we're going
     # to input the user psychochemical characteristics 
     
     # enter user input in html 
     # test_x= request.get_data()
     # test_x = [[test_x]]
+
     test_x = [["ripe", "crisp", "Italy", "Tuscany"]]
+    test_points = 4
+    variables = ['White', 'Red', 'ripe', 'crisp', 'mature', 'tropical', 'rich', 'sweet', 'fresh', 'honeyed', 'fruity', 'smooth',
+    'soft', 'bright', 'dry', 'earthy', 'rubbery', 'savory', 'vanilla', 'bitter', 'intense', 'traditional', 'nutty', 'Argentina',
+    'Australia', 'Austria', 'Brazil', 'Bulgaria', 'Canada', 'Chile', 'Croatia', 'Cyprus', 'Czech Republic', 'Egypt', 'England', 
+    'France', 'Georgia', 'Germany', 'Greece', 'Hungary', 'India', 'Israel', 'Italy', 'Lebanon', 'Luxembourg', 'Macedonia', 'Mexico',
+    'Moldova', 'Morocco', 'New Zealand', 'Peru', 'Portugal', 'Romania', 'Serbia', 'Slovakia', 'Slovenia', 'South Africa', 'Spain',
+    'Switzerland', 'Turkey', 'US', 'Ukraine', 'Uruguay', 'Achaia', 'Aconcagua Costa', 'Aconcagua Valley', 'Aegean', 'Agioritikos',
+    'Ahr', 'Alentejano', 'Alentejo', 'Alsace', 'America', 'Andalucia', 'Apalta', 'Arcadia', 'Arizona', 'Atalanti Valley', 'Atlantida',
+    'Attica', 'Australia Other', 'Austria.1', 'Awatere Valley', 'Baden', 'Bairrada', 'Beaujolais', 'Beira Interior', 'Beiras', 
+    'Bekaa Valley', 'Black Sea Coastal', 'Bordeaux', 'Bot River', 'Brazil.1', 'Brda', 'Breedekloof', 'British Columbia', 'Buin', 
+    'Bulgaria.1', 'Burgenland', 'Burgundy', 'Bío Bío Valley', 'Cachapoal Valley', 'Cahul', 'California', 'Campanha', 'Canelones', 
+    'Canterbury', 'Cape Agulhas', 'Cape Peninsula', 'Cape South Coast', 'Cappadocia', 'Carnuntum', 'Casablanca & Leyda Valleys',
+    'Casablanca Valley', 'Casablanca-Curicó Valley', 'Catalonia', 'Cauquenes Valley', 'Cederberg', 'Central Italy', 'Central Otago',
+    'Central Spain', 'Central Valley', 'Cephalonia', 'Ceres Plateau', 'Chalkidiki', 'Champagne', 'Chile.1', 'Coastal Region', 'Coelemu',
+    'Colares', 'Colchagua Costa', 'Colchagua Valley', 'Colorado', 'Commandaria', 'Connecticut', 'Constantia', 'Corinth', 'Crete',
+    'Croatia.1', 'Curicó Valley', 'Curicó and Leyda Valleys', 'Curicó and Maipo Valleys', 'Cyclades', 'Cyprus.1', 'Dalmatian Coast',
+    'Dan', 'Danube River Plains', 'Darling', 'Dealu Mare', 'Dealurile Hușilor', 'Dealurile Munteniei', 'Devon Valley', 'Dingač', 
+    'Dolenjska', 'Douro', 'Drama', 'Durbanville', 'Duriense', 'Dão', 'East Coast', 'Eger', 'Egypt.1', 'Eilandia', 'Elazığ', 
+    'Elazığ-Diyarbakir', 'Elgin', 'Elim', 'Ella Valley', 'Elqui Valley', 'England.1', 'Epanomi', 'Estremadura', 'Florina', 'France Other', 
+    'Franken', 'Franschhoek', 'Galicia', 'Galil', 'Galilee', 'Georgia.1', 'Germany.1', 'Gisborne', 'Gladstone', 'Golan Heights',
+    'Goriska Brda', 'Goumenissa', 'Greece.1', 'Groenekloof', 'Halkidiki', "Hawke's Bay", 'Hemel en Aarde', 'Hvar', 'Ica', 'Idaho', 
+    'Iowa', 'Ismarikos', 'Israel.1', 'Istria', 'Italy Other', 'Itata Valley', 'Jerusalem Hills', 'Jidvei', 'Jonkershoek Valley', 
+    'Juanico', 'Judean Hills', 'Kakheti', 'Kamptal', 'Kathikas', 'Kentucky', 'Korinthia', 'Krania Olympus', 'Kremstal', 'Kumeu',
+    'Kutjevo', 'Lakonia', 'Landwein Rhein', 'Languedoc-Roussillon', 'Lebanon.1', 'Leithaberg', 'Lesbos', 'Letrinon', 'Levante', 
+    'Leyda Valley', 'Leyda Valley-Maipo Valley', 'Limarí Valley', 'Lisboa', 'Loire Valley', 'Lolol Valley', 'Lombardy', 'Loncomilla Valley', 
+    'Lontué Valley', 'Lutzville Valley', 'Macedonia.1', 'Maipo Valley', 'Maipo Valley-Colchagua Valley', 'Malleco', 'Mantinia', 
+    'Marchigue', 'Markopoulo', 'Marlborough', 'Martinborough', 'Massachusetts', 'Maule Valley', 'Mendoza Province', 'Michigan',
+    'Middle and South Dalmatia', 'Minho', 'Missouri', 'Mittelburgenland', 'Mittelrhein', 'Moldova.1', 'Molina', 'Monemvasia', 'Montevideo',
+    'Moravia', 'Morocco.1', 'Mosel', 'Mosel-Saar-Ruwer', 'Moselle Luxembourgeoise', 'Mount Athos', 'Murfatlar', 'Muzla', 'Nahe', 
+    'Naoussa', 'Nashik', 'Negev', 'Negev Hills', 'Nelson', 'Nemea', 'Neuchâtel', 'Nevada', 'New Jersey', 'New Mexico', 'New South Wales',
+    'New York', 'New Zealand.1', 'Niederösterreich', 'North Carolina', 'North Dalmatia', 'Northeastern Italy', 'Northern Cape',
+    'Northern Spain', 'Northwestern Italy', 'Ohio', 'Olifants River', 'Ontario', 'Oregon', 'Other', 'Overberg', 'Paardeberg',
+    'Paarl', 'Pafos', 'Pageon', 'Palmela', 'Panciu', 'Pangeon', 'Patras', 'Peljesac', 'Peloponnese', 'Pennsylvania', 'Península de Setúbal',
+    'Peumo', 'Pfalz', 'Philadelphia', 'Piedmont', 'Piekenierskloof', 'Pinto Bandeira', 'Pirque', 'Pitsilia Mountains', 'Podunavlje',
+    'Portuguese Table Wine', 'Primorska', 'Progreso', 'Provence', 'Puente Alto', 'Rapel Valley', 'Rapsani', 'Recas', 'Requinoa', 
+    'Retsina', 'Rheingau', 'Rheinhessen', 'Rhône Valley', 'Ribatejano', 'Rio Claro', 'Robertson', 'Romania.1', 'Sagrada Familia',
+    'Samson', 'San Antonio', 'San Antonio de las Minas Valley', 'San Clemente', 'San Jose', 'San Vicente', 'Santa Cruz', 'Santorini', 
+    'Sebes', 'Serra Gaúcha', 'Serra do Sudeste', 'Shomron', 'Sicily & Sardinia', 'Simonsberg-Paarl', 'Simonsberg-Stellenbosch',
+    'Slovenia.1', 'Slovenska Istra', 'Sopron', 'South Africa.1', 'South Australia', 'South Island', 'Southern Italy', 'Southwest France',
+    'Spain Other', 'Spanish Islands', 'Steiermark', 'Stellenbosch', 'Sterea Ellada', 'Swartland', 'Switzerland.1', 'Szekszárd',
+    'Südburgenland', 'Südoststeiermark', 'Südsteiermark', 'Tarnave', 'Tasmania', 'Tejo', 'Texas', 'Thermenregion', 'Thessalikos',
+    'Thrace', 'Thracian Valley', 'Ticino', 'Tikves', 'Tokaj', 'Tokaji', 'Traisental', 'Tulbagh', 'Turkey.1', 'Tuscany', 'Távora-Varosa', 
+    'Ukraine.1', 'Upper Galilee', 'Urla-Thrace', 'Uruguay.1', 'Vale Trentino', 'Vale dos Vinhedos', 'Valle de Guadalupe', 'Veneto', 
+    'Vermont', 'Victoria', 'Vienna', 'Viile Timisului', 'Villány', 'Vin de Pays de Velvendo', 'Vinho Espumante de Qualidade',
+    'Vinho Verde', 'Vipavska Dolina', 'Virginia', 'Vânju Mare', 'Wachau', 'Wagram', 'Wagram-Donauland', 'Waiheke Island', 'Waipara',
+    'Waipara Valley', 'Wairarapa', 'Wairau Valley', 'Waitaki Valley', 'Walker Bay', 'Washington', 'Washington-Oregon', 'Weinland Österreich',
+    'Weinviertel', 'Wellington', 'Western Australia', 'Western Cape', 'Wiener Gemischter Satz', 'Württemberg', 'Zenata', 'Österreichischer Perlwein',
+    'Österreichischer Sekt', 'Štajerska', 'Župa']
+
+    input_dict = {}
+
+    for name in variables:
+        if name in test_x:
+            input_dict[name] = [1]
+        else:
+            input_dict[name] = [0]
+        
+    input_dict['points_grouped'] = [test_points]
+    
+    test_df = pd.DataFrame.from_dict(input_dict, orient='columns')
+
 
     #  Load the model
-    redorwhite_model = load_model('/Users/richagautam/Desktop/variety.sklearn')
+    variety_model = load(open('/Users/richagautam/Desktop/variety_rf.sklearn', 'rb'))
+
+    # Load scalar
+    X_scaler = load(open('/Users/richagautam/Desktop/X_scaler.sklearn', 'rb'))
 
     #predict the wine class based on model and save output to 'out'
-    out = redorwhite_model.predict_classes(test_x)
+    test_scaled = X_scaler.transform(test_df)
+    out = variety_model.predict(test_scaled)
     out = out[0]
     return jsonify({'wine_selection': str(out)})
 

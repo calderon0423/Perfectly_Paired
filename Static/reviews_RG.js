@@ -80,7 +80,7 @@ var countries = ['Argentina', 'Australia', 'Austria', 'Brazil', 'Bulgaria', 'Can
 'Moldova', 'Morocco', 'New Zealand', 'Peru', 'Portugal', 'Romania', 'Serbia', 'Slovakia', 'Slovenia', 'South Africa', 'Spain',
 'Switzerland', 'Turkey', 'US', 'Ukraine', 'Uruguay']
 
-function buildAdjectives() {
+function buildAdjCountry() {
     var tastes = taste;
     var taste_selector = d3.select("#taste");
 
@@ -193,7 +193,45 @@ function buildAdjectives() {
                             });
     });
     
-    var country_selected = country_selector.value;
+    
+};
+
+buildAdjectives();
+
+var country_selector = d3.select("#country")
+var country_selected = country_selector.value;
+
+function buildProvince() {
+    var country = countries;
+    var country_selector = d3.select("#country")
+
+    country.forEach(word => {
+        country_selector.append("div")
+                        .attr("class", "card m-4 shadow")
+                        .attr("style", "min-width: 20%")
+                        .each(function(x) {
+                            d3.select(this).append("div")
+                                            .attr("class", "card-body wine_country")
+                                            .each(function(i) {
+                                                d3.select(this).append("input")
+                                                                .property("type", "button")
+                                                                .on("click",function(){
+                                                                    if (this.classList.contains("active")) {
+                                                                        d3.select(this).attr("class", "inactive")
+                                                                    } 
+                                                                    else {
+                                                                        d3.select(this).attr('class', 'active')
+                                                                    } 
+                                                    })
+                                            .property("value", word)
+                                            .property("id", word)
+                                            .text(word);
+                                            });
+                            });
+    });
+}
+
+
     var province = provinces.country_selected;
     var province_selector = d3.select("#province")
 
@@ -221,9 +259,6 @@ function buildAdjectives() {
                                             });
                             });
     });
-};
-
-buildAdjectives();
 
 d3.select(window).on("load", buildAdjectives);
 
