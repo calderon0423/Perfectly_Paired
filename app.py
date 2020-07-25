@@ -313,10 +313,6 @@ def predict_variety():
     out = out[0]
     return jsonify({'wine_selection': str(out)})
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 4c0941a37f8e9a866091a38032e670c0edaf2e7f
 
 if __name__ == "__main__":
     app.run(debug=True)
