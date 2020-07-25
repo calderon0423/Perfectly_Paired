@@ -85,7 +85,7 @@ body {
     font-weight: bold;
     padding: .5em;
     border: .75px solid rgb(0, 0, 0);
-    box-shadow: 1px 1px 2px grey, -1px -1px 2px grey;
+    box-shadow: 1px 1px 2px rgb(177, 176, 176), -1px -1px 2px rgb(177, 176, 176);
 }
 
 .btn:hover {
@@ -504,12 +504,13 @@ tspan {
 }
 
 .nav>li>a:hover {
-    opacity: 0%;
+    background-color: rgb(63, 63, 63);
     color: rgb(255, 197, 88)
 }
 
-li:hover {
-    color: rgb(255, 197, 88);
-    display: inline;
-    z-index: 1;
+.nav>li>a:active {
+    background-color: rgb(63, 63, 63);
+    color: rgb(255, 197, 88)
 }
+
+
