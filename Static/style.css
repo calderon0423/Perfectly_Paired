@@ -349,6 +349,18 @@ p {
     z-index: 0;
 } 
 
+#reviewsRG {
+    position: static; 
+    height: 55vh;
+    width: 100%;
+    padding-top: 0%;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d0b0af86-61ee-4a77-bf9e-361dc2f8ba2f/dd3fzlu-3e6e6eb2-d88d-4c93-ac05-f6e61353c777.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZDBiMGFmODYtNjFlZS00YTc3LWJmOWUtMzYxZGMyZjhiYTJmXC9kZDNmemx1LTNlNmU2ZWIyLWQ4OGQtNGM5My1hYzA1LWY2ZTYxMzUzYzc3Ny5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.lPPUxRCKHQx9meLw_06GyZcrXz8zLAe0IU1f7QbWvf4");
+    background-size: cover;
+    box-shadow: 0px 5px 5px grey;
+    margin: auto;
+    z-index: 0;
+} 
+
 #reviewscodeRG {
     position: static; 
     height: 55vh;

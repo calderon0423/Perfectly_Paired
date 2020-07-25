@@ -23,7 +23,7 @@
                 <div class="dropdown-content">
                     <a href="/quality">White vs. Red Wine</a>
                     <a href="/reviews">Wine Reviews</a>
-                    <a href="/reviews_2">Wine by Country</a>
+                    <a href="/reviews_2">Wine Variety</a>
                     <a href="/analysis">Behind the Scenes</a>
                 </div>
             </nav>
@@ -86,7 +86,7 @@
                     <h2 id="home-card"><strong>The Design: CSS</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <div class="card-body">
+                    <div class="card-body" style="padding: 0%">
                         <img class="card-image" id="red1" src="{{url_for('static', filename='web-1.5.png')}}"/>
                         <img class="card-image" id="red1" src="{{url_for('static', filename='web-1.5a.png')}}"/>
                     </div>
@@ -106,10 +106,10 @@
                     <h2 id="home-card"><strong>Populating the HTML using JavaScript</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <div class="card-body">
+                    <div class="card-body" style="padding: 0%">
                         <img class="card-image" id="red1" src="{{url_for('static', filename='web-2a.png')}}"/>
-                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-2b.png')}}"/>
-                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-2c.png')}}"/>
+                        <img class="card-image" id="red1" src="{{url_for('static', filename='web-2b.png')}}"/>
+                        <img class="card-image" id="red1" src="{{url_for('static', filename='web-2c.png')}}"/>
                     </div>
                 </div>
             </div>
@@ -119,12 +119,12 @@
         <div class="row" id="options">
             <div class="card" id="objective">
                 <div class="card-header">
-                    <h2 id="home-card"><strong>Saving the Model: Complement NB </strong></h2>
+                    <h2 id="home-card"><strong>AnyChart Word Cloud </strong></h2>
                 </div>
                 <div class="card-deck">
-                    <div class="card-body">
-                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-4a.png')}}"/>
-                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-4b.png')}}"/>
+                    <div class="card-body" style="padding: 0%">
+                        <img class="card-image" id="red1" src="{{url_for('static', filename='web-3a.png')}}"/>
+                        <img class="card-image" id="red1" src="{{url_for('static', filename='web-3b.png')}}"/>
                     </div>
                 </div>
             </div>
@@ -134,31 +134,13 @@
         <div class="row" id="options">
             <div class="card" id="objective">
                 <div class="card-header">
-                    <h2 id="home-card"><strong>Model: Deep Learning</strong></h2>
+                    <h2 id="home-card"><strong>Taking User Input to Output Our Prediction</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <div class="card-body">
-                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-5a.png')}}"/>
-                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-5b.png')}}"/>
-                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-5c.png')}}"/>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row" id="options">
-            <div class="card" id="objective">
-                <div class="card-header">
-                    <h2 id="home-card"><strong>Model Summary</strong></h2>
-                </div>
-                <div class="card-deck">
-                    <div class="card-body" id="blurb" style="border-top: .5px solid black">
-                        <h5 id="obj-body"><b>Models:</b><br>Of the models used - Multinomial NB, Complement NB, Deep Learning - Deep Learning performed the best due to the complexity of the dataset. <br><br>
-                            <b>Challenges:</b><br>Because of the complexity and size of data, deep learning worked very slowly. That’s why we could not test as many variations as we would have liked in order to find the best parameters. 
-                            We could have used hyperparameter tuning to find the highest accuracy.<br><br>
-                            <b>Assumptions:</b><br>We trained the model based on wine selection and reviews of only nineteen tasters, yet assumed the results were general fact rather than subjective taste.  
-                        </h5>
+                    <div class="card-body" style="padding: 0%">
+                        <img class="card-image" id="red1" src="{{url_for('static', filename='web-4a.png')}}"/>
+                        <img class="card-image" id="red1" src="{{url_for('static', filename='web-4b.png')}}"/>
+                        <img class="card-image" id="red1" src="{{url_for('static', filename='web-4c.png')}}"/>
                     </div>
                 </div>
             </div>
@@ -168,8 +150,8 @@
     <br>
     <div class="container">
         <div class="col-md-12 text-center">
-            <a type="button" class="btn btn-primary" id="button" href="/redwhitecode" style="margin-right: 2%" role="button"><b>Previous:</b> Red vs. White Wine</a>
-            <a type="button" class="btn btn-primary" id="button" href="/webdesign" style="margin-left: 2%" role="button"><b>Next:</b> Web Design</a>
+            <a type="button" class="btn btn-primary" id="button" href="/reviewscodeRG" style="margin-right: 2%" role="button"><b>Previous:</b> Wine Variety</a>
+            <a type="button" class="btn btn-primary" id="button" href="/flask" style="margin-left: 2%" role="button"><b>Next:</b> Flask</a>
         </div>
     </div>
     <br>
