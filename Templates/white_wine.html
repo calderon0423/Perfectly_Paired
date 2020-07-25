@@ -22,7 +22,8 @@
                 <a class="dropbtn" href="/">PerfectlyPaired</a>
                 <div class="dropdown-content">
                     <a href="/quality">White vs. Red Wine</a>
-                    <a href="/reviews">Find My Wine</a>
+                    <a href="/reviews">Wine Reviews</a>
+                    <a href="/reviews_2">Wine Variety</a>
                     <a href="/analysis">Behind the Scenes</a>
                 </div>
             </nav>
@@ -30,11 +31,27 @@
         <div class="container-fluid" id="header-redwhite">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 style="color: rgb(252, 252, 241); font-size: 100px;">White Wine</h1>
+                    <h1 style="color: rgb(252, 252, 241); font-size: 100px;">White Wine Code</h1>
                 </div>
             </div>
         </div>
     </div>
+    <div class="container-fluid" style="margin: 0%; padding: 0%">
+        <nav class="navbar" id="code-nav" style="width: 100%; margin: 0%; padding: 0%">
+            <div class="container-fluid full-wdith" style="max-width: none;">
+                <ul class="nav">
+                    <li><a href="/red_wine">Red Wine</a></li>
+                    <li><a href="/white_wine">White Wine</a></li>
+                    <li><a href="/redwhitecode">Red vs. White</a></li>
+                    <li><a href="/reviewscode">Wine Reviews</a></li>
+                    <li><a href="/reviewscodeRG">Wine Variety</a></li>
+                    <li><a href="/webdesign">Web Design</a></li>
+                    <li><a href="/flask">Flask</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br>
     <div class="container-fluid">
         <div class="row" id="options">
             <div class="card" id="objective">
@@ -42,8 +59,8 @@
                     <h2 id="home-card"><strong>Objective</strong></h2>
                 </div>
                 <div class="card-body">
-                    <h5 id="obj-body">Build a regression model that predicts the quality (target) 
-                                        of white wine based on it’s physicochemical properties (features/dimensions). Quality is rated on a scale of 1-10. </h5>
+                    <h5 id="obj-body" style="font-size: 28px; padding: 1%">Build a regression model that predicts the quality (target) 
+                                        of white wine based on its physicochemical properties (features/dimensions). Quality is rated on a scale of 1-10. </h5>
                 </div>
             </div>
         </div>
@@ -54,12 +71,14 @@
                 <div class="card-header">
                     <h2 id="home-card"><strong>Cleaning the White Wine Dataset</strong></h2>
                 </div>
-                <div class="card-deck text-center">
-                    <img class="card-image-top" src="{{url_for('static', filename='Drop_NA_2.png')}}">
-                    <img class="card-image-top" src="{{url_for('static', filename='Remove_Outliers_4.png')}}">
-                    <div class="card-body">
+                <div class="card-deck">
+                    <div class="card-body" style="padding: 0%">
+                        <img class="card-image-top" src="{{url_for('static', filename='Drop_NA_2.png')}}">
+                        <img class="card-image-top" src="{{url_for('static', filename='Remove_Outliers_4.png')}}">
+                    </div>
+                    <div class="card-body" id="blurb">
                         <h5 id="obj-body">After removing missing values from the dataset, we needed to identify and remove outliers
-                                         that could skew the analysis. Removing outliers shrunk our dataset from 4898 to 4469 values..</h5>
+                                         that could skew the analysis. Removing outliers shrunk our dataset from 4898 to 4469 values.</h5>
                     </div>
                 </div>
             </div>
@@ -72,16 +91,16 @@
                     <h2 id="home-card"><strong>Testing Assumptions for Multiple Regression Analysis</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <div class="card-body">
+                    <div class="card-body" style="padding: 0%">
                         <img class="card-image-top" src="{{url_for('static', filename='Seaborn_viz_6b.png')}}">
-                        <img class="card-image-top" src="{{url_for('static', filename='Multicollinearity_VIF_5.png')}}">
+                      <!--  <img class="card-image-top" src="{{url_for('static', filename='Multicollinearity_VIF_5.png')}}"> -->
                     </div>
-                    <div class="card-body">
+                    <div class="card-body" id="blurb">
                         <h5 id="obj-body">Through a variable inflation factor analysis and seaborn heatmap, we assessed how 
-                                        codependent the factors were with one another (excludes the target, quality). Density and residual 
-                                        sugar were the most correlated (0.84), closely followed by volatile and citric acidity (13, VIF). 
-                                        This finding influenced the decision to run a principle component analysis (pca) to strategically 
-                                        decide which features(dimensions) could be reduced to strengthen the model. Additional assumption 
+                                        co-dependent the factors were with one another (excludes the target, quality). Density and residual 
+                                        sugar were the most correlated (0.84), closely followed by volatile and citric acidity (13, VIF). <br><br>
+                                        This finding influenced the decision to run a principle component analysis (PCA) to strategically 
+                                        decide which features (dimensions) could be reduced to strengthen the model. Additional assumption 
                                         testing not featured below included linearity testing through scatter plots/correlation analysis 
                                         and creating residual plots. 
                         </h5>
@@ -97,11 +116,13 @@
                     <h2 id="home-card"><strong>Multiple Regression Analysis</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <img class="card-image-top" src="{{url_for('static', filename='MR_A_Results_1.png')}}">
-                    <div class="card-body">
-                        <h5 id="obj-body">The first MR model used all 11 factors, scaled using MinMaxScaler, with a testing score of 30%. 
+                    <div class="card-body" style="padding: 0%">
+                        <img class="card-image-top" src="{{url_for('static', filename='MR_A_Results_1.png')}}">
+                    </div>
+                    <div class="card-body" id="blurb">
+                        <h5 id="obj-body">The first MR model used all 11 factors and scaled using MinMaxScaler, with a testing score of 30%. <br><br>
                                         The second model used the Principle Component Analysis to transform the existing factors to two factors 
-                                        (reducing dimensionality). While this appeared fruitful, the new pc’s resulted in a weaker model (0.00), 
+                                        (reducing dimensionality). While this appeared fruitful, the new PC’s resulted in a weaker model (0.00), 
                                         mostly predicting “6”. 
                         </h5>  
                     </div> 
@@ -116,8 +137,10 @@
                     <h2 id="home-card"><strong>Original Regression</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <img class="card-image-top" src="{{url_for('static', filename='Ordinal_Reg_10.png')}}">
-                    <div class="card-body">
+                    <div class="card-body" style="padding: 0%">
+                        <img class="card-image-top" src="{{url_for('static', filename='Ordinal_Reg_10.png')}}">
+                    </div>
+                    <div class="card-body" id="blurb">
                         <h5 id="obj-body">Three types of ordinal regressions were tested (logistic, ridge and least absolute deviation). The ordinal 
                                         regression was a natural fit since the target variable is ordinal. However, only one of the model’s came close 
                                         to being highly predictive (logistic, 52%).  
@@ -134,8 +157,10 @@
                     <h2 id="home-card"><strong>Model Summary</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <img class="card-image-top" src="{{url_for('static', filename='Model_Summary_11.png')}}">
-                    <div class="card-body">
+                    <di class="card-body" style="padding: 0%">
+                        <img class="card-image-top" src="{{url_for('static', filename='Model_Summary_11.png')}}">
+                    </di>
+                    <div class="card-body" id="blurb">
                         <h5 id="obj-body">The original regression model proved strongest (testing score: 52%), although it is still relatively weak for a predictive model. 
                             This make’s sense since the target variable is ordinal, not continuous. For the purpose of this exercise, 52% is enough to show some predictive 
                             capability, but ultimately the physicochemical properties aren’t strong predictors of the wine’s quality. More information is needed on what 
@@ -159,9 +184,9 @@
                     <h2 id="home-card"><strong>Test Scores by Different Regression Models</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <div class="card-body">
+                    <div class="card-body" id="blurb" style="border-top: .5px solid black">
                         <h5 id="obj-body">For each model, data was split into training and testing data and were scaled and normalized using MinMaxScaler, which 
-                            transforms each feature so that it lies within the range 0 and 1. <br>
+                            transforms each feature so that it lies within the range 0 and 1. <br><br>
                             Multiple Linear Regression: With Scikit-Learn, we created a model using Linear Regression, fitted the model to the training data, 
                             and quantified the model using the scaled data. Score came out to ~0.372, which is very low and weak.<br>
                             Proceeded to try other linear regression models, specifically Lasso, Ridge, and Elastic Net to see if we could improve our performance. <br><br>
@@ -170,7 +195,7 @@
                             important in predicting your y values. Elastic Net combines feature elimination from Lasso and feature coefficient reduction from the Ridge 
                             model to improve your model's predictions.” <br><br>
                             
-                            However, results were not any better than what we got initially with our multiple linear regression model.<br>
+                            However, results were not any better than what we got initially with our multiple linear regression model.<br><br>
                             
                             Next, we thought outliers could be an issue so we removed outliers and conducted the multiple linear regression model again to see if 
                             our model performed better. It only improved by 0.01, making no significant difference.<br>
@@ -183,12 +208,15 @@
             </div>
         </div>
     </div>
+    <br>
+    <br>
     <div class="container">
         <div class="col-md-12 text-center">
-            <a type="button" class="btn btn-primary" id="button" href="/red_wine" style="margin-right: 1%" role="button"><b>Previous:</b> Red Wine</a>
-            <a type="button" class="btn btn-primary" id="button" href="/reviewscode" style="margin-left: 1%" role="button"><b>Next:</b> Wine Reviews</a>
+            <a type="button" class="btn btn-primary" id="button" href="/red_wine" style="margin-right: 2%" role="button"><b>Previous:</b> Red Wine</a>
+            <a type="button" class="btn btn-primary" id="button" href="/reviewscode" style="margin-left: 2%" role="button"><b>Next:</b> Wine Reviews</a>
         </div>
     </div>
+    <br>
     <br>
     <br>
 </body>

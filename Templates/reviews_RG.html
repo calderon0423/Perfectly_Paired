@@ -11,22 +11,20 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
 
-    <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
-    <script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
-    <script src="../Static/reviews_RG.js"></script>
-    <!-- <script src="static/reviews_sr_1.js"></script> -->
-    <link rel="stylesheet" href="../Static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
 
 </head>
 
 <body>
-    <div class="jumbotron card-image" id="reviews">
+    <div class="jumbotron card-image" id="reviewsRG">
         <div class="row">
             <nav class="dropdown">
                 <a class="dropbtn" href="/">PerfectlyPaired</a>
                 <div class="dropdown-content">
                     <a href="/quality">White vs. Red Wine</a>
-                    <a href="/reviews">Find My Wine</a>
+                    <a href="/reviews">Wine Reviews</a>
+                    <a href="/reviews_2">Wine Variety</a>
                     <a href="/analysis">Behind the Scenes</a>
                 </div>
             </nav>
@@ -34,9 +32,9 @@
         <div class="container-fluid" id="header-redwhite">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 style="color: rgb(252, 252, 241); font-size: 100px;">Wine Reviews</h1>
+                    <h1 style="color: rgb(252, 252, 241); font-size: 100px;">Wine Variety</h1>
                     <hr>
-                    <h2>Let Us Find Your Ideal Wine</h2> 
+                    <h2>Let Us Find Your Ideal Wine by its Country of  Origin </h2> 
                 </div>
             </div>
         </div>
@@ -45,36 +43,16 @@
     <br>
     <div class="container-fluid" id="memo">
         <div class="row" id="border">
-            <h3><strong>Can't find the words to describe your favorite wine?</strong>
-                <br><br>Use our interactive word cloud to find out more.
+            <h3><strong>Need help finding a wine by its description and country of origin?</strong>
             </h3>
+        </div>
+    </div>
+    <div class="container-fluid" id="bottom-memo">
+        <div class="row" id="bottom-border">
+            <h4>Take our Machine Learning test to find out.</h4>
         </div>
     </div>
     <br>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4" id="select-text">
-                    <h2 id="select-wine"><strong>Select a Wine:</strong></h2>
-                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
-            </div>
-            <div class="col-md-4"></div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="word-cloud" id="word-cloud" style="height: 300px;">
-            </div>
-        </div>
-    </div>
-    <hr>
-    <div class="container-fluid" id="memo">
-        <div class="row" id="border" style="margin-top: 3%;">
-            <h3><strong>Need help choosing a wine?</strong>
-                <br><br>Take our Machine Learning test to find your favorite.
-            </h3>
-        </div>
-    </div>
     <div class="container-fluid">
         <div class="row" id="options">
             <div class="card" id="test">
@@ -105,7 +83,7 @@
                     </div>
                     <hr>
                     <div class="card-body">
-                        <button class="btn btn-primary" id="button-type" href="/reviews" onclick="submitChoices()">Submit</button>
+                        <button class="btn btn-primary" id="button" href="/reviews" onclick="submitChoices()">Submit</button>
                         <br>
                         <br>
                     </div>
@@ -116,7 +94,7 @@
         <div class="row" id="options">
             <div class="card">
                 <div class="card-header text-center">
-                    <h3>See Your Prediction!</h3> 
+                    <h2 id="home-card"><strong>See Your Prediction!</strong></h2> 
                 </div>
                 <div class="card-body">
                     <div id='wine_type_result'>
@@ -125,7 +103,10 @@
             </div>
         </div>
     </div>
+    <br>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="/static/reviews_RG.js"></script>
+
 
 </body
               

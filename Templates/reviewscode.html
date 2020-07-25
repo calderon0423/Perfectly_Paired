@@ -22,7 +22,8 @@
                 <a class="dropbtn" href="/">PerfectlyPaired</a>
                 <div class="dropdown-content">
                     <a href="/quality">White vs. Red Wine</a>
-                    <a href="/reviews">Find My Wine</a>
+                    <a href="/reviews">Wine Reviews</a>
+                    <a href="/reviews_2">Wine Variety</a>
                     <a href="/analysis">Behind the Scenes</a>
                 </div>
             </nav>
@@ -30,13 +31,27 @@
         <div class="container-fluid" id="header-redwhite">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 style="color: rgb(252, 252, 241); font-size: 100px;">Wine Reviews</h1>
-                    <hr>
+                    <h1 style="color: rgb(252, 252, 241); font-size: 100px;">Wine Reviews Code</h1>
                 </div>
             </div>
         </div>
     </div>
-    <hr>
+    <div class="container-fluid" style="margin: 0%; padding: 0%">
+        <nav class="navbar" id="code-nav" style="width: 100%; margin: 0%; padding: 0%">
+            <div class="container-fluid">
+                <ul class="nav">
+                    <li><a href="/red_wine">Red Wine</a></li>
+                    <li><a href="/white_wine">White Wine</a></li>
+                    <li><a href="/redwhitecode">Red vs. White</a></li>
+                    <li><a href="/reviewscode">Wine Reviews</a></li>
+                    <li><a href="/reviewscodeRG">Wine Variety</a></li>
+                    <li><a href="/webdesign">Web Design</a></li>
+                    <li><a href="/flask">Flask</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br>
     <div class="container-fluid">
         <div class="row" id="options">
             <div class="card" id="objective">
@@ -44,7 +59,9 @@
                     <h2 id="home-card"><strong>Objective</strong></h2>
                 </div>
                 <div class="card-body">
-                    <h5 id="obj-body">Building a model to predict the ideal wine based on the adjectives that user selected to describe the taste and feel.</h5>
+                    <h5 id="obj-body" style="font-size: 28px; padding: 1%">Building a model to predict the ideal wine based on the adjectives 
+                        that user selected to describe the taste and feel.
+                    </h5>
                 </div>
             </div>
         </div>
@@ -68,17 +85,17 @@
                     <h2 id="home-card"><strong>Data Pre-Processing</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <div class="card-body">
+                    <div class="card-body" style="padding: 0%">
                         <img class="card-image" id="red1" src="{{url_for('static', filename='wr-2a.png')}}"/>
                         <img class="card-image" id="red1" src="{{url_for('static', filename='wr-2b.png')}}"/>
                         <img class="card-image" id="red1" src="{{url_for('static', filename='wr-2c.png')}}"/>
                         <img class="card-image" id="red1" src="{{url_for('static', filename='wr-2d.png')}}"/>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body"  id="blurb">
                         <h5 id="obj-body">Data pre-processing to bring the text into a form that is predictable and analyzable: <br><br>
-                                           1. Count Vectorizer: Text preprocessing, tokenizing and filtering of stopwords<br>
-                                           2. Transformer: Transform our count-matrix to a tf-idf representation “Term Frequency times Inverse Document Frequency”.
-                            </h5>
+                                           Count Vectorizer: Text preprocessing, tokenizing, and filtering of stopwords<br>
+                                           Transformer: Transform our count-matrix to a tf-idf representation - “Term Frequency Times Inverse Document Frequency”.
+                        </h5>
                     </div>
                 </div>
             </div>
@@ -91,7 +108,7 @@
                     <h2 id="home-card"><strong>Training the Model: Multinomial vs. Complement Naïve Bayes</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <div class="card-body">
+                    <div class="card-body" style="padding: 0%">
                         <img class="card-image" id="red1" src="{{url_for('static', filename='wr-3a.png')}}"/>
                         <img class="card-image" id="red1" src="{{url_for('static', filename='wr-3b.png')}}"/>
                         <img class="card-image" id="red1" src="{{url_for('static', filename='wr-3c.png')}}"/>
@@ -108,7 +125,7 @@
                     <h2 id="home-card"><strong>Saving the Model: Complement NB </strong></h2>
                 </div>
                 <div class="card-deck">
-                    <div class="card-body">
+                    <div class="card-body" style="padding: 0%">
                         <img class="card-image" id="red1" src="{{url_for('static', filename='wr-4a.png')}}"/>
                         <img class="card-image" id="red1" src="{{url_for('static', filename='wr-4b.png')}}"/>
                     </div>
@@ -123,7 +140,7 @@
                     <h2 id="home-card"><strong>Model: Deep Learning</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <div class="card-body">
+                    <div class="card-body" style="padding: 0%">
                         <img class="card-image" id="red1" src="{{url_for('static', filename='wr-5a.png')}}"/>
                         <img class="card-image" id="red1" src="{{url_for('static', filename='wr-5b.png')}}"/>
                         <img class="card-image" id="red1" src="{{url_for('static', filename='wr-5c.png')}}"/>
@@ -139,23 +156,26 @@
                     <h2 id="home-card"><strong>Model Summary</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <div class="card-body">
-                        <h5 id="obj-body"><b>Models:</b><br>Of the models used - Multinomial NB, Complement NB, Deep Learning - Deep learning performed the best due to the complexity of the dataset. <br><br>
+                    <div class="card-body" id="blurb" style="border-top: .5px solid black">
+                        <h5 id="obj-body"><b>Models:</b><br>Of the models used - Multinomial NB, Complement NB, Deep Learning - Deep Learning performed the best due to the complexity of the dataset. <br><br>
                             <b>Challenges:</b><br>Because of the complexity and size of data, deep learning worked very slowly. That’s why we could not test as many variations as we would have liked in order to find the best parameters. 
                             We could have used hyperparameter tuning to find the highest accuracy.<br><br>
-                            <b>Assumptions:</b><br>We trained the model based on wine selection and reviews of only nineteen tasters, yet assumed the results were a general fact rather than subjective taste.  
+                            <b>Assumptions:</b><br>We trained the model based on wine selection and reviews of only nineteen tasters, yet assumed the results were general fact rather than subjective taste.  
                         </h5>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <br>
+    <br>
     <div class="container">
         <div class="col-md-12 text-center">
-            <a type="button" class="btn btn-primary" id="button" href="/white_wine" style="margin: auto" role="button"><b>Previous:</b> White Wine</a>
-            <a type="button" class="btn btn-primary" id="button" href="/red_wine" style="margin: auto" role="button"><b>Next:</b> Red Wine</a>
+            <a type="button" class="btn btn-primary" id="button" href="/redwhitecode" style="margin-right: 2%" role="button"><b>Previous:</b> Red vs. White Wine</a>
+            <a type="button" class="btn btn-primary" id="button" href="/reviewscodeRG" style="margin-left: 2%" role="button"><b>Next:</b> Wine Variety</a>
         </div>
     </div>
+    <br>
     <br>
     <br>
 </body>

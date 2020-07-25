@@ -1,70 +1,53 @@
-// //https://www.anychart.com/blog/2019/04/30/create-javascript-word-cloud-chart-tutorial/
-
-// // d3.json('https://perfectlypaired.herokuapp.com/reviews').then((data) => {
-
-// d3.json('../Resources/variety_adj.json').then((data) => {
-//     console.log(data);
-    
-//     var selector = d3.select("selDataset");
-
-//     var wine_list = []
-//     Object.entries(wine).forEach(([key,value])=> {
-//         console.log(key);
-//         selector.append('option')
-//         .property('value', wine)
-//         .text(key)
-
-//     });
-
-
-//     // data.forEach((wine) => {
-//     //     var variety = wine.variety;
-//     //     wine_list.push(variety)
-//     // });
-
-//     // console.log(wine_list);
-
-//     // wine_list.forEach((wine) => {
-//     //     selector.append('option')
-//     //     .property('value', wine)
-//     //     .text(wine)
-//     // })
-
-// buildWordCloud(wine_list[0]);
-// });
-
-// function buildWordCloud(selection) {
-//     d3.json('https://perfectlypaired.herokuapp.com/reviews').then((reviews) => {
-        
-//         var filterWine = reviews.filter(reviews => reviews.variety===selection)
-//         console.log(filterSubject)
-
-//         var data = []
-//         Object.entries(filterWine).forEach(([k, v]) => {
-//             data.push(k, v)
-//         });
-
-//         var chart = anychart.tagCloud(data);
-        
-//         // set a chart title
-//        chart.title(variety)
-//        // set an array of angles at which the words will be laid out
-//        chart.angles([0])
-//        // enable a color range
-//        chart.colorRange(true);
-//        // set the color range length
-//        chart.colorRange().length('80%');
-     
-//        // display the word cloud chart
-//        chart.container("word-cloud");
-//        chart.draw();
-//     })
-// };
-
-// function optionChanged(selectedVariety) {
-//     console.log(selectedVariety);
-//     anychart.buildWordCloud(selectedVariety);
-// };
+// Create dropdown of wine selection
+d3.json('http://127.0.0.1:5000/winelist').then((data) => {
+    var selector = d3.select("#selDataset");
+    var wine_list = []
+    var count = 0
+    Object.entries(data).forEach(([key,value])=> {
+        count = count+1
+        if ( count > 1){
+            // console.log(key);
+            // console.log(wine_list);
+            wine_list.push(key);
+            selector.append('option')
+            .property('value', key)
+            .text(key)
+        }
+    });
+buildWordCloud(wine_list[0]);
+});
+function buildWordCloud(selection) {
+    d3.json('http://127.0.0.1:5000/wordcloud').then((reviews) => {
+        filterWine = reviews[selection]
+        console.log(filterWine);
+        const clearCloud = d3.select("#word-cloud")
+        clearCloud.html("")
+        var data = []
+        Object.entries(filterWine).forEach(([k, v]) => {
+            var data_adj = {}
+            data_adj["x"] = k
+            data_adj["value"] = v
+            data.push(data_adj)
+        });
+        var chart = anychart.tagCloud(data);
+        // set a chart title
+       chart.title(selection) 
+       // set an array of angles at which the words will be laid out
+       chart.angles([0])
+       // enable a color range
+       // chart.colorRange(true);
+       // set the color range length
+       //  chart.colorRange().length('80%');
+       // display the word cloud chart
+       chart.container("word-cloud");
+      
+       chart.draw();
+    })
+};
+function optionChanged(selectedVariety) {
+    console.log(selectedVariety);
+    buildWordCloud(selectedVariety);
+};
 // ----------------------------
 
 var feel = ['Ripe', 'Crisp', 'Mature', 'Full-Bodied', 'Elegant', 'Rare', 'Soft', 'Vibrant', 'Smooth', 'Traditional', 'Fresh', 
@@ -154,8 +137,6 @@ function buildAdjectives() {
 
 buildAdjectives();
 
-d3.select(window).on("load", buildAdjectives);
-
 function submitChoices() {
     let choices = []
     document.querySelectorAll('.active').forEach(item => {
@@ -165,7 +146,7 @@ function submitChoices() {
      console.log(choices)
      fetch(`/predict_type?adjectives=${choices}`).then(data=>data.json()).then(d=>{
          console.log(d.wine_type)
-         document.getElementById('wine_type_result').innerHTML=`<h3>${d.wine_type}id="variety_result"</h3>`
+         document.getElementById('wine_type_result').innerHTML=`<h3>${d.wine_type}</h3>`
      }) 
 }
 
