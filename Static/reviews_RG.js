@@ -6,7 +6,8 @@ var point = [1,2,3,4];
 
 var category = ['White', 'Red']
 
-// var province = d3.json("/province")
+var province = d3.json("/province").then(data=>data.json()).then(d=>{
+    console.log(d.country_selected)
 
 var country = ['Argentina', 'Australia', 'Austria', 'Brazil', 'Bulgaria', 'Canada', 'Chile', 'Croatia', 'Cyprus', 'Czech Republic', 'Egypt', 'England',
 'France', 'Georgia', 'Germany', 'Greece', 'Hungary', 'India', 'Israel', 'Italy', 'Lebanon', 'Luxembourg', 'Macedonia', 'Mexico',
@@ -172,19 +173,20 @@ function buildCountry() {
 
 var country_selector = d3.select("#country")
 
-// var country_selected = country_selector.value;
+var country_selected = country_selector.select('.active').value;
+console.log(country_selected)
 
 function buildProvince() {
-    d3.json('http://127.0.0.1:5000/province').then((provinces) => {
-        let countries = []
-        d3.select('#countries')
-        .on('click', function(){
-            document.querySelectorAll('.active').forEach(country => {
-                countries.push(country.value)
-        })
-        console.log(countries)
-        // var provinces = province.country_selected;
-        var provinces = provinces[country_selected]
+    // d3.json('http://127.0.0.1:5000/province').then((provinces) => {
+        // let countries = []
+        // d3.select('#countries')
+        // .on('click', function(){
+        //     document.querySelectorAll('.active').forEach(country => {
+        //         countries.push(country.value)
+        // })
+        // console.log(countries)
+        var provinces = province.country_selected;
+        // var provinces = provinces[country_selected]
         console.log(provinces)
         var province_selector = d3.select("#province")
         provinces.forEach(word => {
@@ -211,8 +213,6 @@ function buildProvince() {
                                                 });
                                 });
         });
-    })
-    })
 };
 
 buildAdjectives();
