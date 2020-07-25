@@ -7,9 +7,10 @@ from keras.models import model_from_json, load_model
 import numpy as np 
 import pickle 
 import flask 
-from flask import Flask, render_template, jsonify, request, url_for
+from flask import Flask, render_template, jsonify, request, url_for, send_from_directory
 from pymongo import MongoClient
 from flask_restful import reqparse
+import json
 
 
 
@@ -65,9 +66,15 @@ app = Flask(__name__)
 #         f"<a href = '/predict_type' target='_blank'>/Wine Type Prediction</a><br/>"
 #     )
 
+#routes to render .html pages 
 @app.route('/')
 def index():
     return render_template('index.html')
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 @app.route('/quality')
 def quality():
@@ -76,6 +83,10 @@ def quality():
 @app.route('/reviews')
 def reviews():
     return render_template('reviews.html')
+
+@app.route('/reviews_2')
+def reviews_2():
+    return render_template('reviews_RG.html')
 
 @app.route('/analysis')
 def analysis():
@@ -96,6 +107,18 @@ def reviewsCode():
 @app.route('/redwhitecode')
 def redWhiteCode():
     return render_template('redwhitecode.html')
+
+@app.route('/webdesign')
+def webDesign():
+    return render_template('webdesign.html')
+
+@app.route('/reviewscodeRG')
+def reviewsCodeRG():
+    return render_template('reviewscodesRG.html')
+
+@app.route('/flaskcode')
+def flaskCode():
+    return render_template('flask.html')
  
 @app.route('/reviewsdata')
 def reviewsData():
@@ -117,26 +140,42 @@ def redWhiteData():
         response.append(document)
     return jsonify(response)
 
-# @app.route('/predict_red_white')
-# def predict():
-#     # whenever the predict method is called, we're going
-#     # to input the user psychochemical characteristics 
-    
-#     # enter user input in html 
-#     # test_x= request.get_data()
-#     # test_x = [[test_x]]
-#     test_x = [[0.15702479, 0.128     , 0.38211382, 0.08742331, 0.0951586 ,
-#         0.11805556, 0.40552995, 0.13109697, 0.29133858, 0.13483146,
-#         0.25120773]]
+#wine list for drop down menu to use with WordCloud 
+@app.route('/winelist')
+def changename():
+    with open('./Resources/variety_adj.json') as f:
+        data = json.load(f)
+    return json.dumps(data)
 
-#     #  Load the model
-#     redorwhite_model = load_model('Red_and_White_Analysis/redorwhite_model_trained.h5')
+#load json file to create WordCloud 
+@app.route('/wordcloud')
+def name():
+    with open('./Resources/frequency_dict.json') as f:
+        data = json.load(f)
+    return json.dumps(data)
 
-#     #predict the wine class based on model and save output to 'out'
-#     out = redorwhite_model.predict_classes(test_x)
-#     out = out[0]
-#     return jsonify({'wine_selection': out})
+#load json file to create bar chart 
+@app.route('/barchart')
+def barchart():
+    with open('./Resources/winemag-data-barchart.json') as f:
+        data = json.load(f)
+    return json.dumps(data)
 
+#load json file to create bubble chart 
+@app.route('/bubblechart')
+def bubblechart():
+    with open('./Resources/winemag-data-bubblechart.json') as f:
+        data = json.load(f)
+    return json.dumps(data)
+
+#load province json file 
+@app.route('/province')
+def province():
+    with open('./Resources/Country_Province.json') as f:
+        data = json.load(f)
+    return json.dumps(data)
+
+#predict wine type route - Naive Model 
 @app.route('/predict_type')
 def predictType():
     #user input 
@@ -144,23 +183,36 @@ def predictType():
     parser.add_argument('adjectives', type=str, required=True, help="This is expecting a selection of wine adjectives", action='append')
     args = parser.parse_args()
     adjectives = args['adjectives']
+    print(adjectives)
 
     #load model .h5 files 
     vectorizer_file = "tokenizer.h5"
     tokenizer_file = "vectorizer.h5"
     NBModel = 'sentiment_scoring.h5'
+    # NBModel = 'dl_v2.h5'
+
 
     vectorizer = pickle.load(open('Naive_sentiment_model/'+vectorizer_file, 'rb'))
     tokenizer = pickle.load(open('Naive_sentiment_model/'+tokenizer_file, 'rb'))
     nbModel = pickle.load(open('Naive_sentiment_model/'+NBModel, 'rb'))
+    # nbModel = load_model('Naive_sentiment_model/dl_v2.h5')
+
     
-    #run model with user_input argument 
+    # run model with user_input argument 
     user_input=adjectives
     X_new = vectorizer.transform(user_input)
     X_new = tokenizer.transform(X_new)
     result = nbModel.predict(X_new)
     return jsonify({'wine_type': result[0]})
 
+    # user_input=adjectives
+    # X_new = vectorizer.transform(user_input)
+    # X_new = tokenizer.transform(X_new)
+    # result = nbModel.predict_classes(X_new)
+    # result = pd.DataFrame(result,columns=['Class'])
+    # return jsonify({'wine_type': result[0]})
+
+#predict Red/White wine based on properties - Deep Learning Model 
 @app.route('/predict_quality')
 def redwhitepredict():
     # user input
@@ -168,12 +220,6 @@ def redwhitepredict():
     parser.add_argument('characteristics', type=str, required=True, help="This is expecting a selection of wine characteristics", action='append')
     args = parser.parse_args()
     characteristics = args['characteristics'][0].split(' ')
-
-    # test_x = request.get_json()
-    # print(test_x)
-    # test_x = test_x["data"]
-    # print(test_x)
-    # test_x = [[float(i) for i in test_x]]
 
     #  Load the model
     redorwhite_model = load_model('Red_and_White_Analysis/redorwhite_model_trained.h5')
@@ -184,28 +230,107 @@ def redwhitepredict():
 
     #run model with user input
     result_characteristics = redorwhite_model.predict_classes([user_input_characteristics])
-    # out = np.argmax(redorwhite_model.predict(test_x), axis=-1)
-    result_characteristics = "White" if result_characteristics[0] ==0 else "Red"
+    result_characteristics = "White" if result_characteristics[0] ==1 else "Red"
     return jsonify({'wine_selection': result_characteristics})
 
-# @app.route('/quality', methods = ['GET', 'POST'])
-# def redwhitepredict():
-#     # enter user input in html 
-#     test_x = request.get_json()
-#     print(test_x)
-#     test_x = test_x["data"]
-#     print(test_x)
-#     test_x = [[float(i) for i in test_x]]
 
-#     #  Load the model
-#     redorwhite_model = load_model('Red_and_White_Analysis/redorwhite_model_trained.h5')
+@app.route('/predict_wine_variety')
+def predict_variety():
+    #user input 
+    parser = reqparse.RequestParser()
+    parser.add_argument('adjectives', type=str, required=True, help="This is expecting a selection of wine adjectives", action='append')
+    args = parser.parse_args()
+    adjectives = args['adjectives']
+    parser.add_argument('country', type=str, required=True, help="This is expecting one selection of country", action='append')
+    args = parser.parse_args()
+    country = args['country']
+    parser.add_argument('province', type=str, required=True, help="This is expecting one selection of province", action='append')
+    args = parser.parse_args()
+    country = args['province']
+    parser.add_argument('points_grouped', type=str, required=True, help="This is expecting one selection of province", action='append')
+    args = parser.parse_args()
+    points_grouped = args['points_grouped']
 
-#     # #predict the wine class based on model and save output to 'out'
-#     #out = redorwhite_model.predict_classes(test_x)
-#     out = np.argmax(redorwhite_model.predict(test_x), axis=-1)
-#     out = out[0]
-#     return jsonify({'wine_selection': str(out)})
+    user_input=[]
+    for adj in adjectives:
+        user_input.append(adj)
+    for c in country:
+        user_input.append(c)
+    for p in province:
+        user_input.append(p)
 
+    variables = ['White', 'Red', 'ripe', 'crisp', 'mature', 'tropical', 'rich', 'sweet', 'fresh', 'honeyed', 'fruity', 'smooth',
+    'soft', 'bright', 'dry', 'earthy', 'rubbery', 'savory', 'vanilla', 'bitter', 'intense', 'traditional', 'nutty', 'Argentina',
+    'Australia', 'Austria', 'Brazil', 'Bulgaria', 'Canada', 'Chile', 'Croatia', 'Cyprus', 'Czech Republic', 'Egypt', 'England', 
+    'France', 'Georgia', 'Germany', 'Greece', 'Hungary', 'India', 'Israel', 'Italy', 'Lebanon', 'Luxembourg', 'Macedonia', 'Mexico',
+    'Moldova', 'Morocco', 'New Zealand', 'Peru', 'Portugal', 'Romania', 'Serbia', 'Slovakia', 'Slovenia', 'South Africa', 'Spain',
+    'Switzerland', 'Turkey', 'US', 'Ukraine', 'Uruguay', 'Achaia', 'Aconcagua Costa', 'Aconcagua Valley', 'Aegean', 'Agioritikos',
+    'Ahr', 'Alentejano', 'Alentejo', 'Alsace', 'America', 'Andalucia', 'Apalta', 'Arcadia', 'Arizona', 'Atalanti Valley', 'Atlantida',
+    'Attica', 'Australia Other', 'Austria.1', 'Awatere Valley', 'Baden', 'Bairrada', 'Beaujolais', 'Beira Interior', 'Beiras', 
+    'Bekaa Valley', 'Black Sea Coastal', 'Bordeaux', 'Bot River', 'Brazil.1', 'Brda', 'Breedekloof', 'British Columbia', 'Buin', 
+    'Bulgaria.1', 'Burgenland', 'Burgundy', 'Bío Bío Valley', 'Cachapoal Valley', 'Cahul', 'California', 'Campanha', 'Canelones', 
+    'Canterbury', 'Cape Agulhas', 'Cape Peninsula', 'Cape South Coast', 'Cappadocia', 'Carnuntum', 'Casablanca & Leyda Valleys',
+    'Casablanca Valley', 'Casablanca-Curicó Valley', 'Catalonia', 'Cauquenes Valley', 'Cederberg', 'Central Italy', 'Central Otago',
+    'Central Spain', 'Central Valley', 'Cephalonia', 'Ceres Plateau', 'Chalkidiki', 'Champagne', 'Chile.1', 'Coastal Region', 'Coelemu',
+    'Colares', 'Colchagua Costa', 'Colchagua Valley', 'Colorado', 'Commandaria', 'Connecticut', 'Constantia', 'Corinth', 'Crete',
+    'Croatia.1', 'Curicó Valley', 'Curicó and Leyda Valleys', 'Curicó and Maipo Valleys', 'Cyclades', 'Cyprus.1', 'Dalmatian Coast',
+    'Dan', 'Danube River Plains', 'Darling', 'Dealu Mare', 'Dealurile Hușilor', 'Dealurile Munteniei', 'Devon Valley', 'Dingač', 
+    'Dolenjska', 'Douro', 'Drama', 'Durbanville', 'Duriense', 'Dão', 'East Coast', 'Eger', 'Egypt.1', 'Eilandia', 'Elazığ', 
+    'Elazığ-Diyarbakir', 'Elgin', 'Elim', 'Ella Valley', 'Elqui Valley', 'England.1', 'Epanomi', 'Estremadura', 'Florina', 'France Other', 
+    'Franken', 'Franschhoek', 'Galicia', 'Galil', 'Galilee', 'Georgia.1', 'Germany.1', 'Gisborne', 'Gladstone', 'Golan Heights',
+    'Goriska Brda', 'Goumenissa', 'Greece.1', 'Groenekloof', 'Halkidiki', "Hawke's Bay", 'Hemel en Aarde', 'Hvar', 'Ica', 'Idaho', 
+    'Iowa', 'Ismarikos', 'Israel.1', 'Istria', 'Italy Other', 'Itata Valley', 'Jerusalem Hills', 'Jidvei', 'Jonkershoek Valley', 
+    'Juanico', 'Judean Hills', 'Kakheti', 'Kamptal', 'Kathikas', 'Kentucky', 'Korinthia', 'Krania Olympus', 'Kremstal', 'Kumeu',
+    'Kutjevo', 'Lakonia', 'Landwein Rhein', 'Languedoc-Roussillon', 'Lebanon.1', 'Leithaberg', 'Lesbos', 'Letrinon', 'Levante', 
+    'Leyda Valley', 'Leyda Valley-Maipo Valley', 'Limarí Valley', 'Lisboa', 'Loire Valley', 'Lolol Valley', 'Lombardy', 'Loncomilla Valley', 
+    'Lontué Valley', 'Lutzville Valley', 'Macedonia.1', 'Maipo Valley', 'Maipo Valley-Colchagua Valley', 'Malleco', 'Mantinia', 
+    'Marchigue', 'Markopoulo', 'Marlborough', 'Martinborough', 'Massachusetts', 'Maule Valley', 'Mendoza Province', 'Michigan',
+    'Middle and South Dalmatia', 'Minho', 'Missouri', 'Mittelburgenland', 'Mittelrhein', 'Moldova.1', 'Molina', 'Monemvasia', 'Montevideo',
+    'Moravia', 'Morocco.1', 'Mosel', 'Mosel-Saar-Ruwer', 'Moselle Luxembourgeoise', 'Mount Athos', 'Murfatlar', 'Muzla', 'Nahe', 
+    'Naoussa', 'Nashik', 'Negev', 'Negev Hills', 'Nelson', 'Nemea', 'Neuchâtel', 'Nevada', 'New Jersey', 'New Mexico', 'New South Wales',
+    'New York', 'New Zealand.1', 'Niederösterreich', 'North Carolina', 'North Dalmatia', 'Northeastern Italy', 'Northern Cape',
+    'Northern Spain', 'Northwestern Italy', 'Ohio', 'Olifants River', 'Ontario', 'Oregon', 'Other', 'Overberg', 'Paardeberg',
+    'Paarl', 'Pafos', 'Pageon', 'Palmela', 'Panciu', 'Pangeon', 'Patras', 'Peljesac', 'Peloponnese', 'Pennsylvania', 'Península de Setúbal',
+    'Peumo', 'Pfalz', 'Philadelphia', 'Piedmont', 'Piekenierskloof', 'Pinto Bandeira', 'Pirque', 'Pitsilia Mountains', 'Podunavlje',
+    'Portuguese Table Wine', 'Primorska', 'Progreso', 'Provence', 'Puente Alto', 'Rapel Valley', 'Rapsani', 'Recas', 'Requinoa', 
+    'Retsina', 'Rheingau', 'Rheinhessen', 'Rhône Valley', 'Ribatejano', 'Rio Claro', 'Robertson', 'Romania.1', 'Sagrada Familia',
+    'Samson', 'San Antonio', 'San Antonio de las Minas Valley', 'San Clemente', 'San Jose', 'San Vicente', 'Santa Cruz', 'Santorini', 
+    'Sebes', 'Serra Gaúcha', 'Serra do Sudeste', 'Shomron', 'Sicily & Sardinia', 'Simonsberg-Paarl', 'Simonsberg-Stellenbosch',
+    'Slovenia.1', 'Slovenska Istra', 'Sopron', 'South Africa.1', 'South Australia', 'South Island', 'Southern Italy', 'Southwest France',
+    'Spain Other', 'Spanish Islands', 'Steiermark', 'Stellenbosch', 'Sterea Ellada', 'Swartland', 'Switzerland.1', 'Szekszárd',
+    'Südburgenland', 'Südoststeiermark', 'Südsteiermark', 'Tarnave', 'Tasmania', 'Tejo', 'Texas', 'Thermenregion', 'Thessalikos',
+    'Thrace', 'Thracian Valley', 'Ticino', 'Tikves', 'Tokaj', 'Tokaji', 'Traisental', 'Tulbagh', 'Turkey.1', 'Tuscany', 'Távora-Varosa', 
+    'Ukraine.1', 'Upper Galilee', 'Urla-Thrace', 'Uruguay.1', 'Vale Trentino', 'Vale dos Vinhedos', 'Valle de Guadalupe', 'Veneto', 
+    'Vermont', 'Victoria', 'Vienna', 'Viile Timisului', 'Villány', 'Vin de Pays de Velvendo', 'Vinho Espumante de Qualidade',
+    'Vinho Verde', 'Vipavska Dolina', 'Virginia', 'Vânju Mare', 'Wachau', 'Wagram', 'Wagram-Donauland', 'Waiheke Island', 'Waipara',
+    'Waipara Valley', 'Wairarapa', 'Wairau Valley', 'Waitaki Valley', 'Walker Bay', 'Washington', 'Washington-Oregon', 'Weinland Österreich',
+    'Weinviertel', 'Wellington', 'Western Australia', 'Western Cape', 'Wiener Gemischter Satz', 'Württemberg', 'Zenata', 'Österreichischer Perlwein',
+    'Österreichischer Sekt', 'Štajerska', 'Župa']
+
+    input_dict = {}
+
+    for name in variables:
+        if name in user_input:
+            input_dict[name] = [1]
+        else:
+            input_dict[name] = [0]
+        
+    input_dict['points_grouped'] = [points_grouped]
+    
+    input_df = pd.DataFrame.from_dict(input_dict, orient='columns')
+
+
+    #  Load the model
+    variety_model = load(open('Variety_model/variety_rf.sklearn', 'rb'))
+
+    # Load scalar
+    X_scaler = load(open('Variety_model/X_scaler.sklearn', 'rb'))
+
+    #predict the wine class based on model and save output to 'out'
+    input_scaled = X_scaler.transform(input_df)
+    out = variety_model.predict(input_scaled)
+    out = out[0]
+    return jsonify({'wine_selection': str(out)})
 
 
 if __name__ == "__main__":

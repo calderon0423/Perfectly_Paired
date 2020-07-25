@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Red & White Wine Code</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+    
+
+</head>
+
+<body>
+    <div class="jumbotron card-image" id="redwhitecode">
+        <div class="row">
+            <nav class="dropdown">
+                <a class="dropbtn" href="/">PerfectlyPaired</a>
+                <div class="dropdown-content">
+                    <a href="/quality">White vs. Red Wine</a>
+                    <a href="/reviews">Wine Reviews</a>
+                    <a href="/reviews_2">Wine Variety</a>
+                    <a href="/analysis">Behind the Scenes</a>
+                </div>
+            </nav>
+        </div>
+        <div class="container-fluid" id="header-redwhite">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="color: rgb(252, 252, 241); font-size: 100px;">Red vs. White Code</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="margin: 0%; padding: 0%">
+        <nav class="navbar" id="code-nav" style="width: 100%; margin: 0%; padding: 0%">
+            <div class="container-fluid">
+                <ul class="nav">
+                    <li><a href="/red_wine">Red Wine</a></li>
+                    <li><a href="/white_wine">White Wine</a></li>
+                    <li><a href="/redwhitecode">Red vs. White</a></li>
+                    <li><a href="/reviewscode">Wine Reviews</a></li>
+                    <li><a href="/reviewscodeRG">Wine Variety</a></li>
+                    <li><a href="/webdesign">Web Design</a></li>
+                    <li><a href="/flaskcode">Flask</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="row" id="options">
+            <div class="card" id="objective">
+                <div class="card-header">
+                    <h2 id="home-card"><strong>Objective</strong></h2>
+                </div>
+                <div class="card-body">
+                    <h5 id="obj-body" style="font-size: 28px; padding: 1%">Building a classification model that would predict whether a wine is red or white 
+                                        based on its physicochemical properties: Fixed acidity, volatile acidity, citric acid, 
+                                        residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, 
+                                        sulphates, and alcohol.</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="options">
+            <div class="card" id="objective">
+                <div class="card-header">
+                    <h2 id="home-card"><strong>Combining the Red and White Dataset</strong></h2>
+                </div>
+                <div class="card-deck">
+                    <img class="card-image-top" id="red1" src="{{url_for('static', filename='red-white-1.png')}}"/>
+                    <img class="card-image-top" id="red1" src="{{url_for('static', filename='red-white-2.png')}}"/>
+                    <div class="card-body" id="blurb" style="border-bottom: 3px solid black">
+                        <h5 id="obj-body">Adding a new column named “type”, and adding “0” or "1" as values to indicate whether 
+                                            the wine is red or white, respectively.
+                        </h5>
+                    </div>
+                </div>
+                <div class="card-deck">
+                    <img class="card-image-top" id="red1" src="{{url_for('static', filename='red-white-3.png')}}"/>
+                    <div class="card-body" id="blurb">
+                        <h5 id="obj-body">Concatenating the red and white datasets for our analysis.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="options">
+            <div class="card" id="objective">
+                <div class="card-header">
+                    <h2 id="home-card"><strong>Exploring the Combined Dataset</strong></h2>
+                </div>
+                <div class="card-deck">
+                    <img class="card-image-top" id="red1" src="{{url_for('static', filename='red-white-4.png')}}">
+                    <div class="card-body" id="blurb" style="border-bottom: 3px solid black">
+                        <h5 id="obj-body">Grouping the dataset by “type” to further examine the other columns (physiochemical properties), 
+                                            and seeing if we find any difference between the two groups.<br><br>
+                                            Mainly, we looked into the averages of each column.
+                        </h5>
+                    </div>
+                </div>
+                <img class="card-image-top" id="red1" src="{{url_for('static', filename='red-white-5.png')}}">
+                <img class="card-image-top" id="red1" src="{{url_for('static', filename='red-white-6.png')}}">
+                <div class="card-body" id="blurb">
+                    <h5 id="obj-body">Conducted a test to determine if there is a statistical difference for each physicochemical property between
+                                        red and white wine.<br><br>
+                                        The box plot above shows the data for volatile acidity, but the other physicochemical properties were 
+                                        all significantly significant (p < 0.05) as well.
+                    </h5>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="options">
+            <div class="card" id="objective">
+                <div class="card-header">
+                    <h2 id="home-card"><strong>Building the Deep Learning Model</strong></h2>
+                </div>
+                <div class="card-deck">
+                    <img class="card-image-top" id="red1" src="{{url_for('static', filename='red-white-7.png')}}">
+                    <img class="card-image-top" id="red1" src="{{url_for('static', filename='red-white-8.png')}}">
+                    <img class="card-image-top" id="red1" src="{{url_for('static', filename='red-white-9.png')}}">
+                    <img class="card-image-top" id="red1" src="{{url_for('static', filename='red-white-10.png')}}">
+                    <img class="card-image-top" id="red1" src="{{url_for('static', filename='red-white-11.png')}}">
+                    <div class="card-body" id="blurb">
+                        <h5 id="obj-body">Created a Deep Learning model – 11 inputs, with 2 layers of 100 hidden nodes, and 2 outputs 
+                                            (red: 0, white: 1). <br><br>
+                                            Achieved a model with really high accuracy (close to 1), so there was no need for extra training.<br><br>
+                                            Saved the model as a “h5” file that we loaded into Flask.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="options">
+            <div class="card" id="objective">
+                <div class="card-header">
+                    <h2 id="home-card"><strong>Feature Importance</strong></h2>
+                </div>
+                <div class="card-deck">
+                    <img class="card-image-top" id="red1" src="{{url_for('static', filename='red-white-12.png')}}">
+                    <img class="card-image-top" id="red1" src="{{url_for('static', filename='red-white-13.png')}}">
+                    <div class="card-body" id="blurb">
+                        <h5 id="obj-body">Using Random Forest, we calculated feature importance to determine which features are the most 
+                                            important in predicting a wine's color - red vs. white.
+                        </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="col-md-12 text-center">
+            <a type="button" class="btn btn-primary" id="button" href="/white_wine" style="margin-right: 2%" role="button"><b>Previous:</b> White Wine</a>
+            <a type="button" class="btn btn-primary" id="button" href="/reviewscode" style="margin-left: 2%" role="button"><b>Next:</b> Wine Reviews</a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
