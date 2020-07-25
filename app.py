@@ -107,6 +107,18 @@ def reviewsCode():
 @app.route('/redwhitecode')
 def redWhiteCode():
     return render_template('redwhitecode.html')
+
+@app.route('/webdesign')
+def webDesign():
+    return render_template('webdesign.html')
+
+@app.route('/reviewscodeRG')
+def reviewsCodeRG():
+    return render_template('reviewscodeRG.html')
+
+@app.route('/flask')
+def flaskCode():
+    return render_template('flask.html')
  
 @app.route('/reviewsdata')
 def reviewsData():
