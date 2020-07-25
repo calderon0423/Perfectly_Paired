@@ -510,4 +510,6 @@ tspan {
 
 li:hover {
     color: rgb(255, 197, 88);
+    display: inline;
+    z-index: 1;
 }
