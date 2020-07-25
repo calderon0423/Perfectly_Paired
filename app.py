@@ -142,6 +142,20 @@ def name():
         data = json.load(f)
     return json.dumps(data)
 
+#load json file to create bar chart 
+@app.route('/barchart')
+def barchart():
+    with open('./Resources/winemag-data-barchart.json') as f:
+        data = json.load(f)
+    return json.dumps(data)
+
+#load json file to create bubble chart 
+@app.route('/bubblechart')
+def bubblechart():
+    with open('./Resources/winemag-data-bubblechart.json') as f:
+        data = json.load(f)
+    return json.dumps(data)
+
 #predict wine type route - Naive Model 
 @app.route('/predict_type')
 def predictType():
@@ -288,10 +302,10 @@ def predict_variety():
 
 
     #  Load the model
-    variety_model = load(open('/Users/richagautam/Desktop/variety_rf.sklearn', 'rb'))
+    variety_model = load(open('Variety_model/ariety_rf.sklearn', 'rb'))
 
     # Load scalar
-    X_scaler = load(open('/Users/richagautam/Desktop/X_scaler.sklearn', 'rb'))
+    X_scaler = load(open('Variety_model/X_scaler.sklearn', 'rb'))
 
     #predict the wine class based on model and save output to 'out'
     input_scaled = X_scaler.transform(input_df)
@@ -299,6 +313,10 @@ def predict_variety():
     out = out[0]
     return jsonify({'wine_selection': str(out)})
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 4c0941a37f8e9a866091a38032e670c0edaf2e7f
 
 if __name__ == "__main__":
     app.run(debug=True)
