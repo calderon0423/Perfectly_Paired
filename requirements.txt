@@ -5,3 +5,4 @@ gunicorn
 sklearn
 pandas
 tensorflow
+setuptools==41.0.0
