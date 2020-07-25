@@ -146,7 +146,96 @@ function submitChoices() {
      console.log(choices)
      fetch(`/predict_type?adjectives=${choices}`).then(data=>data.json()).then(d=>{
          console.log(d.wine_type)
-         document.getElementById('wine_type_result').innerHTML=`<h3>${d.wine_type}</h3>`
+         document.getElementById('wine_type_result').innerHTML=`<h3 id="test">${d.wine_type}</h3>`
+
+d3.json(`http://127.0.0.1:5000/barchart?variety=${d.wine_type}`).then((reviewData) => {
+
+    // var filteredData = reviewData.filter(data => data.variety==d.wine_type)
+    // var variety = filteredData.map(data => data.variety);
+    // var points = reviewData.map(data => data.points);
+    
+    reviewData.sort(function(a, b) {
+      return parseFloat(b.points) - parseFloat(a.points);
+    });
+
+
+    var topTenData = reviewData.slice(0, 10).reverse(); 
+    var topTenValues = topTenData.map(row => row.points);
+    var topTenCountries = topTenData.map(row => row.country);
+   
+    // Set up trace
+    // -Horizontal bar chart:
+    var trace_bar={
+      y:topTenCountries,
+      x:topTenValues,
+      type:"bar",
+      orientation: 'h',
+      marker: {
+        color:" rgb(172, 5, 5, .90)"
+      }
+      }
+
+    // Set up data
+    var data_bar=[trace_bar];
+
+    // Set up layout
+    var layout_bar = {
+      //   title: `Top 10 Countries for ${selection}`,
+        xaxis: {title: "Rating"}
+      };
+
+    // Plot
+    Plotly.newPlot("bar", data_bar, layout_bar);
+    })
+
+d3.json(`http://127.0.0.1:5000/bubblechart?variety=${d.wine_type}`).then((reviewData) => {
+
+    // var filteredData = reviewData.filter(data => data.variety==stock)
+    var variety = reviewData.map(data => data.variety);
+    var points = reviewData.map(data => data.points);
+    var price = reviewData.map(data => data.price);
+      
+    reviewData.sort(function(a, b) {
+        return parseFloat(b.points) - parseFloat(a.points);
+      });
+
+        var trace_bubble = {
+        x: points,
+        y: price,
+        mode: 'markers',
+        text: variety,
+        marker: {
+            // size: sample_values,
+            // color: otu_ids,
+            opacity: [1, 0.8, 0.6, 0.4],
+            color:" rgb(172, 5, 5, .90)"
+        }
+        }; 
+    
+        // Set up data
+        var data_bubble = [trace_bubble];
+    
+    
+        // Set up layout
+        var layout_bubble = {
+            // title: `Price vs. Rating for ${selection}`,
+            xaxis: {title: "Rating"},
+            yaxis: {title: "Price($)"},
+            showlegend: false,
+            height: 600,
+            width: 1200
+            };
+        
+    
+        // Plot
+        Plotly.newPlot('bubble', data_bubble, layout_bubble);
+
+
+
+})
+
+
+
      }) 
 }
 
