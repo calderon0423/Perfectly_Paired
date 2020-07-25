@@ -156,6 +156,13 @@ def bubblechart():
         data = json.load(f)
     return json.dumps(data)
 
+#load province json file 
+@app.route('/province')
+def province():
+    with open('./Resources/Country_Province.json') as f:
+        data = json.load(f)
+    return json.dumps(data)
+
 #predict wine type route - Naive Model 
 @app.route('/predict_type')
 def predictType():
@@ -302,7 +309,7 @@ def predict_variety():
 
 
     #  Load the model
-    variety_model = load(open('Variety_model/ariety_rf.sklearn', 'rb'))
+    variety_model = load(open('Variety_model/variety_rf.sklearn', 'rb'))
 
     # Load scalar
     X_scaler = load(open('Variety_model/X_scaler.sklearn', 'rb'))
