@@ -6,7 +6,7 @@ var point = [1,2,3,4];
 
 var category = ['White', 'Red']
 
-var province = d3.json("../Resources/Country_Province.json")
+// var province = d3.json("/province")
 
 var country = ['Argentina', 'Australia', 'Austria', 'Brazil', 'Bulgaria', 'Canada', 'Chile', 'Croatia', 'Cyprus', 'Czech Republic', 'Egypt', 'England',
 'France', 'Georgia', 'Germany', 'Greece', 'Hungary', 'India', 'Israel', 'Italy', 'Lebanon', 'Luxembourg', 'Macedonia', 'Mexico',
@@ -20,63 +20,8 @@ function buildAdjectives() {
     tastes.forEach(word => {
         taste_selector.append("div")
                         .attr("class", "card m-4 shadow")
-                        .attr("style", "min-width: 20%")
-                        .each(function(x) {
-                            d3.select(this).append("div")
-                                            .attr("class", "card-body wine_adjectives")
-                                            .each(function(i) {
-                                                d3.select(this).append("input")
-                                                                .property("type", "button")
-                                                                .on("click",function(){
-                                                                    if (this.classList.contains("active")) {
-                                                                        d3.select(this).attr("class", "inactive")
-                                                                    } 
-                                                                    else {
-                                                                        d3.select(this).attr('class', 'active')
-                                                                    } 
-                                                                })
-                                                                .property("value", word)
-                                                                .property("id", word)
-                                                                .text(word);
-                                            });
-                        });
-    });
-
-    var feels = feel;
-    var feel_selector = d3.select("#feel");
-
-    feels.forEach(word => {
-        feel_selector.append("div")
-                        .attr("class", "card m-4 shadow")
-                        .attr("style", "min-width: 20%")
-                        .each(function(x) {
-                            d3.select(this).append("div")
-                                            .attr("class", "card-body wine_adjectives")
-                                            .each(function(i) {
-                                                d3.select(this).append("input")
-                                                                .property("type", "button")
-                                                                .on("click",function(){
-                                                                    if (this.classList.contains("active")) {
-                                                                        d3.select(this).attr("class", "inactive")
-                                                                    } 
-                                                                    else {
-                                                                        d3.select(this).attr('class', 'active')
-                                                                    } 
-                                                                })
-                                                                .property("value", word)
-                                                                .property("id", word)
-                                                                .text(word);
-                                            });
-                        });
-    });
-
-    var points = point;
-    var point_selector = d3.select("#point");
-
-     points.forEach(word => {
-        point_selector.append("div")
-                        .attr("class", "card m-4 shadow")
-                        .attr("style", "min-width: 20%")
+                        .attr('id', 'adjs')
+                        .attr("style", "min-width: 25%")
                         .on("click",function(){
                             if (this.classList.contains("show")) {
                                 d3.select(this).attr("class", "card m-4 shadow noshow")
@@ -105,33 +50,84 @@ function buildAdjectives() {
                                             });
                         });
     });
+
+    var feels = feel;
+    var feel_selector = d3.select("#feel");
+
+    feels.forEach(word => {
+        feel_selector.append("div")
+                        .attr("class", "card m-4 shadow")
+                        .attr('id', 'adjs')
+                        .attr("style", "min-width: 25%")
+                        .on("click",function(){
+                            if (this.classList.contains("show")) {
+                                d3.select(this).attr("class", "card m-4 shadow noshow")
+                            } 
+                            else {
+                                d3.select(this).attr('class', 'card m-4 shadow show')
+                            } 
+                        })
+                        .each(function(x) {
+                            d3.select(this).append("div")
+                                            .attr("class", "card-body wine_adjectives")
+                                            .each(function(i) {
+                                                d3.select(this).append("input")
+                                                                .property("type", "button")
+                                                                .on("click",function(){
+                                                                    if (this.classList.contains("active")) {
+                                                                        d3.select(this).attr("class", "inactive")
+                                                                    } 
+                                                                    else {
+                                                                        d3.select(this).attr('class', 'active')
+                                                                    } 
+                                                                })
+                                                                .property("value", word)
+                                                                .property("id", word)
+                                                                .text(word);
+                                            });
+                        });
+    });
+
     
+};
 
+function buildPoints() {
+    var points = point;
+    var point_selector = d3.select("#point");
 
-    // points.forEach(word => {
-    //     point_selector.append("div")
-    //                     .attr("class", "card m-4 shadow")
-    //                     .attr("style", "min-width: 20%")
-    //                     .each(function(x) {
-    //                         d3.select(this).append("div")
-    //                                         .attr("class", "card-body wine_adjectives")
-    //                                         .each(function(i) {
-    //                                             d3.select(this).append("input")
-    //                                                             .property("type", "button")
-    //                                                             .on("click",function(){
-    //                                                                 if (this.classList.contains("active")) {
-    //                                                                     d3.select(this).attr("class", "inactive")
-    //                                                                 } 
-    //                                                                 else {
-    //                                                                     d3.select(this).attr('class', 'active')
-    //                                                                 } 
-    //                                                             })
-    //                                                             .property("value", word)
-    //                                                             .property("id", word)
-    //                                                             .text(word);
-    //                                         });
-    //                     });
-    // });
+    points.forEach(word => {
+        point_selector.append("div")
+                        .attr("class", "card m-4 shadow")
+                        .attr('id', 'points')
+                        .attr("style", "min-width: 40%")
+                        .on("click",function(){
+                            if (this.classList.contains("show")) {
+                                d3.select(this).attr("class", "card m-4 shadow noshow")
+                            } 
+                            else {
+                                d3.select(this).attr('class', 'card m-4 shadow show')
+                            } 
+                        })
+                        .each(function(x) {
+                            d3.select(this).append("div")
+                                            .attr("class", "card-body wine_points")
+                                            .each(function(i) {
+                                                d3.select(this).append("input")
+                                                                .property("type", "button")
+                                                                .on("click",function(){
+                                                                    if (this.classList.contains("active")) {
+                                                                        d3.select(this).attr("class", "inactive")
+                                                                    } 
+                                                                    else {
+                                                                        d3.select(this).attr('class', 'active')
+                                                                    } 
+                                                                })
+                                                                .property("value", word)
+                                                                .property("id", word)
+                                                                .text(word);
+                                            });
+                        });
+    });
 };
 
 function buildCountry() {
@@ -141,7 +137,16 @@ function buildCountry() {
     countries.forEach(word => {
         country_selector.append("div")
                         .attr("class", "card m-4 shadow")
-                        .attr("style", "min-width: 20%")
+                        .attr('id','countries')
+                        .attr("style", "min-width: 25%")
+                        .on("click",function(){
+                            if (this.classList.contains("show")) {
+                                d3.select(this).attr("class", "card m-4 shadow noshow")
+                            } 
+                            else {
+                                d3.select(this).attr('class', 'card m-4 shadow show')
+                            } 
+                        })
                         .each(function(x) {
                             d3.select(this).append("div")
                                             .attr("class", "card-body wine_country")
@@ -162,43 +167,106 @@ function buildCountry() {
                                             });
                             });
     }); 
+
+};
+
+var country_selector = d3.select("#country")
+
+// var country_selected = country_selector.value;
+
+function buildProvince() {
+    d3.json('http://127.0.0.1:5000/province').then((provinces) => {
+        let countries = []
+        d3.select('#countries')
+        .on('click', function(){
+            document.querySelectorAll('.active').forEach(country => {
+                countries.push(country.value)
+        })
+        console.log(countries)
+        // var provinces = province.country_selected;
+        var provinces = provinces[country_selected]
+        console.log(provinces)
+        var province_selector = d3.select("#province")
+        provinces.forEach(word => {
+            province_selector.append("div")
+                            .attr("class", "card m-4 shadow")
+                            .attr("style", "min-width: 20%")
+                            .each(function(x) {
+                                d3.select(this).append("div")
+                                                .attr("class", "card-body wine_province")
+                                                .each(function(i) {
+                                                    d3.select(this).append("input")
+                                                                    .property("type", "button")
+                                                                    .on("click",function(){
+                                                                        if (this.classList.contains("active")) {
+                                                                            d3.select(this).attr("class", "inactive")
+                                                                        } 
+                                                                        else {
+                                                                            d3.select(this).attr('class', 'active')
+                                                                        } 
+                                                        })
+                                                .property("value", word)
+                                                .property("id", word)
+                                                .text(word);
+                                                });
+                                });
+        });
+    })
+    })
 };
 
 buildAdjectives();
 buildCountry();
+buildPoints();
 
-var country_selector = d3.select("#country")
-var country_selected = country_selector.value;
 
-function buildProvince() {
-    var provinces = province.country_selected;
-    var province_selector = d3.select("#province")
+// var country_selector = d3.select("#country")
 
-    provinces.forEach(word => {
-        province_selector.append("div")
-                        .attr("class", "card m-4 shadow")
-                        .attr("style", "min-width: 20%")
-                        .each(function(x) {
-                            d3.select(this).append("div")
-                                            .attr("class", "card-body wine_province")
-                                            .each(function(i) {
-                                                d3.select(this).append("input")
-                                                                .property("type", "button")
-                                                                .on("click",function(){
-                                                                    if (this.classList.contains("active")) {
-                                                                        d3.select(this).attr("class", "inactive")
-                                                                    } 
-                                                                    else {
-                                                                        d3.select(this).attr('class', 'active')
-                                                                    } 
-                                                    })
-                                            .property("value", word)
-                                            .property("id", word)
-                                            .text(word);
-                                            });
-                            });
-    });
-};
+// // var country_selected = country_selector.value;
+
+// function buildProvince() {
+//     d3.json('http://127.0.0.1:5000/province').then((provinces) => {
+//         let countries = []
+//         d3.select('#countries')
+//         .on('click', function(){
+//             document.querySelectorAll('.active').forEach(country => {
+//                 countries.push(country.value)
+//         })
+//         console.log(countries)
+//         // var provinces = province.country_selected;
+//         var provinces = provinces[country_selected]
+//         console.log(provinces)
+//         var province_selector = d3.select("#province")
+//         provinces.forEach(word => {
+//             province_selector.append("div")
+//                             .attr("class", "card m-4 shadow")
+//                             .attr("style", "min-width: 20%")
+//                             .each(function(x) {
+//                                 d3.select(this).append("div")
+//                                                 .attr("class", "card-body wine_province")
+//                                                 .each(function(i) {
+//                                                     d3.select(this).append("input")
+//                                                                     .property("type", "button")
+//                                                                     .on("click",function(){
+//                                                                         if (this.classList.contains("active")) {
+//                                                                             d3.select(this).attr("class", "inactive")
+//                                                                         } 
+//                                                                         else {
+//                                                                             d3.select(this).attr('class', 'active')
+//                                                                         } 
+//                                                         })
+//                                                 .property("value", word)
+//                                                 .property("id", word)
+//                                                 .text(word);
+//                                                 });
+//                                 });
+//         });
+//     })
+//     })
+// };
+
+
+
 
 d3.select(window).on("load", buildAdjectives);
 
@@ -234,4 +302,3 @@ function submitChoices() {
          document.getElementById('wine_type_result').innerHTML=`<h3>${d.wine_type}</h3>`
      }) 
 }
-
