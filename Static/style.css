@@ -505,9 +505,10 @@ tspan {
 
 .nav>li>a:hover {
     opacity: 0%;
-    color: rgb(255, 197, 88)
+    color: rgb(255, 197, 88);
 }
 
 li:hover {
     color: rgb(255, 197, 88);
 }
+

@@ -186,7 +186,7 @@ def redwhitepredict():
     parser = reqparse.RequestParser()
     parser.add_argument('characteristics', type=str, required=True, help="This is expecting a selection of wine characteristics", action='append')
     args = parser.parse_args()
-    characteristics = args['characteristics'][0].split('')
+    characteristics = args['characteristics'][0].split(' ')
 
     #  Load the model
     redorwhite_model = load_model('Red_and_White_Analysis/redorwhite_model_trained.h5')
