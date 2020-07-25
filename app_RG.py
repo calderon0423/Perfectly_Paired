@@ -120,13 +120,13 @@ def predict_variety():
     parser.add_argument('province', type=str, required=True, help="This is expecting one selection of province", action='append')
     args = parser.parse_args()
     country = args['province']
-    parser.add_argument('points_grouped', type=str, required=True, help="This is expecting one selection of province", action='append')
+    parser.add_argument('points_grouped', type=str, required=True, help="This is expecting one selection of points", action='append')
     args = parser.parse_args()
     points_grouped = args['points_grouped']
 
     user_input=[]
     for adj in adjectives:
-        user_input.append(adj)
+        user_input.append(adj.lower())
     for c in country:
         user_input.append(c)
     for p in province:
