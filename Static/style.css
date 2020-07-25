@@ -30,12 +30,6 @@
     font-weight: bold;
 }
 
-.show {
-    background-color: #f8c15a;
-    cursor: pointer;
-    border: 1.5px solid black;
-}
-
 #adjective {
     margin: 5%;
 }
@@ -54,6 +48,13 @@
     box-shadow: 0px 5px 5px grey;
     margin: auto;
     z-index: 0;
+}
+
+#blurb {
+    border: 1px solid black;
+    border-top: 3px solid black;
+    background-color: rgb(252, 236, 214);
+    padding: 2%
 }
 
 body {
@@ -83,13 +84,14 @@ body {
     background-color: rgb(26, 42, 185);
     font-weight: bold;
     padding: .5em;
-    border: .80px solid rgb(0, 0, 0)
+    border: .75px solid rgb(0, 0, 0);
+    box-shadow: 1px 1px 2px grey, -1px -1px 2px grey;
 }
 
 .btn:hover {
     background-color: rgb(20, 13, 121);
     border: 1px solid rgb(0, 0, 0);
-    box-shadow: 2px 2px 4px grey, -2px -2px 4px grey;
+    box-shadow: 2px 2px 6px grey, -2px -2px 6px grey;
 }
 
 #button {
@@ -265,7 +267,7 @@ input[type=button] {
 
 #obj-body {
     font-size: 22px;
-    font-weight: 500;
+    font-weight: bold;
     margin: 0px;
 }
 
@@ -278,7 +280,6 @@ input[type=button] {
     align-items: center;
     justify-content: center;
     vertical-align: middle;
-    
 }
 
 p {
@@ -367,6 +368,12 @@ p {
     border: .75pt solid black;
     border-radius: 4px;
     padding: 15px
+}
+
+.show {
+    background-color: #f8c15a;
+    cursor: pointer;
+    border: 1.5px solid black;
 }
 
 .slidecontainer {
@@ -461,7 +468,7 @@ span {
 tspan {
     color: black;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 #word-cloud {
@@ -476,9 +483,31 @@ tspan {
     height: 55vh;
     width: 100%;
     padding-top: 0%;
-    background-image: url("https://static.vinepair.com/wp-content/uploads/2015/09/aligote-social.jpg");
-    background-size: 100% 55vh;
+    background-image: url("https://cwa-dp5yl5b.netdna-ssl.com/wp-content/uploads/2016/07/shutterstock_214243009.jpg");
+    background-size: cover;
     box-shadow: 0px 5px 5px grey;
     margin: auto;
     z-index: 0;
+}
+
+#code-nav {
+    background-color: rgb(63, 63, 63);
+    border-radius: 0%;
+    box-shadow: 0px 2px 2px grey;
+}
+
+.nav>li>a {
+    padding: 10px 40px;
+    color: white;
+    text-shadow: none;
+    font-family: "Mulish", sans-serif;
+}
+
+.nav>li>a:hover {
+    opacity: 0%;
+    color: rgb(255, 197, 88)
+}
+
+li:hover {
+    color: rgb(255, 197, 88);
 }

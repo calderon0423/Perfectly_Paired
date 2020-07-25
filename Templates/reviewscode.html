@@ -44,7 +44,9 @@
                     <h2 id="home-card"><strong>Objective</strong></h2>
                 </div>
                 <div class="card-body">
-                    <h5 id="obj-body">Building a model to predict the ideal wine based on the adjectives that user selected to describe the taste and feel.</h5>
+                    <h5 id="obj-body" style="font-size: 28px; padding: 1%">Building a model to predict the ideal wine based on the adjectives 
+                        that user selected to describe the taste and feel.
+                    </h5>
                 </div>
             </div>
         </div>
@@ -74,11 +76,11 @@
                         <img class="card-image" id="red1" src="{{url_for('static', filename='wr-2c.png')}}"/>
                         <img class="card-image" id="red1" src="{{url_for('static', filename='wr-2d.png')}}"/>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body"  id="blurb">
                         <h5 id="obj-body">Data pre-processing to bring the text into a form that is predictable and analyzable: <br><br>
-                                           1. Count Vectorizer: Text preprocessing, tokenizing and filtering of stopwords<br>
-                                           2. Transformer: Transform our count-matrix to a tf-idf representation “Term Frequency times Inverse Document Frequency”.
-                            </h5>
+                                           Count Vectorizer: Text preprocessing, tokenizing, and filtering of stopwords<br>
+                                           Transformer: Transform our count-matrix to a tf-idf representation - “Term Frequency Times Inverse Document Frequency”.
+                        </h5>
                     </div>
                 </div>
             </div>
@@ -139,23 +141,26 @@
                     <h2 id="home-card"><strong>Model Summary</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <div class="card-body">
-                        <h5 id="obj-body"><b>Models:</b><br>Of the models used - Multinomial NB, Complement NB, Deep Learning - Deep learning performed the best due to the complexity of the dataset. <br><br>
+                    <div class="card-body" id="blurb" style="border-top: .5px solid black">
+                        <h5 id="obj-body"><b>Models:</b><br>Of the models used - Multinomial NB, Complement NB, Deep Learning - Deep Learning performed the best due to the complexity of the dataset. <br><br>
                             <b>Challenges:</b><br>Because of the complexity and size of data, deep learning worked very slowly. That’s why we could not test as many variations as we would have liked in order to find the best parameters. 
                             We could have used hyperparameter tuning to find the highest accuracy.<br><br>
-                            <b>Assumptions:</b><br>We trained the model based on wine selection and reviews of only nineteen tasters, yet assumed the results were a general fact rather than subjective taste.  
+                            <b>Assumptions:</b><br>We trained the model based on wine selection and reviews of only nineteen tasters, yet assumed the results were general fact rather than subjective taste.  
                         </h5>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <br>
+    <br>
     <div class="container">
         <div class="col-md-12 text-center">
-            <a type="button" class="btn btn-primary" id="button" href="/redwhitecode" style="margin: auto" role="button"><b>Previous:</b> Red vs. White Wine</a>
-            <a type="button" class="btn btn-primary" id="button" href="/webdesign" style="margin: auto" role="button"><b>Next:</b> Web Design</a>
+            <a type="button" class="btn btn-primary" id="button" href="/redwhitecode" style="margin-right: 2%" role="button"><b>Previous:</b> Red vs. White Wine</a>
+            <a type="button" class="btn btn-primary" id="button" href="/webdesign" style="margin-left: 2%" role="button"><b>Next:</b> Web Design</a>
         </div>
     </div>
+    <br>
     <br>
     <br>
 </body>
