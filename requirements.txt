@@ -7,3 +7,4 @@ pandas
 pymongo
 setuptools==41.0.0
 scipy==1.4.1
+keras
