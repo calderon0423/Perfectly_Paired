@@ -160,7 +160,7 @@ def redwhitepredict():
 
     #run model with user input
     result_characteristics = redorwhite_model.predict_classes([user_input_characteristics])
-    result_characteristics = "White" if result_characteristics[0] ==0 else "Red"
+    result_characteristics = "White" if result_characteristics[0] ==1 else "Red"
     return jsonify({'wine_selection': result_characteristics})
 
 @app.route('/winelist')
