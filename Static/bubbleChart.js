@@ -1,5 +1,5 @@
-d3.json("http://127.0.0.1:5000/bubblechart").then((reviewData) => {
-    console.log(reviewData);
+// d3.json("http://127.0.0.1:5000/bubblechart").then((reviewData) => {
+d3.json("../Resources/winemag-data-bubblechart.json").then((reviewData) => {
 
     var idList = reviewData.map(data => data.variety);
     for (var i = 0; i < idList.length; i++) {
@@ -8,6 +8,10 @@ d3.json("http://127.0.0.1:5000/bubblechart").then((reviewData) => {
     }
     // Set up default plot
     updatePlots(idList[0]);
+    // var test = d3.select('h5').text();
+    // console.log(test);
+
+    // updatePlots(test);
 
   // Function for updating plots   
   function updatePlots(selection) {
@@ -32,7 +36,7 @@ d3.json("http://127.0.0.1:5000/bubblechart").then((reviewData) => {
       // size: sample_values,
       // color: otu_ids,
       opacity: [1, 0.8, 0.6, 0.4],
-      colorscale: [[0, 'rgb(153, 76, 0)'], [1, 'rgb(0, 100, 0)']]
+      color:" rgb(172, 5, 5, .90)"
     }
     }; 
 
@@ -42,7 +46,7 @@ d3.json("http://127.0.0.1:5000/bubblechart").then((reviewData) => {
 
     // Set up layout
     var layout_bubble = {
-      title: 'Price vs. Rating',
+      title: `Price vs. Rating for ${selection}`,
       xaxis: {title: "Rating"},
       yaxis: {title: "Price($)"},
       showlegend: false,

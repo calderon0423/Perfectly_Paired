@@ -1,4 +1,5 @@
-d3.json("http://127.0.0.1:5000/barchart").then((reviewData) => {
+// d3.json("http://127.0.0.1:5000/barchart").then((reviewData) => {
+  d3.json("../Resources/winemag-data-barchart.json").then((reviewData) => {
     console.log(reviewData);
 
     var idList = reviewData.map(data => data.variety);
@@ -34,7 +35,7 @@ d3.json("http://127.0.0.1:5000/barchart").then((reviewData) => {
       type:"bar",
       orientation: 'h',
       marker: {
-        color: 'rgb(153, 76, 0)'
+        color:" rgb(172, 5, 5, .90)"
       }
       }
 
@@ -43,8 +44,8 @@ d3.json("http://127.0.0.1:5000/barchart").then((reviewData) => {
 
     // Set up layout
     var layout_bar = {
-        title: "Top 10 Countries",
-        xaxis: {title: "Wine Rating"}
+        title: `Top 10 Countries for ${selection}`,
+        xaxis: {title: "Rating"}
       };
 
     // Plot
