@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
     <script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
@@ -25,8 +25,8 @@
                 <a class="dropbtn" href="/">PerfectlyPaired</a>
                 <div class="dropdown-content">
                     <a href="/quality">White vs. Red Wine</a>
-                    <a href="/reviews">Wine Reviews</a>
-                    <a href="/reviews_2">Wine Variety</a>
+                    <a href="/reviews">Find My Wine</a>
+                    <!-- <a href="/reviews_2">Wine Variety</a> --> 
                     <a href="/analysis">Behind the Scenes</a>
                 </div>
             </nav>
@@ -91,7 +91,7 @@
                     <h2 id="home-card"><strong>Take the Test!</strong></h2> 
                 </div>
                 <br>
-                <p>Our Deep Learning model works by predicting a wine variety (Chardonnay, Cabernet, Riseling, etc.) based on the adjectives used to 
+                <p>Our Naives Bayes model works by predicting a wine variety (Chardonnay, Cabernet, Riseling, etc.) based on the adjectives used to 
                     describe these wines from over 130k user reviews. So choose your most ideal wine tastes and feels in order to find your new favorite
                     wine!
                 </p>
@@ -126,15 +126,22 @@
         </div>
     </div>
     <div class="container-fluid">
-        <div class="row">
-            <div class="bubble" id="bubble" style="height: 100%;">
+        <div class="row" id="options">
+            <div class="card" style="width: 85%; height:100%">
+                <div class="card-header">
+                    <h2 id="home-card"><strong>Your Prediction: Rating vs. Price</strong></h2> 
+                </div>
+                <div class="card-body">
+                    <div class="bubble" id="bubble" style="height: 100%; width: 100%">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <hr>
     <div class="container-fluid">
-        <div class="row">
-            <div class="bar" id="bar" style="height: 100%;">
+        <div class="row" id="options">
+            <div class="bar" id="bar" style="height: 100%; width: 100%">
             </div>
         </div>
     </div>
@@ -142,11 +149,13 @@
     <br>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
     <script src="static/reviews.js"></script>
+    <script src="static/barChart.js"></script>
+    <script src="static/bubbleChart.js"></script>
 
 
-</body
+</body>
               
 
 
     
-
+</html>

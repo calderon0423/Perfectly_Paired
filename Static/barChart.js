@@ -1,20 +1,26 @@
-// d3.json("http://127.0.0.1:5000/barchart").then((reviewData) => {
-  d3.json("../Resources/winemag-data-barchart.json").then((reviewData) => {
-    console.log(reviewData);
 
-    var idList = reviewData.map(data => data.variety);
-    for (var i = 0; i < idList.length; i++) {
-      selectBox = d3.select("#selDataset");
-      selectBox.append("option").text(idList[i]);
-    }
-    // Set up default plot
-    updatePlots(idList[0]);
+   // Submit Button handler
+function handleSubmit() {
+  // Prevent the page from refreshing
+  d3.event.preventDefault();
 
-  // Function for updating plots   
-  
-  function updatePlots(selection) {
-    console.log(selection);
-    var filteredData = reviewData.filter(data => data.variety==selection)
+  // Select the input value from the form
+  // var stock = d3.select("#wine_type_result").node().value;
+  var stock = d3.select("#test").value;
+
+  console.log(stock);
+
+  // // clear the input value
+  // d3.select("#stockInput").node().value = "";
+
+  // Build the plot with the new stock
+  buildPlot(stock);
+}
+
+function buildPlot(stock) {
+  d3.json('http://127.0.0.1:5000/barchart').then((reviewData) => {
+
+    var filteredData = reviewData.filter(data => data.variety==stock)
     // var variety = filteredData.map(data => data.variety);
     var points = filteredData.map(data => data.points);
     
@@ -44,35 +50,20 @@
 
     // Set up layout
     var layout_bar = {
-        title: `Top 10 Countries for ${selection}`,
+      //   title: `Top 10 Countries for ${selection}`,
         xaxis: {title: "Rating"}
       };
 
     // Plot
     Plotly.newPlot("bar", data_bar, layout_bar);
 
-    // On button click, call refreshData()
-    d3.selectAll("#selDataset").on("change", refreshData);
-
-    function refreshData() {
-    var dropdownMenu = d3.select("#selDataset");
-    // Assign the value of the dropdown menu option to a variable
-    var varieties = dropdownMenu.property("value");
-    // Initialize an empty array for the person's data
-
-    for (var i = 0; i < idList.length; i++) {
-      if (varieties === idList[i]) {
-      
-        updatePlots(idList[i]);
-        return
-      }
-    }
-  }
 
 
+})
 
-    }
-   });
+}
 
+// Add event listener for submit button
+d3.select("#button").on("click", handleSubmit);
 
   

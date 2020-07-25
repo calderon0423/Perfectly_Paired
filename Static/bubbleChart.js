@@ -1,21 +1,25 @@
-// d3.json("http://127.0.0.1:5000/bubblechart").then((reviewData) => {
-d3.json("../Resources/winemag-data-bubblechart.json").then((reviewData) => {
+// Submit Button handler
+function handleSubmit() {
+  // Prevent the page from refreshing
+  d3.event.preventDefault();
 
-    var idList = reviewData.map(data => data.variety);
-    for (var i = 0; i < idList.length; i++) {
-      selectBox = d3.select("#selDataset");
-      selectBox.append("option").text(idList[i]);
-    }
-    // Set up default plot
-    updatePlots(idList[0]);
-    // var test = d3.select('h5').text();
-    // console.log(test);
+  // Select the input value from the form
+  // var stock = d3.select("#wine_type_result").node().value;
+  var stock =  d3.select('#wine_type_result');
 
-    // updatePlots(test);
+  console.log(stock);
 
-  // Function for updating plots   
-  function updatePlots(selection) {
-    var filteredData = reviewData.filter(data => data.variety==selection)
+  // // clear the input value
+  // d3.select("#stockInput").node().value = "";
+
+  // Build the plot with the new stock
+  buildPlot(stock);
+}
+
+function buildPlot(stock) {
+  d3.json('http://127.0.0.1:5000/bubblechart').then((reviewData) => {
+
+    var filteredData = reviewData.filter(data => data.variety==stock)
     var variety = filteredData.map(data => data.variety);
     var points = filteredData.map(data => data.points);
     var price = filteredData.map(data => data.price);
@@ -24,61 +28,42 @@ d3.json("../Resources/winemag-data-bubblechart.json").then((reviewData) => {
       return parseFloat(b.points) - parseFloat(a.points);
     });
 
-
-
-  // -Bubble Chart:
-   var trace_bubble = {
-    x: points,
-    y: price,
-    mode: 'markers',
-    text: variety,
-    marker: {
-      // size: sample_values,
-      // color: otu_ids,
-      opacity: [1, 0.8, 0.6, 0.4],
-      color:" rgb(172, 5, 5, .90)"
-    }
-    }; 
-
-    // Set up data
-    var data_bubble = [trace_bubble];
-
-
-    // Set up layout
-    var layout_bubble = {
-      title: `Price vs. Rating for ${selection}`,
-      xaxis: {title: "Rating"},
-      yaxis: {title: "Price($)"},
-      showlegend: false,
-      height: 600,
-      width: 1200
-      };
-  
-
-    // Plot
-    Plotly.newPlot('bubble', data_bubble, layout_bubble);
-
-    // On button click, call refreshData()
-    d3.selectAll("#selDataset").on("change", refreshData);
-
-    function refreshData() {
-    var dropdownMenu = d3.select("#selDataset");
-    // Assign the value of the dropdown menu option to a variable
-    var varieties = dropdownMenu.property("value");
-    // Initialize an empty array for the person's data
-
-    for (var i = 0; i < idList.length; i++) {
-      if (varieties === idList[i]) {
+      var trace_bubble = {
+        x: points,
+        y: price,
+        mode: 'markers',
+        text: variety,
+        marker: {
+          // size: sample_values,
+          // color: otu_ids,
+          opacity: [1, 0.8, 0.6, 0.4],
+          color:" rgb(172, 5, 5, .90)"
+        }
+      }; 
+    
+        // Set up data
+        var data_bubble = [trace_bubble];
+    
+    
+        // Set up layout
+        var layout_bubble = {
+          // title: `Price vs. Rating for ${selection}`,
+          xaxis: {title: "Rating"},
+          yaxis: {title: "Price($)"},
+          showlegend: false,
+          height: 600,
+          width: 1200
+          };
       
-        updatePlots(idList[i]);
-        return
-      }
-    }
-  }
+    
+        // Plot
+        Plotly.newPlot('bubble', data_bubble, layout_bubble);
 
 
-    }
 
-   });
+})
 
-  
+}
+
+// Add event listener for submit button
+d3.select("#button").on("click", handleSubmit);

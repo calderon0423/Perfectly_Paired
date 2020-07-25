@@ -1,0 +1,8217 @@
+[
+  {
+    "variety": "Çalkarası",
+    "country": "Turkey",
+    "points": 87
+  },
+  {
+    "variety": "Žilavka",
+    "country": "Macedonia",
+    "points": 88
+  },
+  {
+    "variety": "Abouriou",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Abouriou",
+    "country": "US",
+    "points": 85
+  },
+  {
+    "variety": "Agiorgitiko",
+    "country": "Greece",
+    "points": 87
+  },
+  {
+    "variety": "Aglianico",
+    "country": "Italy",
+    "points": 89
+  },
+  {
+    "variety": "Aglianico",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Aidani",
+    "country": "Greece",
+    "points": 82
+  },
+  {
+    "variety": "Airen",
+    "country": "Spain",
+    "points": 82
+  },
+  {
+    "variety": "Albana",
+    "country": "Italy",
+    "points": 90
+  },
+  {
+    "variety": "Albanello",
+    "country": "Italy",
+    "points": 86
+  },
+  {
+    "variety": "Albariño",
+    "country": "Spain",
+    "points": 87
+  },
+  {
+    "variety": "Albariño",
+    "country": "Uruguay",
+    "points": 87
+  },
+  {
+    "variety": "Albariño",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Albarossa",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Aleatico",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Alfrocheiro",
+    "country": "Portugal",
+    "points": 89
+  },
+  {
+    "variety": "Alicante",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Alicante Bouschet",
+    "country": "Portugal",
+    "points": 90
+  },
+  {
+    "variety": "Alicante Bouschet",
+    "country": "Spain",
+    "points": 83
+  },
+  {
+    "variety": "Alicante Bouschet",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Aligoté",
+    "country": "France",
+    "points": 86
+  },
+  {
+    "variety": "Aligoté",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Alsace white blend",
+    "country": "France",
+    "points": 90
+  },
+  {
+    "variety": "Altesse",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Alvarelhão",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Alvarelhão",
+    "country": "US",
+    "points": 85
+  },
+  {
+    "variety": "Alvarinho",
+    "country": "Portugal",
+    "points": 89
+  },
+  {
+    "variety": "Alvarinho",
+    "country": "US",
+    "points": 84
+  },
+  {
+    "variety": "Alvarinho Chardonnay",
+    "country": "Portugal",
+    "points": 87
+  },
+  {
+    "variety": "Ansonica",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Antão Vaz",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Apple",
+    "country": "Canada",
+    "points": 89
+  },
+  {
+    "variety": "Apple",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Aragonês",
+    "country": "Portugal",
+    "points": 89
+  },
+  {
+    "variety": "Aragonez",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Argaman",
+    "country": "Israel",
+    "points": 88
+  },
+  {
+    "variety": "Arinto",
+    "country": "Portugal",
+    "points": 87
+  },
+  {
+    "variety": "Arneis",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Arneis",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Asprinio",
+    "country": "Italy",
+    "points": 84
+  },
+  {
+    "variety": "Assyrtico",
+    "country": "Greece",
+    "points": 88
+  },
+  {
+    "variety": "Assyrtiko",
+    "country": "Greece",
+    "points": 89
+  },
+  {
+    "variety": "Assyrtiko",
+    "country": "(blank)",
+    "points": 90
+  },
+  {
+    "variety": "Athiri",
+    "country": "Greece",
+    "points": 83
+  },
+  {
+    "variety": "Austrian Red Blend",
+    "country": "Austria",
+    "points": 90
+  },
+  {
+    "variety": "Austrian white blend",
+    "country": "Austria",
+    "points": 90
+  },
+  {
+    "variety": "Austrian white blend",
+    "country": "(blank)",
+    "points": 89
+  },
+  {
+    "variety": "Auxerrois",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Auxerrois",
+    "country": "Germany",
+    "points": 89
+  },
+  {
+    "variety": "Auxerrois",
+    "country": "Luxembourg",
+    "points": 90
+  },
+  {
+    "variety": "Auxerrois",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Avesso",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Azal",
+    "country": "Portugal",
+    "points": 86
+  },
+  {
+    "variety": "Babić",
+    "country": "Croatia",
+    "points": 89
+  },
+  {
+    "variety": "Babosa Negro",
+    "country": "Spain",
+    "points": 92
+  },
+  {
+    "variety": "Bacchus",
+    "country": "Germany",
+    "points": 91
+  },
+  {
+    "variety": "Baco Noir",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Baga",
+    "country": "Portugal",
+    "points": 90
+  },
+  {
+    "variety": "Baga Touriga Nacional",
+    "country": "Portugal",
+    "points": 91
+  },
+  {
+    "variety": "Barbera",
+    "country": "Argentina",
+    "points": 85
+  },
+  {
+    "variety": "Barbera",
+    "country": "Israel",
+    "points": 85
+  },
+  {
+    "variety": "Barbera",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Barbera",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Barbera Nebbiolo",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Bastardo",
+    "country": "Portugal",
+    "points": 86
+  },
+  {
+    "variety": "Bastardo",
+    "country": "Ukraine",
+    "points": 85
+  },
+  {
+    "variety": "Biancale",
+    "country": "Italy",
+    "points": 85
+  },
+  {
+    "variety": "Biancolella",
+    "country": "Italy",
+    "points": 85
+  },
+  {
+    "variety": "Biancu Gentile",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Bical",
+    "country": "Portugal",
+    "points": 86
+  },
+  {
+    "variety": "Black Monukka",
+    "country": "US",
+    "points": 91
+  },
+  {
+    "variety": "Black Muscat",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Blanc du Bois",
+    "country": "US",
+    "points": 85
+  },
+  {
+    "variety": "Blatina",
+    "country": "Bosnia and Herzegovina",
+    "points": 88
+  },
+  {
+    "variety": "Blauburger",
+    "country": "Hungary",
+    "points": 87
+  },
+  {
+    "variety": "Blauburgunder",
+    "country": "Austria",
+    "points": 93
+  },
+  {
+    "variety": "Blauer Portugieser",
+    "country": "Hungary",
+    "points": 86
+  },
+  {
+    "variety": "Blauer Portugieser",
+    "country": "Serbia",
+    "points": 87
+  },
+  {
+    "variety": "Blaufränkisch",
+    "country": "Austria",
+    "points": 90
+  },
+  {
+    "variety": "Blaufränkisch",
+    "country": "Croatia",
+    "points": 84
+  },
+  {
+    "variety": "Blaufränkisch",
+    "country": "Hungary",
+    "points": 85
+  },
+  {
+    "variety": "Blaufränkisch",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Boğazkere",
+    "country": "Turkey",
+    "points": 90
+  },
+  {
+    "variety": "Bobal",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "Bobal Cabernet Sauvignon",
+    "country": "Spain",
+    "points": 84
+  },
+  {
+    "variety": "Bombino Bianco",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Bombino Nero",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Bonarda",
+    "country": "Argentina",
+    "points": 87
+  },
+  {
+    "variety": "Bordeaux style Red Blend",
+    "country": "Argentina",
+    "points": 90
+  },
+  {
+    "variety": "Bordeaux style Red Blend",
+    "country": "Australia",
+    "points": 89
+  },
+  {
+    "variety": "Bordeaux style Red Blend",
+    "country": "Austria",
+    "points": 91
+  },
+  {
+    "variety": "Bordeaux style Red Blend",
+    "country": "Brazil",
+    "points": 84
+  },
+  {
+    "variety": "Bordeaux style Red Blend",
+    "country": "Bulgaria",
+    "points": 91
+  },
+  {
+    "variety": "Bordeaux style Red Blend",
+    "country": "Canada",
+    "points": 90
+  },
+  {
+    "variety": "Bordeaux style Red Blend",
+    "country": "Chile",
+    "points": 90
+  },
+  {
+    "variety": "Bordeaux style Red Blend",
+    "country": "Croatia",
+    "points": 88
+  },
+  {
+    "variety": "Bordeaux style Red Blend",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Bordeaux style Red Blend",
+    "country": "Hungary",
+    "points": 88
+  },
+  {
+    "variety": "Bordeaux style Red Blend",
+    "country": "Israel",
+    "points": 89
+  },
+  {
+    "variety": "Bordeaux style Red Blend",
+    "country": "Italy",
+    "points": 90
+  },
+  {
+    "variety": "Bordeaux style Red Blend",
+    "country": "Mexico",
+    "points": 88
+  },
+  {
+    "variety": "Bordeaux style Red Blend",
+    "country": "Moldova",
+    "points": 90
+  },
+  {
+    "variety": "Bordeaux style Red Blend",
+    "country": "New Zealand",
+    "points": 91
+  },
+  {
+    "variety": "Bordeaux style Red Blend",
+    "country": "Portugal",
+    "points": 93
+  },
+  {
+    "variety": "Bordeaux style Red Blend",
+    "country": "Slovenia",
+    "points": 89
+  },
+  {
+    "variety": "Bordeaux style Red Blend",
+    "country": "South Africa",
+    "points": 90
+  },
+  {
+    "variety": "Bordeaux style Red Blend",
+    "country": "Spain",
+    "points": 87
+  },
+  {
+    "variety": "Bordeaux style Red Blend",
+    "country": "Turkey",
+    "points": 88
+  },
+  {
+    "variety": "Bordeaux style Red Blend",
+    "country": "US",
+    "points": 90
+  },
+  {
+    "variety": "Bordeaux style White Blend",
+    "country": "Argentina",
+    "points": 83
+  },
+  {
+    "variety": "Bordeaux style White Blend",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Bordeaux style White Blend",
+    "country": "South Africa",
+    "points": 91
+  },
+  {
+    "variety": "Bordeaux style White Blend",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Bovale",
+    "country": "Italy",
+    "points": 90
+  },
+  {
+    "variety": "Brachetto",
+    "country": "Italy",
+    "points": 84
+  },
+  {
+    "variety": "Braucol",
+    "country": "France",
+    "points": 91
+  },
+  {
+    "variety": "Bual",
+    "country": "Portugal",
+    "points": 94
+  },
+  {
+    "variety": "Códega do Larinho",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Cabernet",
+    "country": "Canada",
+    "points": 88
+  },
+  {
+    "variety": "Cabernet",
+    "country": "France",
+    "points": 85
+  },
+  {
+    "variety": "Cabernet",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet",
+    "country": "South Africa",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Blend",
+    "country": "Argentina",
+    "points": 88
+  },
+  {
+    "variety": "Cabernet Blend",
+    "country": "Australia",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Blend",
+    "country": "Chile",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Blend",
+    "country": "China",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Blend",
+    "country": "France",
+    "points": 84
+  },
+  {
+    "variety": "Cabernet Blend",
+    "country": "Greece",
+    "points": 85
+  },
+  {
+    "variety": "Cabernet Blend",
+    "country": "Hungary",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Blend",
+    "country": "Israel",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet Blend",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Cabernet Blend",
+    "country": "Mexico",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet Blend",
+    "country": "Morocco",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Blend",
+    "country": "Portugal",
+    "points": 86
+  },
+  {
+    "variety": "Cabernet Blend",
+    "country": "South Africa",
+    "points": 88
+  },
+  {
+    "variety": "Cabernet Blend",
+    "country": "Spain",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Blend",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Franc",
+    "country": "Argentina",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Franc",
+    "country": "Austria",
+    "points": 92
+  },
+  {
+    "variety": "Cabernet Franc",
+    "country": "Brazil",
+    "points": 84
+  },
+  {
+    "variety": "Cabernet Franc",
+    "country": "Bulgaria",
+    "points": 88
+  },
+  {
+    "variety": "Cabernet Franc",
+    "country": "Canada",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Franc",
+    "country": "Chile",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet Franc",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Cabernet Franc",
+    "country": "Hungary",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet Franc",
+    "country": "Israel",
+    "points": 88
+  },
+  {
+    "variety": "Cabernet Franc",
+    "country": "Italy",
+    "points": 91
+  },
+  {
+    "variety": "Cabernet Franc",
+    "country": "Mexico",
+    "points": 86
+  },
+  {
+    "variety": "Cabernet Franc",
+    "country": "Slovenia",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Franc",
+    "country": "South Africa",
+    "points": 90
+  },
+  {
+    "variety": "Cabernet Franc",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "Cabernet Franc",
+    "country": "Uruguay",
+    "points": 85
+  },
+  {
+    "variety": "Cabernet Franc",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Cabernet Franc",
+    "country": "(blank)",
+    "points": 92
+  },
+  {
+    "variety": "Cabernet Franc Cabernet Sauvignon",
+    "country": "Argentina",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Franc Cabernet Sauvignon",
+    "country": "France",
+    "points": 90
+  },
+  {
+    "variety": "Cabernet Franc Cabernet Sauvignon",
+    "country": "Israel",
+    "points": 90
+  },
+  {
+    "variety": "Cabernet Franc Cabernet Sauvignon",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Cabernet Franc Carmenère",
+    "country": "Chile",
+    "points": 86
+  },
+  {
+    "variety": "Cabernet Franc Lemberger",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet Franc Malbec",
+    "country": "Argentina",
+    "points": 91
+  },
+  {
+    "variety": "Cabernet Franc Merlot",
+    "country": "Austria",
+    "points": 92
+  },
+  {
+    "variety": "Cabernet Franc Merlot",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Malbec",
+    "country": "Argentina",
+    "points": 86
+  },
+  {
+    "variety": "Cabernet Merlot",
+    "country": "Australia",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet Merlot",
+    "country": "Austria",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet Merlot",
+    "country": "Canada",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Merlot",
+    "country": "France",
+    "points": 85
+  },
+  {
+    "variety": "Cabernet Merlot",
+    "country": "Israel",
+    "points": 90
+  },
+  {
+    "variety": "Cabernet Merlot",
+    "country": "New Zealand",
+    "points": 90
+  },
+  {
+    "variety": "Cabernet Merlot",
+    "country": "US",
+    "points": 85
+  },
+  {
+    "variety": "Cabernet Moravia",
+    "country": "Czech Republic",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet Pfeffer",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Cabernet Sauvignon",
+    "country": "Argentina",
+    "points": 86
+  },
+  {
+    "variety": "Cabernet Sauvignon",
+    "country": "Australia",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Sauvignon",
+    "country": "Austria",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet Sauvignon",
+    "country": "Brazil",
+    "points": 83
+  },
+  {
+    "variety": "Cabernet Sauvignon",
+    "country": "Bulgaria",
+    "points": 88
+  },
+  {
+    "variety": "Cabernet Sauvignon",
+    "country": "Canada",
+    "points": 90
+  },
+  {
+    "variety": "Cabernet Sauvignon",
+    "country": "Chile",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet Sauvignon",
+    "country": "France",
+    "points": 85
+  },
+  {
+    "variety": "Cabernet Sauvignon",
+    "country": "Greece",
+    "points": 86
+  },
+  {
+    "variety": "Cabernet Sauvignon",
+    "country": "Israel",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Sauvignon",
+    "country": "Italy",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Sauvignon",
+    "country": "Mexico",
+    "points": 84
+  },
+  {
+    "variety": "Cabernet Sauvignon",
+    "country": "Moldova",
+    "points": 88
+  },
+  {
+    "variety": "Cabernet Sauvignon",
+    "country": "New Zealand",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet Sauvignon",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Cabernet Sauvignon",
+    "country": "Romania",
+    "points": 86
+  },
+  {
+    "variety": "Cabernet Sauvignon",
+    "country": "Slovenia",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Sauvignon",
+    "country": "South Africa",
+    "points": 88
+  },
+  {
+    "variety": "Cabernet Sauvignon",
+    "country": "Spain",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet Sauvignon",
+    "country": "Turkey",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Sauvignon",
+    "country": "Ukraine",
+    "points": 84
+  },
+  {
+    "variety": "Cabernet Sauvignon",
+    "country": "Uruguay",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet Sauvignon",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Sauvignon",
+    "country": "(blank)",
+    "points": 90
+  },
+  {
+    "variety": "Cabernet Sauvignon Barbera",
+    "country": "US",
+    "points": 84
+  },
+  {
+    "variety": "Cabernet Sauvignon Cabernet Franc",
+    "country": "Argentina",
+    "points": 84
+  },
+  {
+    "variety": "Cabernet Sauvignon Cabernet Franc",
+    "country": "Chile",
+    "points": 90
+  },
+  {
+    "variety": "Cabernet Sauvignon Cabernet Franc",
+    "country": "Israel",
+    "points": 92
+  },
+  {
+    "variety": "Cabernet Sauvignon Cabernet Franc",
+    "country": "South Africa",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet Sauvignon Cabernet Franc",
+    "country": "Spain",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Sauvignon Cabernet Franc",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Sauvignon Carmenère",
+    "country": "Chile",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet Sauvignon Carmenère",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet Sauvignon Grenache",
+    "country": "Greece",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet Sauvignon Grenache",
+    "country": "Morocco",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Sauvignon Malbec",
+    "country": "Argentina",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet Sauvignon Malbec",
+    "country": "Chile",
+    "points": 86
+  },
+  {
+    "variety": "Cabernet Sauvignon Malbec",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Sauvignon Merlot",
+    "country": "Argentina",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet Sauvignon Merlot",
+    "country": "Australia",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Sauvignon Merlot",
+    "country": "Brazil",
+    "points": 83
+  },
+  {
+    "variety": "Cabernet Sauvignon Merlot",
+    "country": "Chile",
+    "points": 86
+  },
+  {
+    "variety": "Cabernet Sauvignon Merlot",
+    "country": "France",
+    "points": 85
+  },
+  {
+    "variety": "Cabernet Sauvignon Merlot",
+    "country": "Greece",
+    "points": 88
+  },
+  {
+    "variety": "Cabernet Sauvignon Merlot",
+    "country": "Israel",
+    "points": 88
+  },
+  {
+    "variety": "Cabernet Sauvignon Merlot",
+    "country": "Italy",
+    "points": 92
+  },
+  {
+    "variety": "Cabernet Sauvignon Merlot",
+    "country": "Mexico",
+    "points": 86
+  },
+  {
+    "variety": "Cabernet Sauvignon Merlot",
+    "country": "New Zealand",
+    "points": 90
+  },
+  {
+    "variety": "Cabernet Sauvignon Merlot",
+    "country": "Slovenia",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Sauvignon Merlot",
+    "country": "South Africa",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet Sauvignon Merlot",
+    "country": "Spain",
+    "points": 88
+  },
+  {
+    "variety": "Cabernet Sauvignon Merlot",
+    "country": "Turkey",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet Sauvignon Merlot",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Cabernet Sauvignon Merlot Shiraz",
+    "country": "Australia",
+    "points": 91
+  },
+  {
+    "variety": "Cabernet Sauvignon Merlot Shiraz",
+    "country": "South Africa",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet Sauvignon Sangiovese",
+    "country": "Australia",
+    "points": 88
+  },
+  {
+    "variety": "Cabernet Sauvignon Sangiovese",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Sauvignon Shiraz",
+    "country": "Argentina",
+    "points": 85
+  },
+  {
+    "variety": "Cabernet Sauvignon Shiraz",
+    "country": "Australia",
+    "points": 90
+  },
+  {
+    "variety": "Cabernet Sauvignon Shiraz",
+    "country": "Israel",
+    "points": 88
+  },
+  {
+    "variety": "Cabernet Sauvignon Shiraz",
+    "country": "Italy",
+    "points": 86
+  },
+  {
+    "variety": "Cabernet Sauvignon Shiraz",
+    "country": "South Africa",
+    "points": 90
+  },
+  {
+    "variety": "Cabernet Sauvignon Shiraz",
+    "country": "Spain",
+    "points": 90
+  },
+  {
+    "variety": "Cabernet Sauvignon Shiraz",
+    "country": "US",
+    "points": 83
+  },
+  {
+    "variety": "Cabernet Sauvignon Syrah",
+    "country": "Argentina",
+    "points": 86
+  },
+  {
+    "variety": "Cabernet Sauvignon Syrah",
+    "country": "Bulgaria",
+    "points": 90
+  },
+  {
+    "variety": "Cabernet Sauvignon Syrah",
+    "country": "Canada",
+    "points": 88
+  },
+  {
+    "variety": "Cabernet Sauvignon Syrah",
+    "country": "Chile",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet Sauvignon Syrah",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Cabernet Sauvignon Syrah",
+    "country": "Greece",
+    "points": 88
+  },
+  {
+    "variety": "Cabernet Sauvignon Syrah",
+    "country": "Peru",
+    "points": 84
+  },
+  {
+    "variety": "Cabernet Sauvignon Syrah",
+    "country": "Portugal",
+    "points": 90
+  },
+  {
+    "variety": "Cabernet Sauvignon Syrah",
+    "country": "Spain",
+    "points": 90
+  },
+  {
+    "variety": "Cabernet Sauvignon Syrah",
+    "country": "US",
+    "points": 90
+  },
+  {
+    "variety": "Cabernet Sauvignon Tempranillo",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "Cabernet Sauvignon Tempranillo",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Cabernet Shiraz",
+    "country": "Australia",
+    "points": 96
+  },
+  {
+    "variety": "Cabernet Shiraz",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Cabernet Syrah",
+    "country": "Argentina",
+    "points": 88
+  },
+  {
+    "variety": "Cabernet Syrah",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Cabernet Syrah",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Canaiolo",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Cannonau",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Caprettone",
+    "country": "Italy",
+    "points": 92
+  },
+  {
+    "variety": "Carcajolu",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Cariñena Garnacha",
+    "country": "Spain",
+    "points": 90
+  },
+  {
+    "variety": "Carignan",
+    "country": "Chile",
+    "points": 88
+  },
+  {
+    "variety": "Carignan",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Carignan",
+    "country": "Israel",
+    "points": 90
+  },
+  {
+    "variety": "Carignan",
+    "country": "Spain",
+    "points": 93
+  },
+  {
+    "variety": "Carignan",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Carignan Grenache",
+    "country": "France",
+    "points": 90
+  },
+  {
+    "variety": "Carignan Grenache",
+    "country": "Spain",
+    "points": 89
+  },
+  {
+    "variety": "Carignan Grenache",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Carignan Syrah",
+    "country": "France",
+    "points": 91
+  },
+  {
+    "variety": "Carignane",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Carignano",
+    "country": "Italy",
+    "points": 90
+  },
+  {
+    "variety": "Carineña",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "Carmenère",
+    "country": "Canada",
+    "points": 90
+  },
+  {
+    "variety": "Carmenère",
+    "country": "Chile",
+    "points": 86
+  },
+  {
+    "variety": "Carmenère",
+    "country": "Italy",
+    "points": 90
+  },
+  {
+    "variety": "Carmenère",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Carmenère Cabernet Sauvignon",
+    "country": "Chile",
+    "points": 88
+  },
+  {
+    "variety": "Carmenère Syrah",
+    "country": "Chile",
+    "points": 87
+  },
+  {
+    "variety": "Carricante",
+    "country": "Italy",
+    "points": 90
+  },
+  {
+    "variety": "Casavecchia",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Castelão",
+    "country": "Portugal",
+    "points": 87
+  },
+  {
+    "variety": "Catalanesca",
+    "country": "Italy",
+    "points": 89
+  },
+  {
+    "variety": "Catarratto",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Cayuga",
+    "country": "US",
+    "points": 85
+  },
+  {
+    "variety": "Centesimino",
+    "country": "Italy",
+    "points": 92
+  },
+  {
+    "variety": "Cerceal",
+    "country": "Portugal",
+    "points": 90
+  },
+  {
+    "variety": "Cercial",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Cesanese",
+    "country": "Italy",
+    "points": 90
+  },
+  {
+    "variety": "Cesanese d'Affile",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Chambourcin",
+    "country": "US",
+    "points": 84
+  },
+  {
+    "variety": "Champagne Blend",
+    "country": "Argentina",
+    "points": 85
+  },
+  {
+    "variety": "Champagne Blend",
+    "country": "Australia",
+    "points": 86
+  },
+  {
+    "variety": "Champagne Blend",
+    "country": "Austria",
+    "points": 88
+  },
+  {
+    "variety": "Champagne Blend",
+    "country": "Brazil",
+    "points": 86
+  },
+  {
+    "variety": "Champagne Blend",
+    "country": "Chile",
+    "points": 83
+  },
+  {
+    "variety": "Champagne Blend",
+    "country": "France",
+    "points": 90
+  },
+  {
+    "variety": "Champagne Blend",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Champagne Blend",
+    "country": "Moldova",
+    "points": 83
+  },
+  {
+    "variety": "Champagne Blend",
+    "country": "New Zealand",
+    "points": 91
+  },
+  {
+    "variety": "Champagne Blend",
+    "country": "South Africa",
+    "points": 87
+  },
+  {
+    "variety": "Champagne Blend",
+    "country": "Spain",
+    "points": 84
+  },
+  {
+    "variety": "Champagne Blend",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Chancellor",
+    "country": "US",
+    "points": 81
+  },
+  {
+    "variety": "Charbono",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Chardonel",
+    "country": "US",
+    "points": 83
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Argentina",
+    "points": 85
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Australia",
+    "points": 87
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Austria",
+    "points": 90
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Brazil",
+    "points": 84
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Bulgaria",
+    "points": 89
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Canada",
+    "points": 89
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Chile",
+    "points": 85
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "England",
+    "points": 92
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Germany",
+    "points": 89
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Greece",
+    "points": 88
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Hungary",
+    "points": 89
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Israel",
+    "points": 87
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Lebanon",
+    "points": 88
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Macedonia",
+    "points": 87
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Mexico",
+    "points": 84
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Moldova",
+    "points": 87
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Morocco",
+    "points": 88
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "New Zealand",
+    "points": 89
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Peru",
+    "points": 82
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Romania",
+    "points": 86
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Slovenia",
+    "points": 89
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "South Africa",
+    "points": 88
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Turkey",
+    "points": 89
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Ukraine",
+    "points": 85
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "Uruguay",
+    "points": 81
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Chardonnay",
+    "country": "(blank)",
+    "points": 89
+  },
+  {
+    "variety": "Chardonnay Albariño",
+    "country": "US",
+    "points": 92
+  },
+  {
+    "variety": "Chardonnay Pinot Blanc",
+    "country": "Austria",
+    "points": 91
+  },
+  {
+    "variety": "Chardonnay Pinot Blanc",
+    "country": "Germany",
+    "points": 87
+  },
+  {
+    "variety": "Chardonnay Pinot Blanc",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Chardonnay Pinot Gris",
+    "country": "France",
+    "points": 85
+  },
+  {
+    "variety": "Chardonnay Riesling",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Chardonnay Sauvignon",
+    "country": "Argentina",
+    "points": 85
+  },
+  {
+    "variety": "Chardonnay Sauvignon",
+    "country": "France",
+    "points": 87
+  },
+  {
+    "variety": "Chardonnay Sauvignon",
+    "country": "Israel",
+    "points": 89
+  },
+  {
+    "variety": "Chardonnay Sauvignon Blanc",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Chardonnay Sauvignon Blanc",
+    "country": "Israel",
+    "points": 88
+  },
+  {
+    "variety": "Chardonnay Sauvignon Blanc",
+    "country": "Spain",
+    "points": 87
+  },
+  {
+    "variety": "Chardonnay Semillon",
+    "country": "Argentina",
+    "points": 81
+  },
+  {
+    "variety": "Chardonnay Semillon",
+    "country": "Australia",
+    "points": 90
+  },
+  {
+    "variety": "Chardonnay Semillon",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Chardonnay Viognier",
+    "country": "Argentina",
+    "points": 85
+  },
+  {
+    "variety": "Chardonnay Viognier",
+    "country": "Chile",
+    "points": 84
+  },
+  {
+    "variety": "Chardonnay Viognier",
+    "country": "France",
+    "points": 86
+  },
+  {
+    "variety": "Chardonnay Viognier",
+    "country": "Portugal",
+    "points": 86
+  },
+  {
+    "variety": "Chardonnay Viognier",
+    "country": "South Africa",
+    "points": 87
+  },
+  {
+    "variety": "Chardonnay Viognier",
+    "country": "US",
+    "points": 85
+  },
+  {
+    "variety": "Chardonnay Weissburgunder",
+    "country": "Austria",
+    "points": 94
+  },
+  {
+    "variety": "Chardonnay Weissburgunder",
+    "country": "Germany",
+    "points": 90
+  },
+  {
+    "variety": "Chasselas",
+    "country": "Canada",
+    "points": 90
+  },
+  {
+    "variety": "Chasselas",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Chasselas",
+    "country": "Switzerland",
+    "points": 90
+  },
+  {
+    "variety": "Chelois",
+    "country": "US",
+    "points": 85
+  },
+  {
+    "variety": "Chenin Blanc",
+    "country": "Argentina",
+    "points": 84
+  },
+  {
+    "variety": "Chenin Blanc",
+    "country": "Australia",
+    "points": 87
+  },
+  {
+    "variety": "Chenin Blanc",
+    "country": "Canada",
+    "points": 90
+  },
+  {
+    "variety": "Chenin Blanc",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Chenin Blanc",
+    "country": "India",
+    "points": 89
+  },
+  {
+    "variety": "Chenin Blanc",
+    "country": "Israel",
+    "points": 88
+  },
+  {
+    "variety": "Chenin Blanc",
+    "country": "Mexico",
+    "points": 83
+  },
+  {
+    "variety": "Chenin Blanc",
+    "country": "New Zealand",
+    "points": 90
+  },
+  {
+    "variety": "Chenin Blanc",
+    "country": "Portugal",
+    "points": 90
+  },
+  {
+    "variety": "Chenin Blanc",
+    "country": "South Africa",
+    "points": 88
+  },
+  {
+    "variety": "Chenin Blanc",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Chenin Blanc Chardonnay",
+    "country": "Argentina",
+    "points": 86
+  },
+  {
+    "variety": "Chenin Blanc Chardonnay",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Chenin Blanc Sauvignon Blanc",
+    "country": "South Africa",
+    "points": 85
+  },
+  {
+    "variety": "Chenin Blanc Viognier",
+    "country": "South Africa",
+    "points": 90
+  },
+  {
+    "variety": "Chenin Blanc Viognier",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Chinuri",
+    "country": "Georgia",
+    "points": 86
+  },
+  {
+    "variety": "Chinuri",
+    "country": "(blank)",
+    "points": 87
+  },
+  {
+    "variety": "Ciliegiolo",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Cinsault",
+    "country": "Chile",
+    "points": 89
+  },
+  {
+    "variety": "Cinsault",
+    "country": "France",
+    "points": 86
+  },
+  {
+    "variety": "Cinsault",
+    "country": "Mexico",
+    "points": 80
+  },
+  {
+    "variety": "Cinsault",
+    "country": "South Africa",
+    "points": 91
+  },
+  {
+    "variety": "Cinsault",
+    "country": "US",
+    "points": 90
+  },
+  {
+    "variety": "Clairette",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Clairette",
+    "country": "South Africa",
+    "points": 90
+  },
+  {
+    "variety": "Clairette",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Claret",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Cococciola",
+    "country": "Italy",
+    "points": 86
+  },
+  {
+    "variety": "Coda di Volpe",
+    "country": "Italy",
+    "points": 85
+  },
+  {
+    "variety": "Colombard",
+    "country": "France",
+    "points": 86
+  },
+  {
+    "variety": "Colombard",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Colombard Sauvignon Blanc",
+    "country": "France",
+    "points": 85
+  },
+  {
+    "variety": "Colombard Ugni Blanc",
+    "country": "France",
+    "points": 85
+  },
+  {
+    "variety": "Colorino",
+    "country": "Italy",
+    "points": 86
+  },
+  {
+    "variety": "Cortese",
+    "country": "Italy",
+    "points": 86
+  },
+  {
+    "variety": "Cortese",
+    "country": "US",
+    "points": 85
+  },
+  {
+    "variety": "Corvina",
+    "country": "Italy",
+    "points": 89
+  },
+  {
+    "variety": "Corvina, Rondinella, Molinara",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Counoise",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Dafni",
+    "country": "Greece",
+    "points": 85
+  },
+  {
+    "variety": "Debit",
+    "country": "Croatia",
+    "points": 89
+  },
+  {
+    "variety": "Debit",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Diamond",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Doña Blanca",
+    "country": "Spain",
+    "points": 84
+  },
+  {
+    "variety": "Dolcetto",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Dolcetto",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Dornfelder",
+    "country": "Germany",
+    "points": 86
+  },
+  {
+    "variety": "Dornfelder",
+    "country": "US",
+    "points": 90
+  },
+  {
+    "variety": "Duras",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Durella",
+    "country": "Italy",
+    "points": 90
+  },
+  {
+    "variety": "Durif",
+    "country": "Australia",
+    "points": 86
+  },
+  {
+    "variety": "Edelzwicker",
+    "country": "France",
+    "points": 90
+  },
+  {
+    "variety": "Edelzwicker",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Ekigaïna",
+    "country": "France",
+    "points": 85
+  },
+  {
+    "variety": "Elbling",
+    "country": "Germany",
+    "points": 88
+  },
+  {
+    "variety": "Emir",
+    "country": "Turkey",
+    "points": 87
+  },
+  {
+    "variety": "Encruzado",
+    "country": "Portugal",
+    "points": 90
+  },
+  {
+    "variety": "Erbaluce",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Espadeiro",
+    "country": "Portugal",
+    "points": 84
+  },
+  {
+    "variety": "Falanghina",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Falanghina",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Favorita",
+    "country": "Italy",
+    "points": 90
+  },
+  {
+    "variety": "Fer Servadou",
+    "country": "France",
+    "points": 87
+  },
+  {
+    "variety": "Fernão Pires",
+    "country": "Portugal",
+    "points": 87
+  },
+  {
+    "variety": "Feteasca",
+    "country": "Moldova",
+    "points": 88
+  },
+  {
+    "variety": "Feteasca",
+    "country": "Romania",
+    "points": 87
+  },
+  {
+    "variety": "Feteasca Neagra",
+    "country": "Moldova",
+    "points": 88
+  },
+  {
+    "variety": "Feteasca Neagra",
+    "country": "Romania",
+    "points": 88
+  },
+  {
+    "variety": "Feteascǎ Regalǎ",
+    "country": "Moldova",
+    "points": 87
+  },
+  {
+    "variety": "Feteascǎ Regalǎ",
+    "country": "Romania",
+    "points": 87
+  },
+  {
+    "variety": "Fiano",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Fiano",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Folle Blanche",
+    "country": "France",
+    "points": 85
+  },
+  {
+    "variety": "Forcallà",
+    "country": "Spain",
+    "points": 83
+  },
+  {
+    "variety": "Früburgunder",
+    "country": "Germany",
+    "points": 90
+  },
+  {
+    "variety": "Francisa",
+    "country": "Italy",
+    "points": 91
+  },
+  {
+    "variety": "Franconia",
+    "country": "Italy",
+    "points": 86
+  },
+  {
+    "variety": "Frankovka",
+    "country": "Czech Republic",
+    "points": 88
+  },
+  {
+    "variety": "Frappato",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Freisa",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Friulano",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Fumé Blanc",
+    "country": "Israel",
+    "points": 86
+  },
+  {
+    "variety": "Fumé Blanc",
+    "country": "South Africa",
+    "points": 88
+  },
+  {
+    "variety": "Fumé Blanc",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Furmint",
+    "country": "Austria",
+    "points": 92
+  },
+  {
+    "variety": "Furmint",
+    "country": "Hungary",
+    "points": 90
+  },
+  {
+    "variety": "Furmint",
+    "country": "Slovenia",
+    "points": 83
+  },
+  {
+    "variety": "Furmint",
+    "country": "(blank)",
+    "points": 89
+  },
+  {
+    "variety": "G S M",
+    "country": "Australia",
+    "points": 89
+  },
+  {
+    "variety": "G S M",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "G S M",
+    "country": "South Africa",
+    "points": 89
+  },
+  {
+    "variety": "G S M",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Gaglioppo",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Gamay",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Gamay",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Gamay Noir",
+    "country": "Canada",
+    "points": 88
+  },
+  {
+    "variety": "Gamay Noir",
+    "country": "France",
+    "points": 87
+  },
+  {
+    "variety": "Gamay Noir",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Gamza",
+    "country": "Bulgaria",
+    "points": 89
+  },
+  {
+    "variety": "Garganega",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Garnacha",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "Garnacha",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Garnacha Blanca",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "Garnacha Blanca",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Garnacha Blend",
+    "country": "Spain",
+    "points": 88
+  },
+  {
+    "variety": "Garnacha Cabernet",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Garnacha Cariñena",
+    "country": "Spain",
+    "points": 93
+  },
+  {
+    "variety": "Garnacha Monastrell",
+    "country": "Spain",
+    "points": 87
+  },
+  {
+    "variety": "Garnacha Syrah",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Garnacha Tempranillo",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "Garnacha Tintorera",
+    "country": "Spain",
+    "points": 87
+  },
+  {
+    "variety": "Gelber Muskateller",
+    "country": "Austria",
+    "points": 89
+  },
+  {
+    "variety": "Gelber Muskateller",
+    "country": "(blank)",
+    "points": 92
+  },
+  {
+    "variety": "Gelber Traminer",
+    "country": "Austria",
+    "points": 95
+  },
+  {
+    "variety": "Gewürztraminer",
+    "country": "Argentina",
+    "points": 84
+  },
+  {
+    "variety": "Gewürztraminer",
+    "country": "Austria",
+    "points": 89
+  },
+  {
+    "variety": "Gewürztraminer",
+    "country": "Canada",
+    "points": 89
+  },
+  {
+    "variety": "Gewürztraminer",
+    "country": "Chile",
+    "points": 85
+  },
+  {
+    "variety": "Gewürztraminer",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Gewürztraminer",
+    "country": "Germany",
+    "points": 88
+  },
+  {
+    "variety": "Gewürztraminer",
+    "country": "Israel",
+    "points": 89
+  },
+  {
+    "variety": "Gewürztraminer",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Gewürztraminer",
+    "country": "New Zealand",
+    "points": 88
+  },
+  {
+    "variety": "Gewürztraminer",
+    "country": "Portugal",
+    "points": 85
+  },
+  {
+    "variety": "Gewürztraminer",
+    "country": "Romania",
+    "points": 86
+  },
+  {
+    "variety": "Gewürztraminer",
+    "country": "South Africa",
+    "points": 89
+  },
+  {
+    "variety": "Gewürztraminer",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Gewürztraminer",
+    "country": "(blank)",
+    "points": 89
+  },
+  {
+    "variety": "Gewürztraminer Riesling",
+    "country": "Canada",
+    "points": 83
+  },
+  {
+    "variety": "Gewürztraminer Riesling",
+    "country": "Chile",
+    "points": 88
+  },
+  {
+    "variety": "Gewürztraminer Riesling",
+    "country": "Germany",
+    "points": 86
+  },
+  {
+    "variety": "Gewürztraminer Riesling",
+    "country": "Portugal",
+    "points": 82
+  },
+  {
+    "variety": "Gewürztraminer Riesling",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Glera",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Godello",
+    "country": "Spain",
+    "points": 87
+  },
+  {
+    "variety": "Gouveio",
+    "country": "Portugal",
+    "points": 89
+  },
+  {
+    "variety": "Grüner Veltliner",
+    "country": "Austria",
+    "points": 90
+  },
+  {
+    "variety": "Grüner Veltliner",
+    "country": "Hungary",
+    "points": 87
+  },
+  {
+    "variety": "Grüner Veltliner",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Grüner Veltliner",
+    "country": "New Zealand",
+    "points": 89
+  },
+  {
+    "variety": "Grüner Veltliner",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Graševina",
+    "country": "Croatia",
+    "points": 89
+  },
+  {
+    "variety": "Graciano",
+    "country": "Spain",
+    "points": 88
+  },
+  {
+    "variety": "Graciano",
+    "country": "US",
+    "points": 90
+  },
+  {
+    "variety": "Gragnano",
+    "country": "Italy",
+    "points": 83
+  },
+  {
+    "variety": "Grauburgunder",
+    "country": "Austria",
+    "points": 89
+  },
+  {
+    "variety": "Grauburgunder",
+    "country": "Germany",
+    "points": 88
+  },
+  {
+    "variety": "Grauburgunder",
+    "country": "(blank)",
+    "points": 90
+  },
+  {
+    "variety": "Grecanico",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Grechetto",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Greco",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Greco",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Greco Bianco",
+    "country": "Italy",
+    "points": 86
+  },
+  {
+    "variety": "Grenache",
+    "country": "Australia",
+    "points": 90
+  },
+  {
+    "variety": "Grenache",
+    "country": "Croatia",
+    "points": 88
+  },
+  {
+    "variety": "Grenache",
+    "country": "Egypt",
+    "points": 84
+  },
+  {
+    "variety": "Grenache",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Grenache",
+    "country": "Italy",
+    "points": 90
+  },
+  {
+    "variety": "Grenache",
+    "country": "Mexico",
+    "points": 85
+  },
+  {
+    "variety": "Grenache",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "Grenache",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Grenache Blanc",
+    "country": "France",
+    "points": 91
+  },
+  {
+    "variety": "Grenache Blanc",
+    "country": "Spain",
+    "points": 87
+  },
+  {
+    "variety": "Grenache Blanc",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Grenache Blend",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Grenache Blend",
+    "country": "US",
+    "points": 90
+  },
+  {
+    "variety": "Grenache Carignan",
+    "country": "France",
+    "points": 90
+  },
+  {
+    "variety": "Grenache Carignan",
+    "country": "Spain",
+    "points": 89
+  },
+  {
+    "variety": "Grenache Carignan",
+    "country": "US",
+    "points": 91
+  },
+  {
+    "variety": "Grenache Gris",
+    "country": "France",
+    "points": 87
+  },
+  {
+    "variety": "Grenache Mourvèdre",
+    "country": "France",
+    "points": 92
+  },
+  {
+    "variety": "Grenache Mourvèdre",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Grenache Noir",
+    "country": "France",
+    "points": 86
+  },
+  {
+    "variety": "Grenache Noir",
+    "country": "US",
+    "points": 91
+  },
+  {
+    "variety": "Grenache Shiraz",
+    "country": "Australia",
+    "points": 88
+  },
+  {
+    "variety": "Grenache Syrah",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Grenache Syrah",
+    "country": "South Africa",
+    "points": 91
+  },
+  {
+    "variety": "Grenache Syrah",
+    "country": "Spain",
+    "points": 88
+  },
+  {
+    "variety": "Grenache Syrah",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Grignolino",
+    "country": "Italy",
+    "points": 86
+  },
+  {
+    "variety": "Grillo",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Grolleau",
+    "country": "France",
+    "points": 87
+  },
+  {
+    "variety": "Groppello",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Gros and Petit Manseng",
+    "country": "France",
+    "points": 90
+  },
+  {
+    "variety": "Gros Manseng",
+    "country": "Austria",
+    "points": 89
+  },
+  {
+    "variety": "Gros Manseng",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Gros Plant",
+    "country": "France",
+    "points": 86
+  },
+  {
+    "variety": "Hárslevelü",
+    "country": "Hungary",
+    "points": 90
+  },
+  {
+    "variety": "Hondarrabi Zuri",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "Incrocio Manzoni",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Insolia",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Inzolia",
+    "country": "Italy",
+    "points": 86
+  },
+  {
+    "variety": "Irsai Oliver",
+    "country": "Hungary",
+    "points": 87
+  },
+  {
+    "variety": "Jacquère",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Jacquez",
+    "country": "US",
+    "points": 85
+  },
+  {
+    "variety": "Jaen",
+    "country": "Portugal",
+    "points": 90
+  },
+  {
+    "variety": "Jaen",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "Jampal",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Johannisberg Riesling",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Kadarka",
+    "country": "Hungary",
+    "points": 88
+  },
+  {
+    "variety": "Kalecik Karasi",
+    "country": "Turkey",
+    "points": 89
+  },
+  {
+    "variety": "Kangoun",
+    "country": "Armenia",
+    "points": 87
+  },
+  {
+    "variety": "Karalahna",
+    "country": "Turkey",
+    "points": 87
+  },
+  {
+    "variety": "Karasakiz",
+    "country": "Turkey",
+    "points": 89
+  },
+  {
+    "variety": "Kekfrankos",
+    "country": "Hungary",
+    "points": 87
+  },
+  {
+    "variety": "Kerner",
+    "country": "Italy",
+    "points": 89
+  },
+  {
+    "variety": "Kerner",
+    "country": "US",
+    "points": 90
+  },
+  {
+    "variety": "Kinali Yapincak",
+    "country": "Turkey",
+    "points": 84
+  },
+  {
+    "variety": "Kisi",
+    "country": "Georgia",
+    "points": 87
+  },
+  {
+    "variety": "Kotsifali",
+    "country": "Greece",
+    "points": 92
+  },
+  {
+    "variety": "Kuntra",
+    "country": "Turkey",
+    "points": 86
+  },
+  {
+    "variety": "Lagrein",
+    "country": "Italy",
+    "points": 89
+  },
+  {
+    "variety": "Lagrein",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Lambrusco",
+    "country": "Italy",
+    "points": 85
+  },
+  {
+    "variety": "Lambrusco di Sorbara",
+    "country": "Italy",
+    "points": 90
+  },
+  {
+    "variety": "Lambrusco Grasparossa",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Lambrusco Salamino",
+    "country": "Italy",
+    "points": 89
+  },
+  {
+    "variety": "Lemberger",
+    "country": "Germany",
+    "points": 88
+  },
+  {
+    "variety": "Lemberger",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Listán Negro",
+    "country": "Spain",
+    "points": 88
+  },
+  {
+    "variety": "Loin de l'Oeil",
+    "country": "France",
+    "points": 91
+  },
+  {
+    "variety": "Loureiro",
+    "country": "Portugal",
+    "points": 87
+  },
+  {
+    "variety": "Loureiro Arinto",
+    "country": "Portugal",
+    "points": 86
+  },
+  {
+    "variety": "Müller Thurgau",
+    "country": "Germany",
+    "points": 90
+  },
+  {
+    "variety": "Müller Thurgau",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Müller Thurgau",
+    "country": "US",
+    "points": 85
+  },
+  {
+    "variety": "Macabeo",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Macabeo Chardonnay",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Macabeo Moscatel",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Madeira Blend",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Madeira Blend",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Madeleine Angevine",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Magliocco",
+    "country": "Italy",
+    "points": 89
+  },
+  {
+    "variety": "Malagousia",
+    "country": "Greece",
+    "points": 89
+  },
+  {
+    "variety": "Malagouzia",
+    "country": "Greece",
+    "points": 89
+  },
+  {
+    "variety": "Malagouzia Chardonnay",
+    "country": "Greece",
+    "points": 86
+  },
+  {
+    "variety": "Malbec",
+    "country": "Argentina",
+    "points": 88
+  },
+  {
+    "variety": "Malbec",
+    "country": "Australia",
+    "points": 87
+  },
+  {
+    "variety": "Malbec",
+    "country": "Bulgaria",
+    "points": 89
+  },
+  {
+    "variety": "Malbec",
+    "country": "Canada",
+    "points": 92
+  },
+  {
+    "variety": "Malbec",
+    "country": "Chile",
+    "points": 87
+  },
+  {
+    "variety": "Malbec",
+    "country": "France",
+    "points": 90
+  },
+  {
+    "variety": "Malbec",
+    "country": "Italy",
+    "points": 89
+  },
+  {
+    "variety": "Malbec",
+    "country": "New Zealand",
+    "points": 88
+  },
+  {
+    "variety": "Malbec",
+    "country": "Peru",
+    "points": 85
+  },
+  {
+    "variety": "Malbec",
+    "country": "Uruguay",
+    "points": 87
+  },
+  {
+    "variety": "Malbec",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Malbec Blend",
+    "country": "Argentina",
+    "points": 91
+  },
+  {
+    "variety": "Malbec Blend",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Malbec Bonarda",
+    "country": "Argentina",
+    "points": 86
+  },
+  {
+    "variety": "Malbec Cabernet",
+    "country": "Argentina",
+    "points": 92
+  },
+  {
+    "variety": "Malbec Cabernet Franc",
+    "country": "Argentina",
+    "points": 89
+  },
+  {
+    "variety": "Malbec Cabernet Franc",
+    "country": "France",
+    "points": 85
+  },
+  {
+    "variety": "Malbec Cabernet Sauvignon",
+    "country": "Argentina",
+    "points": 88
+  },
+  {
+    "variety": "Malbec Cabernet Sauvignon",
+    "country": "Chile",
+    "points": 86
+  },
+  {
+    "variety": "Malbec Cabernet Sauvignon",
+    "country": "US",
+    "points": 92
+  },
+  {
+    "variety": "Malbec Carménère",
+    "country": "Chile",
+    "points": 91
+  },
+  {
+    "variety": "Malbec Merlot",
+    "country": "Argentina",
+    "points": 86
+  },
+  {
+    "variety": "Malbec Merlot",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Malbec Merlot",
+    "country": "Peru",
+    "points": 85
+  },
+  {
+    "variety": "Malbec Merlot",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Malbec Petit Verdot",
+    "country": "Argentina",
+    "points": 91
+  },
+  {
+    "variety": "Malbec Syrah",
+    "country": "Argentina",
+    "points": 86
+  },
+  {
+    "variety": "Malbec Syrah",
+    "country": "Chile",
+    "points": 84
+  },
+  {
+    "variety": "Malbec Syrah",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Malbec Tannat",
+    "country": "Argentina",
+    "points": 85
+  },
+  {
+    "variety": "Malbec Tannat",
+    "country": "France",
+    "points": 92
+  },
+  {
+    "variety": "Malbec Tannat",
+    "country": "US",
+    "points": 91
+  },
+  {
+    "variety": "Malbec Tempranillo",
+    "country": "Argentina",
+    "points": 87
+  },
+  {
+    "variety": "Malvar",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Malvar",
+    "country": "Spain",
+    "points": 81
+  },
+  {
+    "variety": "Malvasia",
+    "country": "Croatia",
+    "points": 88
+  },
+  {
+    "variety": "Malvasia",
+    "country": "Greece",
+    "points": 85
+  },
+  {
+    "variety": "Malvasia",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Malvasia",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Malvasia",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Malvasia",
+    "country": "US",
+    "points": 85
+  },
+  {
+    "variety": "Malvasia Bianca",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Malvasia Bianca",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Malvasia di Candia",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Malvasia Fina",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Malvasia Istriana",
+    "country": "Croatia",
+    "points": 88
+  },
+  {
+    "variety": "Malvasia Istriana",
+    "country": "Italy",
+    "points": 85
+  },
+  {
+    "variety": "Malvasia Istriana",
+    "country": "Slovenia",
+    "points": 87
+  },
+  {
+    "variety": "Malvasia Nera",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Malvasia Viura",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Mandilaria",
+    "country": "Greece",
+    "points": 89
+  },
+  {
+    "variety": "Mansois",
+    "country": "France",
+    "points": 87
+  },
+  {
+    "variety": "Mantonico",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Manzoni",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Marawi",
+    "country": "Israel",
+    "points": 88
+  },
+  {
+    "variety": "Maria Gomes",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Maria Gomes Bical",
+    "country": "Portugal",
+    "points": 86
+  },
+  {
+    "variety": "Marquette",
+    "country": "US",
+    "points": 85
+  },
+  {
+    "variety": "Marsanne",
+    "country": "Australia",
+    "points": 89
+  },
+  {
+    "variety": "Marsanne",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Marsanne",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Marsanne Roussanne",
+    "country": "Australia",
+    "points": 88
+  },
+  {
+    "variety": "Marsanne Roussanne",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Marsanne Roussanne",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Marsanne Viognier",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Marselan",
+    "country": "France",
+    "points": 87
+  },
+  {
+    "variety": "Marselan",
+    "country": "Israel",
+    "points": 89
+  },
+  {
+    "variety": "Marzemino",
+    "country": "Italy",
+    "points": 86
+  },
+  {
+    "variety": "Mataro",
+    "country": "Australia",
+    "points": 91
+  },
+  {
+    "variety": "Mataro",
+    "country": "Spain",
+    "points": 90
+  },
+  {
+    "variety": "Mataro",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Maturana",
+    "country": "Spain",
+    "points": 87
+  },
+  {
+    "variety": "Mauzac",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Mavrodaphne",
+    "country": "Greece",
+    "points": 86
+  },
+  {
+    "variety": "Mavrokalavryta",
+    "country": "Greece",
+    "points": 86
+  },
+  {
+    "variety": "Mavrotragano",
+    "country": "Greece",
+    "points": 90
+  },
+  {
+    "variety": "Mavroudi",
+    "country": "Greece",
+    "points": 87
+  },
+  {
+    "variety": "Mavrud",
+    "country": "Bulgaria",
+    "points": 88
+  },
+  {
+    "variety": "Mazuelo",
+    "country": "Spain",
+    "points": 88
+  },
+  {
+    "variety": "Melnik",
+    "country": "(blank)",
+    "points": 89
+  },
+  {
+    "variety": "Melon",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Melon",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Mencía",
+    "country": "Spain",
+    "points": 89
+  },
+  {
+    "variety": "Meritage",
+    "country": "Canada",
+    "points": 91
+  },
+  {
+    "variety": "Meritage",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Merlot",
+    "country": "Argentina",
+    "points": 85
+  },
+  {
+    "variety": "Merlot",
+    "country": "Australia",
+    "points": 86
+  },
+  {
+    "variety": "Merlot",
+    "country": "Austria",
+    "points": 91
+  },
+  {
+    "variety": "Merlot",
+    "country": "Brazil",
+    "points": 84
+  },
+  {
+    "variety": "Merlot",
+    "country": "Bulgaria",
+    "points": 88
+  },
+  {
+    "variety": "Merlot",
+    "country": "Canada",
+    "points": 89
+  },
+  {
+    "variety": "Merlot",
+    "country": "Chile",
+    "points": 85
+  },
+  {
+    "variety": "Merlot",
+    "country": "France",
+    "points": 87
+  },
+  {
+    "variety": "Merlot",
+    "country": "Greece",
+    "points": 88
+  },
+  {
+    "variety": "Merlot",
+    "country": "Hungary",
+    "points": 89
+  },
+  {
+    "variety": "Merlot",
+    "country": "Israel",
+    "points": 87
+  },
+  {
+    "variety": "Merlot",
+    "country": "Italy",
+    "points": 89
+  },
+  {
+    "variety": "Merlot",
+    "country": "Mexico",
+    "points": 82
+  },
+  {
+    "variety": "Merlot",
+    "country": "Moldova",
+    "points": 87
+  },
+  {
+    "variety": "Merlot",
+    "country": "New Zealand",
+    "points": 89
+  },
+  {
+    "variety": "Merlot",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Merlot",
+    "country": "Romania",
+    "points": 86
+  },
+  {
+    "variety": "Merlot",
+    "country": "Slovenia",
+    "points": 89
+  },
+  {
+    "variety": "Merlot",
+    "country": "South Africa",
+    "points": 87
+  },
+  {
+    "variety": "Merlot",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Merlot",
+    "country": "Switzerland",
+    "points": 83
+  },
+  {
+    "variety": "Merlot",
+    "country": "Turkey",
+    "points": 86
+  },
+  {
+    "variety": "Merlot",
+    "country": "Ukraine",
+    "points": 84
+  },
+  {
+    "variety": "Merlot",
+    "country": "Uruguay",
+    "points": 84
+  },
+  {
+    "variety": "Merlot",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Merlot",
+    "country": "(blank)",
+    "points": 91
+  },
+  {
+    "variety": "Merlot Argaman",
+    "country": "Israel",
+    "points": 85
+  },
+  {
+    "variety": "Merlot Cabernet",
+    "country": "Chile",
+    "points": 86
+  },
+  {
+    "variety": "Merlot Cabernet",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Merlot Cabernet",
+    "country": "Italy",
+    "points": 86
+  },
+  {
+    "variety": "Merlot Cabernet",
+    "country": "New Zealand",
+    "points": 88
+  },
+  {
+    "variety": "Merlot Cabernet",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Merlot Cabernet Franc",
+    "country": "Argentina",
+    "points": 87
+  },
+  {
+    "variety": "Merlot Cabernet Franc",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Merlot Cabernet Franc",
+    "country": "New Zealand",
+    "points": 89
+  },
+  {
+    "variety": "Merlot Cabernet Franc",
+    "country": "Slovenia",
+    "points": 90
+  },
+  {
+    "variety": "Merlot Cabernet Franc",
+    "country": "South Africa",
+    "points": 84
+  },
+  {
+    "variety": "Merlot Cabernet Franc",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Merlot Cabernet Sauvignon",
+    "country": "Brazil",
+    "points": 86
+  },
+  {
+    "variety": "Merlot Cabernet Sauvignon",
+    "country": "France",
+    "points": 87
+  },
+  {
+    "variety": "Merlot Cabernet Sauvignon",
+    "country": "Israel",
+    "points": 85
+  },
+  {
+    "variety": "Merlot Cabernet Sauvignon",
+    "country": "Moldova",
+    "points": 87
+  },
+  {
+    "variety": "Merlot Cabernet Sauvignon",
+    "country": "South Africa",
+    "points": 87
+  },
+  {
+    "variety": "Merlot Cabernet Sauvignon",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "Merlot Cabernet Sauvignon",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Merlot Grenache",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Merlot Malbec",
+    "country": "France",
+    "points": 87
+  },
+  {
+    "variety": "Merlot Malbec",
+    "country": "New Zealand",
+    "points": 87
+  },
+  {
+    "variety": "Merlot Malbec",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Merlot Petite Verdot",
+    "country": "US",
+    "points": 83
+  },
+  {
+    "variety": "Merlot Shiraz",
+    "country": "South Africa",
+    "points": 86
+  },
+  {
+    "variety": "Merlot Syrah",
+    "country": "Bulgaria",
+    "points": 89
+  },
+  {
+    "variety": "Merlot Syrah",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Merlot Tannat",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Merseguera Sauvignon Blanc",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Meseguera",
+    "country": "Spain",
+    "points": 91
+  },
+  {
+    "variety": "Misket",
+    "country": "Turkey",
+    "points": 85
+  },
+  {
+    "variety": "Mission",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Molinara",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Monastrell",
+    "country": "Spain",
+    "points": 87
+  },
+  {
+    "variety": "Monastrell",
+    "country": "US",
+    "points": 91
+  },
+  {
+    "variety": "Monastrell Petit Verdot",
+    "country": "Spain",
+    "points": 88
+  },
+  {
+    "variety": "Monastrell Syrah",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "Mondeuse",
+    "country": "France",
+    "points": 87
+  },
+  {
+    "variety": "Mondeuse",
+    "country": "Italy",
+    "points": 90
+  },
+  {
+    "variety": "Mondeuse",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Monica",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Montepulciano",
+    "country": "Australia",
+    "points": 91
+  },
+  {
+    "variety": "Montepulciano",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Montepulciano",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Morava",
+    "country": "Serbia",
+    "points": 87
+  },
+  {
+    "variety": "Morillon",
+    "country": "Austria",
+    "points": 90
+  },
+  {
+    "variety": "Morillon",
+    "country": "(blank)",
+    "points": 90
+  },
+  {
+    "variety": "Morio Muskat",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Moscadello",
+    "country": "Italy",
+    "points": 90
+  },
+  {
+    "variety": "Moscatel",
+    "country": "Argentina",
+    "points": 81
+  },
+  {
+    "variety": "Moscatel",
+    "country": "Brazil",
+    "points": 87
+  },
+  {
+    "variety": "Moscatel",
+    "country": "Chile",
+    "points": 88
+  },
+  {
+    "variety": "Moscatel",
+    "country": "Portugal",
+    "points": 89
+  },
+  {
+    "variety": "Moscatel",
+    "country": "Spain",
+    "points": 88
+  },
+  {
+    "variety": "Moscatel de Alejandría",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Moscatel Graúdo",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Moscatel Roxo",
+    "country": "Portugal",
+    "points": 90
+  },
+  {
+    "variety": "Moscato",
+    "country": "Argentina",
+    "points": 82
+  },
+  {
+    "variety": "Moscato",
+    "country": "Australia",
+    "points": 86
+  },
+  {
+    "variety": "Moscato",
+    "country": "Austria",
+    "points": 87
+  },
+  {
+    "variety": "Moscato",
+    "country": "Brazil",
+    "points": 84
+  },
+  {
+    "variety": "Moscato",
+    "country": "Canada",
+    "points": 92
+  },
+  {
+    "variety": "Moscato",
+    "country": "Chile",
+    "points": 81
+  },
+  {
+    "variety": "Moscato",
+    "country": "France",
+    "points": 86
+  },
+  {
+    "variety": "Moscato",
+    "country": "Israel",
+    "points": 89
+  },
+  {
+    "variety": "Moscato",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Moscato",
+    "country": "Moldova",
+    "points": 85
+  },
+  {
+    "variety": "Moscato",
+    "country": "Romania",
+    "points": 86
+  },
+  {
+    "variety": "Moscato",
+    "country": "Slovenia",
+    "points": 87
+  },
+  {
+    "variety": "Moscato",
+    "country": "South Africa",
+    "points": 84
+  },
+  {
+    "variety": "Moscato",
+    "country": "Spain",
+    "points": 84
+  },
+  {
+    "variety": "Moscato",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Moscato di Noto",
+    "country": "Italy",
+    "points": 92
+  },
+  {
+    "variety": "Moscato Giallo",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Moscato Giallo",
+    "country": "US",
+    "points": 94
+  },
+  {
+    "variety": "Moscato Rosa",
+    "country": "Italy",
+    "points": 90
+  },
+  {
+    "variety": "Moschofilero",
+    "country": "Greece",
+    "points": 88
+  },
+  {
+    "variety": "Moschofilero Chardonnay",
+    "country": "Greece",
+    "points": 85
+  },
+  {
+    "variety": "Mourvèdre",
+    "country": "Australia",
+    "points": 91
+  },
+  {
+    "variety": "Mourvèdre",
+    "country": "Chile",
+    "points": 92
+  },
+  {
+    "variety": "Mourvèdre",
+    "country": "France",
+    "points": 91
+  },
+  {
+    "variety": "Mourvèdre",
+    "country": "South Africa",
+    "points": 87
+  },
+  {
+    "variety": "Mourvèdre",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Mourvèdre Syrah",
+    "country": "Australia",
+    "points": 92
+  },
+  {
+    "variety": "Mourvèdre Syrah",
+    "country": "US",
+    "points": 91
+  },
+  {
+    "variety": "Mtsvane",
+    "country": "Georgia",
+    "points": 88
+  },
+  {
+    "variety": "Mtsvane",
+    "country": "(blank)",
+    "points": 87
+  },
+  {
+    "variety": "Muscadel",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Muscadelle",
+    "country": "Australia",
+    "points": 94
+  },
+  {
+    "variety": "Muscadelle",
+    "country": "France",
+    "points": 90
+  },
+  {
+    "variety": "Muscadine",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Muscat",
+    "country": "Australia",
+    "points": 92
+  },
+  {
+    "variety": "Muscat",
+    "country": "Bulgaria",
+    "points": 87
+  },
+  {
+    "variety": "Muscat",
+    "country": "Canada",
+    "points": 91
+  },
+  {
+    "variety": "Muscat",
+    "country": "Chile",
+    "points": 85
+  },
+  {
+    "variety": "Muscat",
+    "country": "Croatia",
+    "points": 88
+  },
+  {
+    "variety": "Muscat",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Muscat",
+    "country": "Greece",
+    "points": 87
+  },
+  {
+    "variety": "Muscat",
+    "country": "Hungary",
+    "points": 88
+  },
+  {
+    "variety": "Muscat",
+    "country": "Italy",
+    "points": 86
+  },
+  {
+    "variety": "Muscat",
+    "country": "Moldova",
+    "points": 85
+  },
+  {
+    "variety": "Muscat",
+    "country": "Portugal",
+    "points": 87
+  },
+  {
+    "variety": "Muscat",
+    "country": "South Africa",
+    "points": 95
+  },
+  {
+    "variety": "Muscat",
+    "country": "Spain",
+    "points": 87
+  },
+  {
+    "variety": "Muscat",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Muscat Blanc",
+    "country": "Hungary",
+    "points": 90
+  },
+  {
+    "variety": "Muscat Blanc",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Muscat Blanc à Petits Grains",
+    "country": "France",
+    "points": 86
+  },
+  {
+    "variety": "Muscat Blanc à Petits Grains",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Muscat Canelli",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Muscat d'Alexandrie",
+    "country": "Chile",
+    "points": 84
+  },
+  {
+    "variety": "Muscat d'Alexandrie",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Muscat d'Alexandrie",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Muscat Hamburg",
+    "country": "Australia",
+    "points": 90
+  },
+  {
+    "variety": "Muscat Hamburg",
+    "country": "Ukraine",
+    "points": 86
+  },
+  {
+    "variety": "Muscat Hamburg",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Muscat of Alexandria",
+    "country": "Greece",
+    "points": 85
+  },
+  {
+    "variety": "Muscat of Alexandria",
+    "country": "Spain",
+    "points": 91
+  },
+  {
+    "variety": "Muscatel",
+    "country": "Chile",
+    "points": 88
+  },
+  {
+    "variety": "Muscatel",
+    "country": "Mexico",
+    "points": 87
+  },
+  {
+    "variety": "Muskat",
+    "country": "Austria",
+    "points": 89
+  },
+  {
+    "variety": "Muskat",
+    "country": "US",
+    "points": 91
+  },
+  {
+    "variety": "Muskat Ottonel",
+    "country": "Austria",
+    "points": 88
+  },
+  {
+    "variety": "Muskat Ottonel",
+    "country": "Bulgaria",
+    "points": 84
+  },
+  {
+    "variety": "Muskat Ottonel",
+    "country": "Romania",
+    "points": 88
+  },
+  {
+    "variety": "Muskat Ottonel",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Muskateller",
+    "country": "Austria",
+    "points": 86
+  },
+  {
+    "variety": "Muskateller",
+    "country": "Germany",
+    "points": 87
+  },
+  {
+    "variety": "Narince",
+    "country": "Turkey",
+    "points": 87
+  },
+  {
+    "variety": "Nascetta",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Nasco",
+    "country": "Italy",
+    "points": 91
+  },
+  {
+    "variety": "Nebbiolo",
+    "country": "Argentina",
+    "points": 89
+  },
+  {
+    "variety": "Nebbiolo",
+    "country": "Italy",
+    "points": 90
+  },
+  {
+    "variety": "Nebbiolo",
+    "country": "Mexico",
+    "points": 86
+  },
+  {
+    "variety": "Nebbiolo",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Negrette",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Negrette",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Negroamaro",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Negroamaro",
+    "country": "US",
+    "points": 90
+  },
+  {
+    "variety": "Nerello Cappuccio",
+    "country": "Italy",
+    "points": 90
+  },
+  {
+    "variety": "Nerello Mascalese",
+    "country": "Italy",
+    "points": 90
+  },
+  {
+    "variety": "Nero d'Avola",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Nero d'Avola",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Nero di Troia",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Neuburger",
+    "country": "Austria",
+    "points": 91
+  },
+  {
+    "variety": "Nielluciu",
+    "country": "Austria",
+    "points": 89
+  },
+  {
+    "variety": "Nielluciu",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Norton",
+    "country": "US",
+    "points": 84
+  },
+  {
+    "variety": "Nosiola",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Nuragus",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Ojaleshi",
+    "country": "(blank)",
+    "points": 88
+  },
+  {
+    "variety": "Okuzgozu",
+    "country": "Turkey",
+    "points": 90
+  },
+  {
+    "variety": "Ondenc",
+    "country": "France",
+    "points": 90
+  },
+  {
+    "variety": "Orange Muscat",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Orangetraube",
+    "country": "Austria",
+    "points": 90
+  },
+  {
+    "variety": "Other",
+    "country": "Georgia",
+    "points": 89
+  },
+  {
+    "variety": "Otskhanuri Sapere",
+    "country": "(blank)",
+    "points": 90
+  },
+  {
+    "variety": "País",
+    "country": "Chile",
+    "points": 83
+  },
+  {
+    "variety": "Pallagrello",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Pallagrello Bianco",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Pallagrello Nero",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Palomino",
+    "country": "Spain",
+    "points": 89
+  },
+  {
+    "variety": "Palomino",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Pansa Blanca",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "Papaskarasi",
+    "country": "Turkey",
+    "points": 87
+  },
+  {
+    "variety": "Paralleda",
+    "country": "Spain",
+    "points": 83
+  },
+  {
+    "variety": "Parraleta",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "Passerina",
+    "country": "Italy",
+    "points": 86
+  },
+  {
+    "variety": "Pecorino",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Pedro Ximénez",
+    "country": "Chile",
+    "points": 84
+  },
+  {
+    "variety": "Pedro Ximénez",
+    "country": "Spain",
+    "points": 91
+  },
+  {
+    "variety": "Perricone",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Petit Courbu",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Petit Manseng",
+    "country": "France",
+    "points": 92
+  },
+  {
+    "variety": "Petit Manseng",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Petit Manseng",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Petit Meslier",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Petit Verdot",
+    "country": "Argentina",
+    "points": 89
+  },
+  {
+    "variety": "Petit Verdot",
+    "country": "Australia",
+    "points": 88
+  },
+  {
+    "variety": "Petit Verdot",
+    "country": "Chile",
+    "points": 89
+  },
+  {
+    "variety": "Petit Verdot",
+    "country": "France",
+    "points": 92
+  },
+  {
+    "variety": "Petit Verdot",
+    "country": "Israel",
+    "points": 91
+  },
+  {
+    "variety": "Petit Verdot",
+    "country": "Italy",
+    "points": 90
+  },
+  {
+    "variety": "Petit Verdot",
+    "country": "Peru",
+    "points": 84
+  },
+  {
+    "variety": "Petit Verdot",
+    "country": "Portugal",
+    "points": 90
+  },
+  {
+    "variety": "Petit Verdot",
+    "country": "Spain",
+    "points": 90
+  },
+  {
+    "variety": "Petit Verdot",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Petite Sirah",
+    "country": "Australia",
+    "points": 87
+  },
+  {
+    "variety": "Petite Sirah",
+    "country": "Chile",
+    "points": 88
+  },
+  {
+    "variety": "Petite Sirah",
+    "country": "Israel",
+    "points": 89
+  },
+  {
+    "variety": "Petite Sirah",
+    "country": "Mexico",
+    "points": 85
+  },
+  {
+    "variety": "Petite Sirah",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Petite Verdot",
+    "country": "France",
+    "points": 84
+  },
+  {
+    "variety": "Petite Verdot",
+    "country": "Portugal",
+    "points": 91
+  },
+  {
+    "variety": "Petite Verdot",
+    "country": "Spain",
+    "points": 87
+  },
+  {
+    "variety": "Petite Verdot",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Picapoll",
+    "country": "Spain",
+    "points": 82
+  },
+  {
+    "variety": "Picolit",
+    "country": "Italy",
+    "points": 91
+  },
+  {
+    "variety": "Picpoul",
+    "country": "France",
+    "points": 86
+  },
+  {
+    "variety": "Picpoul",
+    "country": "US",
+    "points": 90
+  },
+  {
+    "variety": "Piedirosso",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Pigato",
+    "country": "Italy",
+    "points": 84
+  },
+  {
+    "variety": "Pignoletto",
+    "country": "Italy",
+    "points": 85
+  },
+  {
+    "variety": "Pignolo",
+    "country": "Italy",
+    "points": 92
+  },
+  {
+    "variety": "Pinot Auxerrois",
+    "country": "France",
+    "points": 87
+  },
+  {
+    "variety": "Pinot Auxerrois",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Pinot Bianco",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Pinot Blanc",
+    "country": "Austria",
+    "points": 89
+  },
+  {
+    "variety": "Pinot Blanc",
+    "country": "France",
+    "points": 87
+  },
+  {
+    "variety": "Pinot Blanc",
+    "country": "Germany",
+    "points": 89
+  },
+  {
+    "variety": "Pinot Blanc",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Pinot Blanc Chardonnay",
+    "country": "Austria",
+    "points": 90
+  },
+  {
+    "variety": "Pinot Blanc Chardonnay",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Pinot Blanc Chardonnay",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Pinot Blanc Pinot Noir",
+    "country": "US",
+    "points": 85
+  },
+  {
+    "variety": "Pinot Blanc Viognier",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Pinot Chardonnay",
+    "country": "US",
+    "points": 90
+  },
+  {
+    "variety": "Pinot Grigio",
+    "country": "Argentina",
+    "points": 84
+  },
+  {
+    "variety": "Pinot Grigio",
+    "country": "Australia",
+    "points": 86
+  },
+  {
+    "variety": "Pinot Grigio",
+    "country": "Bulgaria",
+    "points": 88
+  },
+  {
+    "variety": "Pinot Grigio",
+    "country": "Chile",
+    "points": 83
+  },
+  {
+    "variety": "Pinot Grigio",
+    "country": "Germany",
+    "points": 88
+  },
+  {
+    "variety": "Pinot Grigio",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Pinot Grigio",
+    "country": "Moldova",
+    "points": 87
+  },
+  {
+    "variety": "Pinot Grigio",
+    "country": "New Zealand",
+    "points": 87
+  },
+  {
+    "variety": "Pinot Grigio",
+    "country": "Romania",
+    "points": 86
+  },
+  {
+    "variety": "Pinot Grigio",
+    "country": "Slovenia",
+    "points": 88
+  },
+  {
+    "variety": "Pinot Grigio",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Pinot Grigio Sauvignon Blanc",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Pinot Gris",
+    "country": "Argentina",
+    "points": 85
+  },
+  {
+    "variety": "Pinot Gris",
+    "country": "Australia",
+    "points": 87
+  },
+  {
+    "variety": "Pinot Gris",
+    "country": "Austria",
+    "points": 90
+  },
+  {
+    "variety": "Pinot Gris",
+    "country": "Canada",
+    "points": 90
+  },
+  {
+    "variety": "Pinot Gris",
+    "country": "Croatia",
+    "points": 83
+  },
+  {
+    "variety": "Pinot Gris",
+    "country": "France",
+    "points": 90
+  },
+  {
+    "variety": "Pinot Gris",
+    "country": "Germany",
+    "points": 88
+  },
+  {
+    "variety": "Pinot Gris",
+    "country": "Hungary",
+    "points": 87
+  },
+  {
+    "variety": "Pinot Gris",
+    "country": "Israel",
+    "points": 90
+  },
+  {
+    "variety": "Pinot Gris",
+    "country": "Moldova",
+    "points": 86
+  },
+  {
+    "variety": "Pinot Gris",
+    "country": "New Zealand",
+    "points": 88
+  },
+  {
+    "variety": "Pinot Gris",
+    "country": "Romania",
+    "points": 87
+  },
+  {
+    "variety": "Pinot Gris",
+    "country": "Slovenia",
+    "points": 89
+  },
+  {
+    "variety": "Pinot Gris",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Pinot Gris",
+    "country": "(blank)",
+    "points": 87
+  },
+  {
+    "variety": "Pinot Gris Gewürztraminer",
+    "country": "US",
+    "points": 90
+  },
+  {
+    "variety": "Pinot Meunier",
+    "country": "France",
+    "points": 90
+  },
+  {
+    "variety": "Pinot Meunier",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Pinot Nero",
+    "country": "Italy",
+    "points": 89
+  },
+  {
+    "variety": "Pinot Nero",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "Argentina",
+    "points": 86
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "Australia",
+    "points": 87
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "Austria",
+    "points": 90
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "Brazil",
+    "points": 86
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "Bulgaria",
+    "points": 89
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "Canada",
+    "points": 89
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "Chile",
+    "points": 86
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "Croatia",
+    "points": 84
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "England",
+    "points": 92
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "France",
+    "points": 90
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "Germany",
+    "points": 89
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "Hungary",
+    "points": 90
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "Israel",
+    "points": 86
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "Macedonia",
+    "points": 86
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "New Zealand",
+    "points": 88
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "Romania",
+    "points": 86
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "Slovenia",
+    "points": 88
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "South Africa",
+    "points": 89
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "Spain",
+    "points": 87
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "Switzerland",
+    "points": 89
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "Uruguay",
+    "points": 85
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "US",
+    "points": 90
+  },
+  {
+    "variety": "Pinot Noir",
+    "country": "(blank)",
+    "points": 89
+  },
+  {
+    "variety": "Pinot Noir Gamay",
+    "country": "France",
+    "points": 85
+  },
+  {
+    "variety": "Pinot Noir Gamay",
+    "country": "Switzerland",
+    "points": 90
+  },
+  {
+    "variety": "Pinot Noir Syrah",
+    "country": "Chile",
+    "points": 83
+  },
+  {
+    "variety": "Pinot Noir Syrah",
+    "country": "US",
+    "points": 91
+  },
+  {
+    "variety": "Pinotage",
+    "country": "Israel",
+    "points": 88
+  },
+  {
+    "variety": "Pinotage",
+    "country": "South Africa",
+    "points": 87
+  },
+  {
+    "variety": "Pinotage",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Pinotage Merlot",
+    "country": "South Africa",
+    "points": 84
+  },
+  {
+    "variety": "Piquepoul Blanc",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Plavac Mali",
+    "country": "Croatia",
+    "points": 88
+  },
+  {
+    "variety": "Plyto",
+    "country": "Greece",
+    "points": 87
+  },
+  {
+    "variety": "Port",
+    "country": "Australia",
+    "points": 88
+  },
+  {
+    "variety": "Port",
+    "country": "Portugal",
+    "points": 90
+  },
+  {
+    "variety": "Port",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Portuguese Red",
+    "country": "Portugal",
+    "points": 89
+  },
+  {
+    "variety": "Portuguese Rosé",
+    "country": "Portugal",
+    "points": 85
+  },
+  {
+    "variety": "Portuguese Sparkling",
+    "country": "Portugal",
+    "points": 86
+  },
+  {
+    "variety": "Portuguese White",
+    "country": "Portugal",
+    "points": 87
+  },
+  {
+    "variety": "Portuguiser",
+    "country": "Serbia",
+    "points": 86
+  },
+  {
+    "variety": "Posip",
+    "country": "Croatia",
+    "points": 88
+  },
+  {
+    "variety": "Poulsard",
+    "country": "France",
+    "points": 87
+  },
+  {
+    "variety": "Premsal",
+    "country": "Spain",
+    "points": 83
+  },
+  {
+    "variety": "Prié Blanc",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Prieto Picudo",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "Primitivo",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Primitivo",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Prosecco",
+    "country": "Italy",
+    "points": 86
+  },
+  {
+    "variety": "Prosecco",
+    "country": "US",
+    "points": 82
+  },
+  {
+    "variety": "Provence red blend",
+    "country": "France",
+    "points": 90
+  },
+  {
+    "variety": "Provence white blend",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Prugnolo Gentile",
+    "country": "Italy",
+    "points": 89
+  },
+  {
+    "variety": "Prunelard",
+    "country": "France",
+    "points": 91
+  },
+  {
+    "variety": "Pugnitello",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Rabigato",
+    "country": "Portugal",
+    "points": 89
+  },
+  {
+    "variety": "Raboso",
+    "country": "Italy",
+    "points": 86
+  },
+  {
+    "variety": "Ramisco",
+    "country": "Portugal",
+    "points": 93
+  },
+  {
+    "variety": "Rara Neagra",
+    "country": "Moldova",
+    "points": 90
+  },
+  {
+    "variety": "Rebo",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Rebula",
+    "country": "Slovenia",
+    "points": 88
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Argentina",
+    "points": 88
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Australia",
+    "points": 88
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Austria",
+    "points": 90
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Brazil",
+    "points": 85
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Bulgaria",
+    "points": 89
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Canada",
+    "points": 91
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Chile",
+    "points": 89
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Croatia",
+    "points": 88
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Cyprus",
+    "points": 87
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Czech Republic",
+    "points": 89
+  },
+  {
+    "variety": "Red Blend",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Georgia",
+    "points": 89
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Germany",
+    "points": 87
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Greece",
+    "points": 87
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Hungary",
+    "points": 87
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Israel",
+    "points": 89
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Italy",
+    "points": 89
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Lebanon",
+    "points": 88
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Macedonia",
+    "points": 86
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Mexico",
+    "points": 88
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Moldova",
+    "points": 88
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Morocco",
+    "points": 90
+  },
+  {
+    "variety": "Red Blend",
+    "country": "New Zealand",
+    "points": 89
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Peru",
+    "points": 85
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Portugal",
+    "points": 89
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Romania",
+    "points": 88
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Serbia",
+    "points": 89
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Slovenia",
+    "points": 89
+  },
+  {
+    "variety": "Red Blend",
+    "country": "South Africa",
+    "points": 89
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Spain",
+    "points": 88
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Turkey",
+    "points": 88
+  },
+  {
+    "variety": "Red Blend",
+    "country": "Uruguay",
+    "points": 87
+  },
+  {
+    "variety": "Red Blend",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Red Blend",
+    "country": "(blank)",
+    "points": 88
+  },
+  {
+    "variety": "Refosco",
+    "country": "Italy",
+    "points": 86
+  },
+  {
+    "variety": "Refosco",
+    "country": "Slovenia",
+    "points": 86
+  },
+  {
+    "variety": "Refosco",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Rhône style Red Blend",
+    "country": "Australia",
+    "points": 88
+  },
+  {
+    "variety": "Rhône style Red Blend",
+    "country": "Chile",
+    "points": 90
+  },
+  {
+    "variety": "Rhône style Red Blend",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Rhône style Red Blend",
+    "country": "Israel",
+    "points": 92
+  },
+  {
+    "variety": "Rhône style Red Blend",
+    "country": "Lebanon",
+    "points": 91
+  },
+  {
+    "variety": "Rhône style Red Blend",
+    "country": "Portugal",
+    "points": 93
+  },
+  {
+    "variety": "Rhône style Red Blend",
+    "country": "South Africa",
+    "points": 91
+  },
+  {
+    "variety": "Rhône style Red Blend",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Rhône style Red Blend",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Rhône style Red Blend",
+    "country": "(blank)",
+    "points": 92
+  },
+  {
+    "variety": "Rhône style White Blend",
+    "country": "Australia",
+    "points": 88
+  },
+  {
+    "variety": "Rhône style White Blend",
+    "country": "Canada",
+    "points": 91
+  },
+  {
+    "variety": "Rhône style White Blend",
+    "country": "Chile",
+    "points": 87
+  },
+  {
+    "variety": "Rhône style White Blend",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Rhône style White Blend",
+    "country": "Israel",
+    "points": 85
+  },
+  {
+    "variety": "Rhône style White Blend",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Ribolla Gialla",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Ribolla Gialla",
+    "country": "Slovenia",
+    "points": 88
+  },
+  {
+    "variety": "Ribolla Gialla",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Rieslaner",
+    "country": "Germany",
+    "points": 90
+  },
+  {
+    "variety": "Riesling",
+    "country": "Argentina",
+    "points": 86
+  },
+  {
+    "variety": "Riesling",
+    "country": "Australia",
+    "points": 89
+  },
+  {
+    "variety": "Riesling",
+    "country": "Austria",
+    "points": 91
+  },
+  {
+    "variety": "Riesling",
+    "country": "Bulgaria",
+    "points": 85
+  },
+  {
+    "variety": "Riesling",
+    "country": "Canada",
+    "points": 89
+  },
+  {
+    "variety": "Riesling",
+    "country": "Chile",
+    "points": 86
+  },
+  {
+    "variety": "Riesling",
+    "country": "Czech Republic",
+    "points": 88
+  },
+  {
+    "variety": "Riesling",
+    "country": "France",
+    "points": 90
+  },
+  {
+    "variety": "Riesling",
+    "country": "Germany",
+    "points": 90
+  },
+  {
+    "variety": "Riesling",
+    "country": "Israel",
+    "points": 90
+  },
+  {
+    "variety": "Riesling",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Riesling",
+    "country": "Luxembourg",
+    "points": 88
+  },
+  {
+    "variety": "Riesling",
+    "country": "Moldova",
+    "points": 90
+  },
+  {
+    "variety": "Riesling",
+    "country": "New Zealand",
+    "points": 88
+  },
+  {
+    "variety": "Riesling",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Riesling",
+    "country": "Romania",
+    "points": 84
+  },
+  {
+    "variety": "Riesling",
+    "country": "Serbia",
+    "points": 87
+  },
+  {
+    "variety": "Riesling",
+    "country": "Slovakia",
+    "points": 87
+  },
+  {
+    "variety": "Riesling",
+    "country": "Slovenia",
+    "points": 87
+  },
+  {
+    "variety": "Riesling",
+    "country": "South Africa",
+    "points": 88
+  },
+  {
+    "variety": "Riesling",
+    "country": "Spain",
+    "points": 82
+  },
+  {
+    "variety": "Riesling",
+    "country": "Ukraine",
+    "points": 88
+  },
+  {
+    "variety": "Riesling",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Riesling",
+    "country": "(blank)",
+    "points": 84
+  },
+  {
+    "variety": "Riesling Chardonnay",
+    "country": "US",
+    "points": 94
+  },
+  {
+    "variety": "Rivaner",
+    "country": "Czech Republic",
+    "points": 87
+  },
+  {
+    "variety": "Rivaner",
+    "country": "Germany",
+    "points": 87
+  },
+  {
+    "variety": "Rkatsiteli",
+    "country": "Georgia",
+    "points": 87
+  },
+  {
+    "variety": "Rkatsiteli",
+    "country": "Macedonia",
+    "points": 88
+  },
+  {
+    "variety": "Rkatsiteli",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Robola",
+    "country": "Greece",
+    "points": 88
+  },
+  {
+    "variety": "Roditis",
+    "country": "Greece",
+    "points": 87
+  },
+  {
+    "variety": "Roditis Moschofilero",
+    "country": "Greece",
+    "points": 88
+  },
+  {
+    "variety": "Rolle",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Romorantin",
+    "country": "France",
+    "points": 91
+  },
+  {
+    "variety": "Rosé",
+    "country": "Argentina",
+    "points": 84
+  },
+  {
+    "variety": "Rosé",
+    "country": "Armenia",
+    "points": 88
+  },
+  {
+    "variety": "Rosé",
+    "country": "Australia",
+    "points": 87
+  },
+  {
+    "variety": "Rosé",
+    "country": "Austria",
+    "points": 88
+  },
+  {
+    "variety": "Rosé",
+    "country": "Bulgaria",
+    "points": 86
+  },
+  {
+    "variety": "Rosé",
+    "country": "Canada",
+    "points": 87
+  },
+  {
+    "variety": "Rosé",
+    "country": "Chile",
+    "points": 84
+  },
+  {
+    "variety": "Rosé",
+    "country": "Croatia",
+    "points": 85
+  },
+  {
+    "variety": "Rosé",
+    "country": "France",
+    "points": 87
+  },
+  {
+    "variety": "Rosé",
+    "country": "Georgia",
+    "points": 86
+  },
+  {
+    "variety": "Rosé",
+    "country": "Germany",
+    "points": 89
+  },
+  {
+    "variety": "Rosé",
+    "country": "Greece",
+    "points": 87
+  },
+  {
+    "variety": "Rosé",
+    "country": "Hungary",
+    "points": 87
+  },
+  {
+    "variety": "Rosé",
+    "country": "Israel",
+    "points": 87
+  },
+  {
+    "variety": "Rosé",
+    "country": "Italy",
+    "points": 86
+  },
+  {
+    "variety": "Rosé",
+    "country": "Lebanon",
+    "points": 87
+  },
+  {
+    "variety": "Rosé",
+    "country": "Mexico",
+    "points": 83
+  },
+  {
+    "variety": "Rosé",
+    "country": "Moldova",
+    "points": 90
+  },
+  {
+    "variety": "Rosé",
+    "country": "New Zealand",
+    "points": 86
+  },
+  {
+    "variety": "Rosé",
+    "country": "Portugal",
+    "points": 85
+  },
+  {
+    "variety": "Rosé",
+    "country": "Romania",
+    "points": 82
+  },
+  {
+    "variety": "Rosé",
+    "country": "Slovenia",
+    "points": 88
+  },
+  {
+    "variety": "Rosé",
+    "country": "South Africa",
+    "points": 86
+  },
+  {
+    "variety": "Rosé",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Rosé",
+    "country": "Turkey",
+    "points": 88
+  },
+  {
+    "variety": "Rosé",
+    "country": "Ukraine",
+    "points": 84
+  },
+  {
+    "variety": "Rosé",
+    "country": "Uruguay",
+    "points": 84
+  },
+  {
+    "variety": "Rosé",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Rosé",
+    "country": "(blank)",
+    "points": 86
+  },
+  {
+    "variety": "Rosado",
+    "country": "Argentina",
+    "points": 87
+  },
+  {
+    "variety": "Rosado",
+    "country": "Mexico",
+    "points": 86
+  },
+  {
+    "variety": "Rosado",
+    "country": "Portugal",
+    "points": 86
+  },
+  {
+    "variety": "Rosado",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Rosado",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Rosato",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Rosato",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Roscetto",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Rosenmuskateller",
+    "country": "Austria",
+    "points": 93
+  },
+  {
+    "variety": "Roter Traminer",
+    "country": "Austria",
+    "points": 90
+  },
+  {
+    "variety": "Roter Traminer",
+    "country": "(blank)",
+    "points": 92
+  },
+  {
+    "variety": "Roter Veltliner",
+    "country": "Austria",
+    "points": 90
+  },
+  {
+    "variety": "Rotgipfler",
+    "country": "Austria",
+    "points": 90
+  },
+  {
+    "variety": "Roussanne",
+    "country": "Australia",
+    "points": 89
+  },
+  {
+    "variety": "Roussanne",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Roussanne",
+    "country": "South Africa",
+    "points": 93
+  },
+  {
+    "variety": "Roussanne",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Roussanne Grenache Blanc",
+    "country": "US",
+    "points": 91
+  },
+  {
+    "variety": "Roussanne Marsanne",
+    "country": "France",
+    "points": 91
+  },
+  {
+    "variety": "Roussanne Marsanne",
+    "country": "Israel",
+    "points": 88
+  },
+  {
+    "variety": "Roussanne Marsanne",
+    "country": "South Africa",
+    "points": 91
+  },
+  {
+    "variety": "Roussanne Marsanne",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Roussanne Viognier",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Roviello",
+    "country": "Italy",
+    "points": 93
+  },
+  {
+    "variety": "Ruché",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Rufete",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "Ryzlink Rýnský",
+    "country": "Czech Republic",
+    "points": 89
+  },
+  {
+    "variety": "Sämling",
+    "country": "Austria",
+    "points": 91
+  },
+  {
+    "variety": "Sémillon",
+    "country": "Argentina",
+    "points": 84
+  },
+  {
+    "variety": "Sémillon",
+    "country": "Australia",
+    "points": 89
+  },
+  {
+    "variety": "Sémillon",
+    "country": "Chile",
+    "points": 87
+  },
+  {
+    "variety": "Sémillon",
+    "country": "France",
+    "points": 87
+  },
+  {
+    "variety": "Sémillon",
+    "country": "Italy",
+    "points": 86
+  },
+  {
+    "variety": "Sémillon",
+    "country": "Portugal",
+    "points": 90
+  },
+  {
+    "variety": "Sémillon",
+    "country": "South Africa",
+    "points": 90
+  },
+  {
+    "variety": "Sémillon",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Sacy",
+    "country": "France",
+    "points": 87
+  },
+  {
+    "variety": "Sagrantino",
+    "country": "Italy",
+    "points": 90
+  },
+  {
+    "variety": "Sagrantino",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Sangiovese",
+    "country": "Argentina",
+    "points": 82
+  },
+  {
+    "variety": "Sangiovese",
+    "country": "Australia",
+    "points": 88
+  },
+  {
+    "variety": "Sangiovese",
+    "country": "Israel",
+    "points": 90
+  },
+  {
+    "variety": "Sangiovese",
+    "country": "Italy",
+    "points": 89
+  },
+  {
+    "variety": "Sangiovese",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Sangiovese Cabernet",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Sangiovese Cabernet Sauvignon",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Sangiovese Grosso",
+    "country": "Italy",
+    "points": 91
+  },
+  {
+    "variety": "Sangiovese Grosso",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Sangiovese Syrah",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Saperavi",
+    "country": "Georgia",
+    "points": 89
+  },
+  {
+    "variety": "Saperavi",
+    "country": "Moldova",
+    "points": 82
+  },
+  {
+    "variety": "Saperavi",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Saperavi Merlot",
+    "country": "Georgia",
+    "points": 87
+  },
+  {
+    "variety": "Sauvignon",
+    "country": "Australia",
+    "points": 88
+  },
+  {
+    "variety": "Sauvignon",
+    "country": "Austria",
+    "points": 89
+  },
+  {
+    "variety": "Sauvignon",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Sauvignon",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Sauvignon",
+    "country": "Macedonia",
+    "points": 88
+  },
+  {
+    "variety": "Sauvignon",
+    "country": "New Zealand",
+    "points": 85
+  },
+  {
+    "variety": "Sauvignon",
+    "country": "Romania",
+    "points": 89
+  },
+  {
+    "variety": "Sauvignon",
+    "country": "Slovenia",
+    "points": 87
+  },
+  {
+    "variety": "Sauvignon",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "Argentina",
+    "points": 84
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "Australia",
+    "points": 87
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "Austria",
+    "points": 90
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "Bulgaria",
+    "points": 86
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "Canada",
+    "points": 88
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "Chile",
+    "points": 86
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "Croatia",
+    "points": 82
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "Czech Republic",
+    "points": 86
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "Greece",
+    "points": 86
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "India",
+    "points": 90
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "Israel",
+    "points": 86
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "Mexico",
+    "points": 85
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "Moldova",
+    "points": 86
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "Morocco",
+    "points": 88
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "New Zealand",
+    "points": 88
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "Peru",
+    "points": 84
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "Portugal",
+    "points": 87
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "Romania",
+    "points": 87
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "Slovenia",
+    "points": 87
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "South Africa",
+    "points": 87
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "Spain",
+    "points": 84
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "Turkey",
+    "points": 89
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "Uruguay",
+    "points": 84
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Sauvignon Blanc",
+    "country": "(blank)",
+    "points": 90
+  },
+  {
+    "variety": "Sauvignon Blanc Assyrtiko",
+    "country": "Greece",
+    "points": 92
+  },
+  {
+    "variety": "Sauvignon Blanc Chardonnay",
+    "country": "Austria",
+    "points": 91
+  },
+  {
+    "variety": "Sauvignon Blanc Chardonnay",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Sauvignon Blanc Chardonnay",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Sauvignon Blanc Chenin Blanc",
+    "country": "Mexico",
+    "points": 86
+  },
+  {
+    "variety": "Sauvignon Blanc Chenin Blanc",
+    "country": "South Africa",
+    "points": 87
+  },
+  {
+    "variety": "Sauvignon Blanc Chenin Blanc",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Sauvignon Blanc Sauvignon Gris",
+    "country": "France",
+    "points": 86
+  },
+  {
+    "variety": "Sauvignon Blanc Semillon",
+    "country": "Australia",
+    "points": 88
+  },
+  {
+    "variety": "Sauvignon Blanc Semillon",
+    "country": "Chile",
+    "points": 88
+  },
+  {
+    "variety": "Sauvignon Blanc Semillon",
+    "country": "France",
+    "points": 86
+  },
+  {
+    "variety": "Sauvignon Blanc Semillon",
+    "country": "Israel",
+    "points": 86
+  },
+  {
+    "variety": "Sauvignon Blanc Semillon",
+    "country": "New Zealand",
+    "points": 86
+  },
+  {
+    "variety": "Sauvignon Blanc Semillon",
+    "country": "South Africa",
+    "points": 91
+  },
+  {
+    "variety": "Sauvignon Blanc Semillon",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Sauvignon Blanc Verdejo",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Sauvignon Gris",
+    "country": "Chile",
+    "points": 85
+  },
+  {
+    "variety": "Sauvignon Gris",
+    "country": "France",
+    "points": 87
+  },
+  {
+    "variety": "Sauvignon Gris",
+    "country": "US",
+    "points": 92
+  },
+  {
+    "variety": "Sauvignon Musqué",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Sauvignon Sémillon",
+    "country": "France",
+    "points": 86
+  },
+  {
+    "variety": "Sauvignonasse",
+    "country": "Slovenia",
+    "points": 90
+  },
+  {
+    "variety": "Savagnin",
+    "country": "Australia",
+    "points": 88
+  },
+  {
+    "variety": "Savagnin",
+    "country": "France",
+    "points": 90
+  },
+  {
+    "variety": "Savatiano",
+    "country": "Greece",
+    "points": 87
+  },
+  {
+    "variety": "Scheurebe",
+    "country": "Austria",
+    "points": 92
+  },
+  {
+    "variety": "Scheurebe",
+    "country": "Germany",
+    "points": 88
+  },
+  {
+    "variety": "Scheurebe",
+    "country": "US",
+    "points": 90
+  },
+  {
+    "variety": "Schiava",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Schwartzriesling",
+    "country": "Germany",
+    "points": 90
+  },
+  {
+    "variety": "Sciaccerellu",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Semillon Chardonnay",
+    "country": "Australia",
+    "points": 85
+  },
+  {
+    "variety": "Semillon Chardonnay",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Semillon Sauvignon Blanc",
+    "country": "Australia",
+    "points": 86
+  },
+  {
+    "variety": "Semillon Sauvignon Blanc",
+    "country": "France",
+    "points": 86
+  },
+  {
+    "variety": "Semillon Sauvignon Blanc",
+    "country": "New Zealand",
+    "points": 82
+  },
+  {
+    "variety": "Semillon Sauvignon Blanc",
+    "country": "South Africa",
+    "points": 91
+  },
+  {
+    "variety": "Semillon Sauvignon Blanc",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Sercial",
+    "country": "Portugal",
+    "points": 94
+  },
+  {
+    "variety": "Seyval Blanc",
+    "country": "US",
+    "points": 84
+  },
+  {
+    "variety": "Sherry",
+    "country": "Spain",
+    "points": 90
+  },
+  {
+    "variety": "Sherry",
+    "country": "US",
+    "points": 90
+  },
+  {
+    "variety": "Shiraz",
+    "country": "Argentina",
+    "points": 84
+  },
+  {
+    "variety": "Shiraz",
+    "country": "Australia",
+    "points": 90
+  },
+  {
+    "variety": "Shiraz",
+    "country": "Austria",
+    "points": 91
+  },
+  {
+    "variety": "Shiraz",
+    "country": "Chile",
+    "points": 86
+  },
+  {
+    "variety": "Shiraz",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Shiraz",
+    "country": "India",
+    "points": 92
+  },
+  {
+    "variety": "Shiraz",
+    "country": "Israel",
+    "points": 89
+  },
+  {
+    "variety": "Shiraz",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Shiraz",
+    "country": "Mexico",
+    "points": 82
+  },
+  {
+    "variety": "Shiraz",
+    "country": "Portugal",
+    "points": 90
+  },
+  {
+    "variety": "Shiraz",
+    "country": "South Africa",
+    "points": 88
+  },
+  {
+    "variety": "Shiraz",
+    "country": "Spain",
+    "points": 88
+  },
+  {
+    "variety": "Shiraz",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Shiraz",
+    "country": "(blank)",
+    "points": 87
+  },
+  {
+    "variety": "Shiraz Cabernet",
+    "country": "Australia",
+    "points": 87
+  },
+  {
+    "variety": "Shiraz Cabernet Sauvignon",
+    "country": "Australia",
+    "points": 88
+  },
+  {
+    "variety": "Shiraz Cabernet Sauvignon",
+    "country": "Chile",
+    "points": 83
+  },
+  {
+    "variety": "Shiraz Cabernet Sauvignon",
+    "country": "South Africa",
+    "points": 87
+  },
+  {
+    "variety": "Shiraz Cabernet Sauvignon",
+    "country": "Spain",
+    "points": 88
+  },
+  {
+    "variety": "Shiraz Grenache",
+    "country": "Australia",
+    "points": 90
+  },
+  {
+    "variety": "Shiraz Malbec",
+    "country": "Argentina",
+    "points": 90
+  },
+  {
+    "variety": "Shiraz Malbec",
+    "country": "Australia",
+    "points": 90
+  },
+  {
+    "variety": "Shiraz Mourvèdre",
+    "country": "Australia",
+    "points": 89
+  },
+  {
+    "variety": "Shiraz Mourvèdre",
+    "country": "South Africa",
+    "points": 88
+  },
+  {
+    "variety": "Shiraz Roussanne",
+    "country": "Australia",
+    "points": 90
+  },
+  {
+    "variety": "Shiraz Tempranillo",
+    "country": "Spain",
+    "points": 82
+  },
+  {
+    "variety": "Shiraz Viognier",
+    "country": "Australia",
+    "points": 90
+  },
+  {
+    "variety": "Sideritis",
+    "country": "Greece",
+    "points": 85
+  },
+  {
+    "variety": "Siegerrebe",
+    "country": "US",
+    "points": 84
+  },
+  {
+    "variety": "Silvaner",
+    "country": "Germany",
+    "points": 89
+  },
+  {
+    "variety": "Silvaner",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Silvaner",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Silvaner Traminer",
+    "country": "Germany",
+    "points": 86
+  },
+  {
+    "variety": "Siria",
+    "country": "Portugal",
+    "points": 87
+  },
+  {
+    "variety": "Sirica",
+    "country": "Italy",
+    "points": 93
+  },
+  {
+    "variety": "Sousão",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Souzao",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Spätburgunder",
+    "country": "Germany",
+    "points": 90
+  },
+  {
+    "variety": "Sparkling Blend",
+    "country": "Argentina",
+    "points": 85
+  },
+  {
+    "variety": "Sparkling Blend",
+    "country": "Australia",
+    "points": 87
+  },
+  {
+    "variety": "Sparkling Blend",
+    "country": "Austria",
+    "points": 89
+  },
+  {
+    "variety": "Sparkling Blend",
+    "country": "Brazil",
+    "points": 86
+  },
+  {
+    "variety": "Sparkling Blend",
+    "country": "Chile",
+    "points": 85
+  },
+  {
+    "variety": "Sparkling Blend",
+    "country": "England",
+    "points": 91
+  },
+  {
+    "variety": "Sparkling Blend",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Sparkling Blend",
+    "country": "Georgia",
+    "points": 85
+  },
+  {
+    "variety": "Sparkling Blend",
+    "country": "Germany",
+    "points": 88
+  },
+  {
+    "variety": "Sparkling Blend",
+    "country": "Hungary",
+    "points": 84
+  },
+  {
+    "variety": "Sparkling Blend",
+    "country": "Israel",
+    "points": 87
+  },
+  {
+    "variety": "Sparkling Blend",
+    "country": "Italy",
+    "points": 89
+  },
+  {
+    "variety": "Sparkling Blend",
+    "country": "Luxembourg",
+    "points": 89
+  },
+  {
+    "variety": "Sparkling Blend",
+    "country": "Moldova",
+    "points": 85
+  },
+  {
+    "variety": "Sparkling Blend",
+    "country": "New Zealand",
+    "points": 88
+  },
+  {
+    "variety": "Sparkling Blend",
+    "country": "Peru",
+    "points": 80
+  },
+  {
+    "variety": "Sparkling Blend",
+    "country": "Portugal",
+    "points": 87
+  },
+  {
+    "variety": "Sparkling Blend",
+    "country": "South Africa",
+    "points": 86
+  },
+  {
+    "variety": "Sparkling Blend",
+    "country": "Spain",
+    "points": 87
+  },
+  {
+    "variety": "Sparkling Blend",
+    "country": "Ukraine",
+    "points": 83
+  },
+  {
+    "variety": "Sparkling Blend",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "St. Laurent",
+    "country": "Austria",
+    "points": 90
+  },
+  {
+    "variety": "St. Laurent",
+    "country": "Czech Republic",
+    "points": 88
+  },
+  {
+    "variety": "St. Laurent",
+    "country": "Germany",
+    "points": 87
+  },
+  {
+    "variety": "St. Vincent",
+    "country": "US",
+    "points": 85
+  },
+  {
+    "variety": "Susumaniello",
+    "country": "Italy",
+    "points": 90
+  },
+  {
+    "variety": "Sylvaner",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Sylvaner",
+    "country": "Italy",
+    "points": 89
+  },
+  {
+    "variety": "Symphony",
+    "country": "US",
+    "points": 85
+  },
+  {
+    "variety": "Syrah",
+    "country": "Argentina",
+    "points": 86
+  },
+  {
+    "variety": "Syrah",
+    "country": "Australia",
+    "points": 92
+  },
+  {
+    "variety": "Syrah",
+    "country": "Austria",
+    "points": 89
+  },
+  {
+    "variety": "Syrah",
+    "country": "Bulgaria",
+    "points": 89
+  },
+  {
+    "variety": "Syrah",
+    "country": "Canada",
+    "points": 91
+  },
+  {
+    "variety": "Syrah",
+    "country": "Chile",
+    "points": 88
+  },
+  {
+    "variety": "Syrah",
+    "country": "France",
+    "points": 90
+  },
+  {
+    "variety": "Syrah",
+    "country": "Greece",
+    "points": 87
+  },
+  {
+    "variety": "Syrah",
+    "country": "Hungary",
+    "points": 89
+  },
+  {
+    "variety": "Syrah",
+    "country": "Israel",
+    "points": 89
+  },
+  {
+    "variety": "Syrah",
+    "country": "Italy",
+    "points": 89
+  },
+  {
+    "variety": "Syrah",
+    "country": "Mexico",
+    "points": 83
+  },
+  {
+    "variety": "Syrah",
+    "country": "Morocco",
+    "points": 90
+  },
+  {
+    "variety": "Syrah",
+    "country": "New Zealand",
+    "points": 90
+  },
+  {
+    "variety": "Syrah",
+    "country": "Peru",
+    "points": 81
+  },
+  {
+    "variety": "Syrah",
+    "country": "Portugal",
+    "points": 89
+  },
+  {
+    "variety": "Syrah",
+    "country": "South Africa",
+    "points": 90
+  },
+  {
+    "variety": "Syrah",
+    "country": "Spain",
+    "points": 89
+  },
+  {
+    "variety": "Syrah",
+    "country": "Turkey",
+    "points": 90
+  },
+  {
+    "variety": "Syrah",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Syrah Bonarda",
+    "country": "Argentina",
+    "points": 87
+  },
+  {
+    "variety": "Syrah Cabernet",
+    "country": "Chile",
+    "points": 87
+  },
+  {
+    "variety": "Syrah Cabernet",
+    "country": "France",
+    "points": 86
+  },
+  {
+    "variety": "Syrah Cabernet",
+    "country": "South Africa",
+    "points": 82
+  },
+  {
+    "variety": "Syrah Cabernet",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Syrah Cabernet Franc",
+    "country": "Chile",
+    "points": 91
+  },
+  {
+    "variety": "Syrah Cabernet Franc",
+    "country": "US",
+    "points": 90
+  },
+  {
+    "variety": "Syrah Cabernet Sauvignon",
+    "country": "Chile",
+    "points": 87
+  },
+  {
+    "variety": "Syrah Cabernet Sauvignon",
+    "country": "Lebanon",
+    "points": 91
+  },
+  {
+    "variety": "Syrah Cabernet Sauvignon",
+    "country": "South Africa",
+    "points": 91
+  },
+  {
+    "variety": "Syrah Cabernet Sauvignon",
+    "country": "US",
+    "points": 90
+  },
+  {
+    "variety": "Syrah Carignan",
+    "country": "Chile",
+    "points": 92
+  },
+  {
+    "variety": "Syrah Carignan",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Syrah Grenache",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Syrah Grenache",
+    "country": "Morocco",
+    "points": 87
+  },
+  {
+    "variety": "Syrah Grenache",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "Syrah Grenache",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Syrah Grenache Viognier",
+    "country": "US",
+    "points": 90
+  },
+  {
+    "variety": "Syrah Malbec",
+    "country": "Argentina",
+    "points": 89
+  },
+  {
+    "variety": "Syrah Merlot",
+    "country": "Chile",
+    "points": 89
+  },
+  {
+    "variety": "Syrah Merlot",
+    "country": "France",
+    "points": 86
+  },
+  {
+    "variety": "Syrah Merlot",
+    "country": "Israel",
+    "points": 88
+  },
+  {
+    "variety": "Syrah Merlot",
+    "country": "Spain",
+    "points": 89
+  },
+  {
+    "variety": "Syrah Merlot",
+    "country": "Turkey",
+    "points": 90
+  },
+  {
+    "variety": "Syrah Merlot",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Syrah Mourvèdre",
+    "country": "France",
+    "points": 91
+  },
+  {
+    "variety": "Syrah Mourvèdre",
+    "country": "Israel",
+    "points": 90
+  },
+  {
+    "variety": "Syrah Mourvèdre",
+    "country": "Mexico",
+    "points": 91
+  },
+  {
+    "variety": "Syrah Mourvèdre",
+    "country": "South Africa",
+    "points": 88
+  },
+  {
+    "variety": "Syrah Mourvèdre",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Syrah Petit Verdot",
+    "country": "Spain",
+    "points": 90
+  },
+  {
+    "variety": "Syrah Petit Verdot",
+    "country": "US",
+    "points": 94
+  },
+  {
+    "variety": "Syrah Petite Sirah",
+    "country": "US",
+    "points": 90
+  },
+  {
+    "variety": "Syrah Tempranillo",
+    "country": "Spain",
+    "points": 87
+  },
+  {
+    "variety": "Syrah Tempranillo",
+    "country": "US",
+    "points": 90
+  },
+  {
+    "variety": "Syrah Viognier",
+    "country": "Argentina",
+    "points": 91
+  },
+  {
+    "variety": "Syrah Viognier",
+    "country": "France",
+    "points": 90
+  },
+  {
+    "variety": "Syrah Viognier",
+    "country": "Israel",
+    "points": 90
+  },
+  {
+    "variety": "Syrah Viognier",
+    "country": "South Africa",
+    "points": 89
+  },
+  {
+    "variety": "Syrah Viognier",
+    "country": "US",
+    "points": 90
+  },
+  {
+    "variety": "Tămâioasă Românească",
+    "country": "Romania",
+    "points": 88
+  },
+  {
+    "variety": "Tamianka",
+    "country": "Bulgaria",
+    "points": 89
+  },
+  {
+    "variety": "Tamjanika",
+    "country": "Serbia",
+    "points": 88
+  },
+  {
+    "variety": "Tannat",
+    "country": "Argentina",
+    "points": 87
+  },
+  {
+    "variety": "Tannat",
+    "country": "Brazil",
+    "points": 84
+  },
+  {
+    "variety": "Tannat",
+    "country": "France",
+    "points": 92
+  },
+  {
+    "variety": "Tannat",
+    "country": "Greece",
+    "points": 88
+  },
+  {
+    "variety": "Tannat",
+    "country": "Italy",
+    "points": 86
+  },
+  {
+    "variety": "Tannat",
+    "country": "Peru",
+    "points": 85
+  },
+  {
+    "variety": "Tannat",
+    "country": "Uruguay",
+    "points": 87
+  },
+  {
+    "variety": "Tannat",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Tannat",
+    "country": "(blank)",
+    "points": 88
+  },
+  {
+    "variety": "Tannat Cabernet",
+    "country": "France",
+    "points": 90
+  },
+  {
+    "variety": "Tannat Cabernet Franc",
+    "country": "France",
+    "points": 91
+  },
+  {
+    "variety": "Tannat Cabernet Franc",
+    "country": "Uruguay",
+    "points": 90
+  },
+  {
+    "variety": "Tannat Merlot",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Tannat Merlot",
+    "country": "Uruguay",
+    "points": 87
+  },
+  {
+    "variety": "Tannat Syrah",
+    "country": "France",
+    "points": 87
+  },
+  {
+    "variety": "Tannat Syrah",
+    "country": "Uruguay",
+    "points": 84
+  },
+  {
+    "variety": "Tannat Syrah",
+    "country": "US",
+    "points": 93
+  },
+  {
+    "variety": "Tempranillo",
+    "country": "Argentina",
+    "points": 84
+  },
+  {
+    "variety": "Tempranillo",
+    "country": "Australia",
+    "points": 90
+  },
+  {
+    "variety": "Tempranillo",
+    "country": "Chile",
+    "points": 86
+  },
+  {
+    "variety": "Tempranillo",
+    "country": "Israel",
+    "points": 83
+  },
+  {
+    "variety": "Tempranillo",
+    "country": "Italy",
+    "points": 89
+  },
+  {
+    "variety": "Tempranillo",
+    "country": "Mexico",
+    "points": 83
+  },
+  {
+    "variety": "Tempranillo",
+    "country": "Spain",
+    "points": 88
+  },
+  {
+    "variety": "Tempranillo",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Tempranillo",
+    "country": "(blank)",
+    "points": 89
+  },
+  {
+    "variety": "Tempranillo Blanco",
+    "country": "Spain",
+    "points": 84
+  },
+  {
+    "variety": "Tempranillo Blend",
+    "country": "Spain",
+    "points": 88
+  },
+  {
+    "variety": "Tempranillo Blend",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Tempranillo Cabernet Sauvignon",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "Tempranillo Cabernet Sauvignon",
+    "country": "US",
+    "points": 92
+  },
+  {
+    "variety": "Tempranillo Garnacha",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Tempranillo Garnacha",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Tempranillo Malbec",
+    "country": "Argentina",
+    "points": 91
+  },
+  {
+    "variety": "Tempranillo Merlot",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Tempranillo Shiraz",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Tempranillo Syrah",
+    "country": "Spain",
+    "points": 82
+  },
+  {
+    "variety": "Tempranillo Syrah",
+    "country": "US",
+    "points": 91
+  },
+  {
+    "variety": "Tempranillo Tannat",
+    "country": "Uruguay",
+    "points": 88
+  },
+  {
+    "variety": "Teran",
+    "country": "Croatia",
+    "points": 88
+  },
+  {
+    "variety": "Teran",
+    "country": "Slovenia",
+    "points": 89
+  },
+  {
+    "variety": "Teroldego",
+    "country": "Italy",
+    "points": 90
+  },
+  {
+    "variety": "Teroldego",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Teroldego Rotaliano",
+    "country": "Italy",
+    "points": 86
+  },
+  {
+    "variety": "Terrantez",
+    "country": "Portugal",
+    "points": 95
+  },
+  {
+    "variety": "Thrapsathiri",
+    "country": "Greece",
+    "points": 88
+  },
+  {
+    "variety": "Timorasso",
+    "country": "Italy",
+    "points": 91
+  },
+  {
+    "variety": "Tinta Amarela",
+    "country": "US",
+    "points": 90
+  },
+  {
+    "variety": "Tinta Barroca",
+    "country": "Portugal",
+    "points": 87
+  },
+  {
+    "variety": "Tinta Barroca",
+    "country": "South Africa",
+    "points": 91
+  },
+  {
+    "variety": "Tinta Cao",
+    "country": "Portugal",
+    "points": 90
+  },
+  {
+    "variety": "Tinta de Toro",
+    "country": "Spain",
+    "points": 90
+  },
+  {
+    "variety": "Tinta del Pais",
+    "country": "Spain",
+    "points": 95
+  },
+  {
+    "variety": "Tinta del Toro",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "Tinta Fina",
+    "country": "Spain",
+    "points": 88
+  },
+  {
+    "variety": "Tinta Francisca",
+    "country": "Portugal",
+    "points": 90
+  },
+  {
+    "variety": "Tinta Madeira",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Tinta Miúda",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Tinta Negra Mole",
+    "country": "Portugal",
+    "points": 92
+  },
+  {
+    "variety": "Tinta Roriz",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Tintilia",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Tinto del Pais",
+    "country": "Spain",
+    "points": 88
+  },
+  {
+    "variety": "Tinto Fino",
+    "country": "Spain",
+    "points": 90
+  },
+  {
+    "variety": "Tinto Velasco",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Tocai",
+    "country": "Argentina",
+    "points": 85
+  },
+  {
+    "variety": "Tocai",
+    "country": "Italy",
+    "points": 89
+  },
+  {
+    "variety": "Tocai Friulano",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Tocai Friulano",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Tokaji",
+    "country": "Hungary",
+    "points": 91
+  },
+  {
+    "variety": "Tokay",
+    "country": "Australia",
+    "points": 91
+  },
+  {
+    "variety": "Tokay Pinot Gris",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Torbato",
+    "country": "Italy",
+    "points": 91
+  },
+  {
+    "variety": "Torontel",
+    "country": "Chile",
+    "points": 92
+  },
+  {
+    "variety": "Torrontés",
+    "country": "Argentina",
+    "points": 85
+  },
+  {
+    "variety": "Torrontés",
+    "country": "US",
+    "points": 90
+  },
+  {
+    "variety": "Touriga",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Touriga Franca",
+    "country": "Portugal",
+    "points": 89
+  },
+  {
+    "variety": "Touriga Nacional",
+    "country": "Portugal",
+    "points": 89
+  },
+  {
+    "variety": "Touriga Nacional",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Touriga Nacional Blend",
+    "country": "Portugal",
+    "points": 89
+  },
+  {
+    "variety": "Touriga Nacional Blend",
+    "country": "Spain",
+    "points": 90
+  },
+  {
+    "variety": "Touriga Nacional Blend",
+    "country": "US",
+    "points": 93
+  },
+  {
+    "variety": "Touriga Nacional Cabernet Sauvignon",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Trajadura",
+    "country": "Portugal",
+    "points": 86
+  },
+  {
+    "variety": "Traminer",
+    "country": "Austria",
+    "points": 89
+  },
+  {
+    "variety": "Traminer",
+    "country": "Bulgaria",
+    "points": 86
+  },
+  {
+    "variety": "Traminer",
+    "country": "Croatia",
+    "points": 87
+  },
+  {
+    "variety": "Traminer",
+    "country": "Germany",
+    "points": 88
+  },
+  {
+    "variety": "Traminer",
+    "country": "Greece",
+    "points": 85
+  },
+  {
+    "variety": "Traminer",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Traminer",
+    "country": "Moldova",
+    "points": 89
+  },
+  {
+    "variety": "Traminer",
+    "country": "Slovenia",
+    "points": 85
+  },
+  {
+    "variety": "Traminette",
+    "country": "US",
+    "points": 85
+  },
+  {
+    "variety": "Trebbiano",
+    "country": "Argentina",
+    "points": 83
+  },
+  {
+    "variety": "Trebbiano",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Trebbiano",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Trebbiano di Lugana",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Trebbiano Spoletino",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Treixadura",
+    "country": "Spain",
+    "points": 87
+  },
+  {
+    "variety": "Trepat",
+    "country": "Spain",
+    "points": 88
+  },
+  {
+    "variety": "Trincadeira",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Trollinger",
+    "country": "Germany",
+    "points": 91
+  },
+  {
+    "variety": "Trousseau",
+    "country": "Argentina",
+    "points": 88
+  },
+  {
+    "variety": "Trousseau",
+    "country": "France",
+    "points": 87
+  },
+  {
+    "variety": "Trousseau Gris",
+    "country": "US",
+    "points": 90
+  },
+  {
+    "variety": "Tsapournakos",
+    "country": "(blank)",
+    "points": 90
+  },
+  {
+    "variety": "Tsolikouri",
+    "country": "(blank)",
+    "points": 87
+  },
+  {
+    "variety": "Turbiana",
+    "country": "Italy",
+    "points": 89
+  },
+  {
+    "variety": "Ugni Blanc",
+    "country": "US",
+    "points": 91
+  },
+  {
+    "variety": "Ugni Blanc Colombard",
+    "country": "France",
+    "points": 86
+  },
+  {
+    "variety": "Uva di Troia",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Uvalino",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Valdiguié",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Valvin Muscat",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Veltliner",
+    "country": "Italy",
+    "points": 90
+  },
+  {
+    "variety": "Verdeca",
+    "country": "Italy",
+    "points": 86
+  },
+  {
+    "variety": "Verdejo",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "Verdejo",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Verdejo Sauvignon Blanc",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Verdejo Viura",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "Verdelho",
+    "country": "Australia",
+    "points": 87
+  },
+  {
+    "variety": "Verdelho",
+    "country": "France",
+    "points": 92
+  },
+  {
+    "variety": "Verdelho",
+    "country": "Portugal",
+    "points": 87
+  },
+  {
+    "variety": "Verdelho",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "Verdicchio",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Verdil",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "Verdosilla",
+    "country": "Spain",
+    "points": 84
+  },
+  {
+    "variety": "Verduzzo",
+    "country": "Italy",
+    "points": 90
+  },
+  {
+    "variety": "Verduzzo Friulano",
+    "country": "Italy",
+    "points": 89
+  },
+  {
+    "variety": "Vermentino",
+    "country": "Australia",
+    "points": 86
+  },
+  {
+    "variety": "Vermentino",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Vermentino",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Vermentino",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Vermentino Nero",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Vernaccia",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Vespaiolo",
+    "country": "Italy",
+    "points": 92
+  },
+  {
+    "variety": "Vespolina",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "Vidadillo",
+    "country": "Spain",
+    "points": 89
+  },
+  {
+    "variety": "Vidal",
+    "country": "Canada",
+    "points": 91
+  },
+  {
+    "variety": "Vidal",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Vidal Blanc",
+    "country": "Canada",
+    "points": 89
+  },
+  {
+    "variety": "Vidal Blanc",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Vignoles",
+    "country": "US",
+    "points": 85
+  },
+  {
+    "variety": "Vilana",
+    "country": "Greece",
+    "points": 87
+  },
+  {
+    "variety": "Vinhão",
+    "country": "Portugal",
+    "points": 86
+  },
+  {
+    "variety": "Viognier",
+    "country": "Argentina",
+    "points": 84
+  },
+  {
+    "variety": "Viognier",
+    "country": "Australia",
+    "points": 88
+  },
+  {
+    "variety": "Viognier",
+    "country": "Bulgaria",
+    "points": 89
+  },
+  {
+    "variety": "Viognier",
+    "country": "Canada",
+    "points": 88
+  },
+  {
+    "variety": "Viognier",
+    "country": "Chile",
+    "points": 85
+  },
+  {
+    "variety": "Viognier",
+    "country": "France",
+    "points": 89
+  },
+  {
+    "variety": "Viognier",
+    "country": "Greece",
+    "points": 87
+  },
+  {
+    "variety": "Viognier",
+    "country": "Israel",
+    "points": 88
+  },
+  {
+    "variety": "Viognier",
+    "country": "Italy",
+    "points": 87
+  },
+  {
+    "variety": "Viognier",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Viognier",
+    "country": "South Africa",
+    "points": 87
+  },
+  {
+    "variety": "Viognier",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Viognier Chardonnay",
+    "country": "Chile",
+    "points": 84
+  },
+  {
+    "variety": "Viognier Chardonnay",
+    "country": "France",
+    "points": 88
+  },
+  {
+    "variety": "Viognier Chardonnay",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Viognier Chardonnay",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Viognier Gewürztraminer",
+    "country": "US",
+    "points": 86
+  },
+  {
+    "variety": "Viognier Grenache Blanc",
+    "country": "South Africa",
+    "points": 87
+  },
+  {
+    "variety": "Viognier Grenache Blanc",
+    "country": "US",
+    "points": 91
+  },
+  {
+    "variety": "Viognier Marsanne",
+    "country": "Australia",
+    "points": 89
+  },
+  {
+    "variety": "Viognier Marsanne",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Viognier Roussanne",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Viognier Valdiguié",
+    "country": "US",
+    "points": 84
+  },
+  {
+    "variety": "Viosinho",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "Vital",
+    "country": "Portugal",
+    "points": 90
+  },
+  {
+    "variety": "Vitovska",
+    "country": "Italy",
+    "points": 91
+  },
+  {
+    "variety": "Vitovska",
+    "country": "Slovenia",
+    "points": 90
+  },
+  {
+    "variety": "Viura",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Viura Chardonnay",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Viura Verdejo",
+    "country": "Spain",
+    "points": 85
+  },
+  {
+    "variety": "Vranac",
+    "country": "(blank)",
+    "points": 86
+  },
+  {
+    "variety": "Vranec",
+    "country": "Bosnia and Herzegovina",
+    "points": 85
+  },
+  {
+    "variety": "Vranec",
+    "country": "Macedonia",
+    "points": 87
+  },
+  {
+    "variety": "Weissburgunder",
+    "country": "Austria",
+    "points": 90
+  },
+  {
+    "variety": "Weissburgunder",
+    "country": "Germany",
+    "points": 89
+  },
+  {
+    "variety": "Welschriesling",
+    "country": "Austria",
+    "points": 90
+  },
+  {
+    "variety": "Welschriesling",
+    "country": "Croatia",
+    "points": 85
+  },
+  {
+    "variety": "Welschriesling",
+    "country": "Czech Republic",
+    "points": 85
+  },
+  {
+    "variety": "White Blend",
+    "country": "Argentina",
+    "points": 85
+  },
+  {
+    "variety": "White Blend",
+    "country": "Australia",
+    "points": 87
+  },
+  {
+    "variety": "White Blend",
+    "country": "Austria",
+    "points": 90
+  },
+  {
+    "variety": "White Blend",
+    "country": "Bulgaria",
+    "points": 88
+  },
+  {
+    "variety": "White Blend",
+    "country": "Canada",
+    "points": 88
+  },
+  {
+    "variety": "White Blend",
+    "country": "Chile",
+    "points": 84
+  },
+  {
+    "variety": "White Blend",
+    "country": "Croatia",
+    "points": 86
+  },
+  {
+    "variety": "White Blend",
+    "country": "Cyprus",
+    "points": 87
+  },
+  {
+    "variety": "White Blend",
+    "country": "England",
+    "points": 89
+  },
+  {
+    "variety": "White Blend",
+    "country": "France",
+    "points": 87
+  },
+  {
+    "variety": "White Blend",
+    "country": "Georgia",
+    "points": 87
+  },
+  {
+    "variety": "White Blend",
+    "country": "Germany",
+    "points": 88
+  },
+  {
+    "variety": "White Blend",
+    "country": "Greece",
+    "points": 87
+  },
+  {
+    "variety": "White Blend",
+    "country": "Hungary",
+    "points": 91
+  },
+  {
+    "variety": "White Blend",
+    "country": "Israel",
+    "points": 87
+  },
+  {
+    "variety": "White Blend",
+    "country": "Italy",
+    "points": 88
+  },
+  {
+    "variety": "White Blend",
+    "country": "Lebanon",
+    "points": 87
+  },
+  {
+    "variety": "White Blend",
+    "country": "Luxembourg",
+    "points": 89
+  },
+  {
+    "variety": "White Blend",
+    "country": "Macedonia",
+    "points": 85
+  },
+  {
+    "variety": "White Blend",
+    "country": "Mexico",
+    "points": 86
+  },
+  {
+    "variety": "White Blend",
+    "country": "Moldova",
+    "points": 88
+  },
+  {
+    "variety": "White Blend",
+    "country": "Morocco",
+    "points": 86
+  },
+  {
+    "variety": "White Blend",
+    "country": "New Zealand",
+    "points": 90
+  },
+  {
+    "variety": "White Blend",
+    "country": "Peru",
+    "points": 83
+  },
+  {
+    "variety": "White Blend",
+    "country": "Portugal",
+    "points": 88
+  },
+  {
+    "variety": "White Blend",
+    "country": "Romania",
+    "points": 86
+  },
+  {
+    "variety": "White Blend",
+    "country": "Slovenia",
+    "points": 89
+  },
+  {
+    "variety": "White Blend",
+    "country": "South Africa",
+    "points": 88
+  },
+  {
+    "variety": "White Blend",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "White Blend",
+    "country": "Switzerland",
+    "points": 90
+  },
+  {
+    "variety": "White Blend",
+    "country": "Turkey",
+    "points": 86
+  },
+  {
+    "variety": "White Blend",
+    "country": "Uruguay",
+    "points": 87
+  },
+  {
+    "variety": "White Blend",
+    "country": "US",
+    "points": 87
+  },
+  {
+    "variety": "White Blend",
+    "country": "(blank)",
+    "points": 88
+  },
+  {
+    "variety": "White Port",
+    "country": "Portugal",
+    "points": 86
+  },
+  {
+    "variety": "White Port",
+    "country": "US",
+    "points": 92
+  },
+  {
+    "variety": "White Riesling",
+    "country": "Israel",
+    "points": 89
+  },
+  {
+    "variety": "White Riesling",
+    "country": "US",
+    "points": 89
+  },
+  {
+    "variety": "Xarel lo",
+    "country": "Spain",
+    "points": 86
+  },
+  {
+    "variety": "Xinisteri",
+    "country": "Cyprus",
+    "points": 89
+  },
+  {
+    "variety": "Xinomavro",
+    "country": "Greece",
+    "points": 87
+  },
+  {
+    "variety": "Xynisteri",
+    "country": "Cyprus",
+    "points": 87
+  },
+  {
+    "variety": "Yapincak",
+    "country": "Turkey",
+    "points": 86
+  },
+  {
+    "variety": "Zelen",
+    "country": "Slovenia",
+    "points": 88
+  },
+  {
+    "variety": "Zibibbo",
+    "country": "Italy",
+    "points": 90
+  },
+  {
+    "variety": "Zierfandler",
+    "country": "Austria",
+    "points": 90
+  },
+  {
+    "variety": "Zierfandler Rotgipfler",
+    "country": "Austria",
+    "points": 90
+  },
+  {
+    "variety": "Zinfandel",
+    "country": "Australia",
+    "points": 88
+  },
+  {
+    "variety": "Zinfandel",
+    "country": "US",
+    "points": 88
+  },
+  {
+    "variety": "Zlahtina",
+    "country": "Croatia",
+    "points": 86
+  },
+  {
+    "variety": "Zweigelt",
+    "country": "Austria",
+    "points": 88
+  },
+  {
+    "variety": "Zweigelt",
+    "country": "Croatia",
+    "points": 90
+  },
+  {
+    "variety": "Zweigelt",
+    "country": "US",
+    "points": 88
+  }
+]
