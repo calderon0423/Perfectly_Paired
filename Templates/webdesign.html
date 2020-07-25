@@ -106,10 +106,21 @@
                     <h2 id="home-card"><strong>Populating the HTML using JavaScript</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <div class="card-body" style="padding: 0%">
-                        <img class="card-image" id="red1" src="{{url_for('static', filename='web-2a.png')}}"/>
-                        <img class="card-image" id="red1" src="{{url_for('static', filename='web-2b.png')}}"/>
-                        <img class="card-image" id="red1" src="{{url_for('static', filename='web-2c.png')}}"/>
+                    <img class="card-image" id="red1" src="{{url_for('static', filename='web-2a.png')}}"/>
+                    <div class="card-body" id="blurb">
+                        <h5 id="obj-body">HTML</h5>
+                    </div>
+                </div>
+                <div class="card-deck">
+                    <img class="card-image" id="red1" src="{{url_for('static', filename='web-2b.png')}}"/>
+                    <div class="card-body" id="blurb" style="border-bottom: 3px solid black">
+                        <h5 id="obj-body">JavaScript</h5>
+                    </div>
+                </div>
+                <div class="card-deck">
+                    <img class="card-image" id="red1" src="{{url_for('static', filename='web-2c.png')}}"/>
+                    <div class="card-body" id="blurb">
+                        <h5 id="obj-body">Finished Product</h5>
                     </div>
                 </div>
             </div>
