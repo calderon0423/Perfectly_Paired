@@ -40,6 +40,11 @@ function buildWordCloud(selection) {
        //  chart.colorRange().length('80%');
        // display the word cloud chart
        chart.container("word-cloud");
+       chart.tooltip(true);
+       chart.tooltip().useHtml(true);
+       chart.tooltip().format("Frequency: {%value} <br> \nPercent of Total: {%yPercentOfTotal}%");
+       chart.tooltip().fontSize(16);
+       chart.container("word-cloud");
       
        chart.draw();
     })
