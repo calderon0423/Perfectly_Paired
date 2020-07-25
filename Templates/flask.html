@@ -60,8 +60,8 @@
                     <h2 id="home-card"><strong>Objective</strong></h2>
                 </div>
                 <div class="card-body">
-                    <h5 id="obj-body" style="font-size: 28px; padding: 1%">Building a model to predict the ideal wine based on the adjectives 
-                        that user selected to describe the taste and feel.
+                    <h5 id="obj-body" style="font-size: 28px; padding: 1%">Use Flask to build a web application that works by creating
+                        web APIs and routes in order to return our data and display our pages. 
                     </h5>
                 </div>
             </div>
@@ -71,10 +71,10 @@
         <div class="row" id="options">
             <div class="card" id="objective">
                 <div class="card-header">
-                    <h2 id="home-card"><strong>Exploring the Wine Reviews Dataset</strong></h2>
+                    <h2 id="home-card"><strong>Importing the Libraries</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <img class="card-image-top" id="red1" src="{{url_for('static', filename='wr-1.png')}}">
+                    <img class="card-image-top" id="red1" src="{{url_for('static', filename='f-1.png')}}">
                 </div>
             </div>
         </div>
@@ -83,20 +83,11 @@
         <div class="row" id="options">
             <div class="card" id="objective">
                 <div class="card-header">
-                    <h2 id="home-card"><strong>Data Pre-Processing</strong></h2>
+                    <h2 id="home-card"><strong>Routes for Our HTML Pages</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <div class="card-body">
-                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-2a.png')}}"/>
-                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-2b.png')}}"/>
-                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-2c.png')}}"/>
-                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-2d.png')}}"/>
-                    </div>
-                    <div class="card-body"  id="blurb">
-                        <h5 id="obj-body">Data pre-processing to bring the text into a form that is predictable and analyzable: <br><br>
-                                           Count Vectorizer: Text preprocessing, tokenizing, and filtering of stopwords<br>
-                                           Transformer: Transform our count-matrix to a tf-idf representation - “Term Frequency Times Inverse Document Frequency”.
-                        </h5>
+                    <div class="card-body" style="padding: 0%">
+                        <img class="card-image" id="red1" src="{{url_for('static', filename='f-2.png')}}"/>
                     </div>
                 </div>
             </div>
@@ -106,14 +97,11 @@
         <div class="row" id="options">
             <div class="card" id="objective">
                 <div class="card-header">
-                    <h2 id="home-card"><strong>Training the Model: Multinomial vs. Complement Naïve Bayes</strong></h2>
+                    <h2 id="home-card"><strong>Routes for Our JavaScript</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <div class="card-body">
-                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-3a.png')}}"/>
-                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-3b.png')}}"/>
-                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-3c.png')}}"/>
-                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-3d.png')}}"/>
+                    <div class="card-body" style="padding: 0%">
+                        <img class="card-image" id="red1" src="{{url_for('static', filename='f-3.png')}}"/>
                     </div>
                 </div>
             </div>
@@ -123,46 +111,12 @@
         <div class="row" id="options">
             <div class="card" id="objective">
                 <div class="card-header">
-                    <h2 id="home-card"><strong>Saving the Model: Complement NB </strong></h2>
+                    <h2 id="home-card"><strong>Routes for Our Predictions</strong></h2>
                 </div>
                 <div class="card-deck">
-                    <div class="card-body">
-                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-4a.png')}}"/>
-                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-4b.png')}}"/>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row" id="options">
-            <div class="card" id="objective">
-                <div class="card-header">
-                    <h2 id="home-card"><strong>Model: Deep Learning</strong></h2>
-                </div>
-                <div class="card-deck">
-                    <div class="card-body">
-                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-5a.png')}}"/>
-                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-5b.png')}}"/>
-                        <img class="card-image" id="red1" src="{{url_for('static', filename='wr-5c.png')}}"/>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row" id="options">
-            <div class="card" id="objective">
-                <div class="card-header">
-                    <h2 id="home-card"><strong>Model Summary</strong></h2>
-                </div>
-                <div class="card-deck">
-                    <div class="card-body" id="blurb" style="border-top: .5px solid black">
-                        <h5 id="obj-body"><b>Models:</b><br>Of the models used - Multinomial NB, Complement NB, Deep Learning - Deep Learning performed the best due to the complexity of the dataset. <br><br>
-                            <b>Challenges:</b><br>Because of the complexity and size of data, deep learning worked very slowly. That’s why we could not test as many variations as we would have liked in order to find the best parameters. 
-                            We could have used hyperparameter tuning to find the highest accuracy.<br><br>
-                            <b>Assumptions:</b><br>We trained the model based on wine selection and reviews of only nineteen tasters, yet assumed the results were general fact rather than subjective taste.  
-                        </h5>
+                    <div class="card-body" style="padding: 0%">
+                        <img class="card-image" id="red1" src="{{url_for('static', filename='f-4.png')}}"/>
+                        <img class="card-image" id="red1" src="{{url_for('static', filename='f-5.png')}}"/>
                     </div>
                 </div>
             </div>

@@ -116,7 +116,7 @@ def webDesign():
 def reviewsCodeRG():
     return render_template('reviewscodesRG.html')
 
-@app.route('/flask')
+@app.route('/flaskcode')
 def flaskCode():
     return render_template('flask.html')
  
