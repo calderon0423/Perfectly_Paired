@@ -11,7 +11,10 @@ from flask import Flask, render_template, jsonify, request, url_for, send_from_d
 from pymongo import MongoClient
 from flask_restful import reqparse
 import json
+import zipfile
 
+with zipfile.ZipFile(os.path.join('Naive_sentiment_model', 'sentiment_scoring.zip'),'r') as zipped:
+    zipped.extractall('Naive_sentiment_model')
 
 
 #read in csv file 
