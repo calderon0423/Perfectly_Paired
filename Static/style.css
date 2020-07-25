@@ -349,6 +349,18 @@ p {
     z-index: 0;
 } 
 
+#reviewscodeRG {
+    position: static; 
+    height: 55vh;
+    width: 100%;
+    padding-top: 0%;
+    background-image: url("https://lp-cms-production.imgix.net/2019-06/8e840f45e4bd9a274b7cba79508305a2-napa-sonoma-wine-country.jpg?fit=crop&q=40&sharp=10&vib=20&auto=format&ixlib=react-8.6.4");
+    background-size: cover;
+    box-shadow: 0px 5px 5px grey;
+    margin: auto;
+    z-index: 0;
+} 
+
 #right {
     float: right;
 }
@@ -470,6 +482,18 @@ tspan {
     font-weight: bold;
     font-size: 30px;
 }
+
+#webdesign {
+    position: static; 
+    height: 55vh;
+    width: 100%;
+    padding-top: 0%;
+    background-image: url("https://mytechdecisions.com/wp-content/uploads/2019/10/AdobeStock_256229414.jpg");
+    background-size: 100% 55vh;
+    box-shadow: 0px 5px 5px grey;
+    margin: auto;
+    z-index: 0;
+} 
 
 #word-cloud {
     width: 100%;
