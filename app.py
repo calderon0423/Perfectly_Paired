@@ -253,7 +253,7 @@ def predict_variety():
 
     user_input=[]
     for adj in adjectives:
-        user_input.append(adj)
+        user_input.append(adj.lower())
     for c in country:
         user_input.append(c)
     for p in province:
