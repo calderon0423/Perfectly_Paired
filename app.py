@@ -299,6 +299,7 @@ def predict_variety():
     out = out[0]
     return jsonify({'wine_selection': str(out)})
 
+
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
