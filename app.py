@@ -2,16 +2,19 @@ import sys
 import os
 import pandas as pd 
 # import tensorflow as tf 
-import keras 
-from keras.models import model_from_json, load_model
+#import keras 
+#from keras.models import model_from_json, load_model
 import numpy as np 
 import pickle 
 import flask 
 from flask import Flask, render_template, jsonify, request, url_for, send_from_directory
 from pymongo import MongoClient
 from flask_restful import reqparse
+from flask_cors import CORS
+import sklearn
 import json
 import zipfile
+from tflite_runtime.interpreter import Interpreter
 
 with zipfile.ZipFile(os.path.join('Naive_sentiment_model', 'sentiment_scoring.zip'),'r') as zipped:
     zipped.extractall('Naive_sentiment_model')
@@ -55,7 +58,7 @@ with zipfile.ZipFile(os.path.join('Naive_sentiment_model', 'sentiment_scoring.zi
 
 
 app = Flask(__name__)
-
+CORS(app)
 
 # @app.route("/")
 # def welcome():
@@ -240,15 +243,35 @@ def redwhitepredict():
     characteristics = args['characteristics'][0].split(' ')
 
     #  Load the model
-    redorwhite_model = load_model('Red_and_White_Analysis/redorwhite_model_trained.h5')
+    
+    interpreter = Interpreter(model_path="redorwhite_model_trained.tflite")
+    interpreter.allocate_tensors()
+    input_details = interpreter.get_input_details()
+    output_details = interpreter.get_output_details()
 
-    # #predict the wine class based on model and save output to 'out'
+    # Test the model on random input data.
+    input_shape = input_details[0]['shape']
     user_input_characteristics=[float(i) for i in characteristics]
     print(user_input_characteristics)
 
+    input_data = np.array([user_input_characteristics], dtype=np.float32)
+    interpreter.set_tensor(input_details[0]['index'], input_data)
+
+    interpreter.invoke()
+
+    # The function `get_tensor()` returns a copy of the tensor data.
+    # Use `tensor()` in order to get a pointer to the tensor.
+    output_data = interpreter.get_tensor(output_details[0]['index'])
+    print(output_data)
+
+    #redorwhite_model = load_model('Red_and_White_Analysis/redorwhite_model_trained.h5')
+
+    # #predict the wine class based on model and save output to 'out'
+    # user_input_characteristics=[float(i) for i in characteristics]
+
     #run model with user input
-    result_characteristics = redorwhite_model.predict_classes([user_input_characteristics])
-    result_characteristics = "White" if result_characteristics[0] ==1 else "Red"
+    #result_characteristics = redorwhite_model.predict_classes([user_input_characteristics])
+    result_characteristics = "White" if output_data[0][0] ==1 else "Red"
     return jsonify({'wine_selection': result_characteristics})
 
 
