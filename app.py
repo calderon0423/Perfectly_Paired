@@ -16,7 +16,7 @@ import json
 import zipfile
 from tflite_runtime.interpreter import Interpreter
 
-with zipfile.ZipFile(os.path.join('Naive_sentiment_model', 'sentiment_scoring.zip'),'r') as zipped:
+with zipfile.ZipFile(os.path.join('Naive_sentiment_model', 'nbModel.sklearn.zip'),'r') as zipped:
     zipped.extractall('Naive_sentiment_model')
 
 
@@ -207,14 +207,14 @@ def predictType():
     print(adjectives)
 
     #load model .h5 files 
-    vectorizer_file = "tokenizer.h5"
-    tokenizer_file = "vectorizer.h5"
-    NBModel = 'sentiment_scoring.h5'
+    countVectorizer = "vectorizer.sklearn"
+    tfid = "tfid.sklearn"
+    NBModel = 'nbModel.sklearn'
     # NBModel = 'dl_v2.h5'
 
 
-    vectorizer = pickle.load(open('Naive_sentiment_model/'+vectorizer_file, 'rb'))
-    tokenizer = pickle.load(open('Naive_sentiment_model/'+tokenizer_file, 'rb'))
+    vectorizer = pickle.load(open('Naive_sentiment_model/'+countVectorizer, 'rb'))
+    transformer = pickle.load(open('Naive_sentiment_model/'+tfid, 'rb'))
     nbModel = pickle.load(open('Naive_sentiment_model/'+NBModel, 'rb'))
     # nbModel = load_model('Naive_sentiment_model/dl_v2.h5')
 
@@ -222,7 +222,7 @@ def predictType():
     # run model with user_input argument 
     user_input=adjectives
     X_new = vectorizer.transform(user_input)
-    X_new = tokenizer.transform(X_new)
+    X_new = transformer.transform(X_new)
     result = nbModel.predict(X_new)
     return jsonify({'wine_type': result[0]})
 
