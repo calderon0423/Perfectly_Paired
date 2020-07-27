@@ -1,5 +1,5 @@
 // Create dropdown of wine selection
-d3.json('http://127.0.0.1:5000/winelist').then((data) => {
+d3.json('/winelist').then((data) => {
     var selector = d3.select("#selDataset");
     var wine_list = []
     var count = 0
@@ -17,7 +17,7 @@ d3.json('http://127.0.0.1:5000/winelist').then((data) => {
 buildWordCloud(wine_list[0]);
 });
 function buildWordCloud(selection) {
-    d3.json('http://127.0.0.1:5000/wordcloud').then((reviews) => {
+    d3.json('/wordcloud').then((reviews) => {
         filterWine = reviews[selection]
         console.log(filterWine);
         const clearCloud = d3.select("#word-cloud")
@@ -153,7 +153,7 @@ function submitChoices() {
          console.log(d.wine_type)
          document.getElementById('wine_type_result').innerHTML=`<h3 id="test">${d.wine_type}</h3>`
 
-d3.json(`http://127.0.0.1:5000/barchart?variety=${d.wine_type}`).then((reviewData) => {
+d3.json(`/barchart?variety=${d.wine_type}`).then((reviewData) => {
 
     // var filteredData = reviewData.filter(data => data.variety==d.wine_type)
     // var variety = filteredData.map(data => data.variety);
@@ -193,7 +193,7 @@ d3.json(`http://127.0.0.1:5000/barchart?variety=${d.wine_type}`).then((reviewDat
     Plotly.newPlot("bar", data_bar, layout_bar);
     })
 
-d3.json(`http://127.0.0.1:5000/bubblechart?variety=${d.wine_type}`).then((reviewData) => {
+d3.json(`bubblechart?variety=${d.wine_type}`).then((reviewData) => {
 
     // var filteredData = reviewData.filter(data => data.variety==stock)
     var variety = reviewData.map(data => data.variety);
