@@ -1,8 +1,7 @@
 import sys
 import os
 import pandas as pd 
-import tensorflow as tf 
-# from tensorflow.lite import Interpreter
+#import tensorflow as tf 
 #import keras 
 #from keras.models import model_from_json, load_model
 import numpy as np 
@@ -15,6 +14,7 @@ from flask_cors import CORS
 import sklearn
 import json
 import zipfile
+from tflite_runtime.interpreter import Interpreter
 
 
 with zipfile.ZipFile(os.path.join('Naive_sentiment_model', 'nbModel.sklearn.zip'),'r') as zipped:
@@ -245,7 +245,7 @@ def redwhitepredict():
 
     #  Load the model
     
-    interpreter = tf.lite.Interpreter(model_path="Red_and_White_Analysis/redorwhite_model_trained.tflite")
+    interpreter = Interpreter(model_path="Red_and_White_Analysis/redorwhite_model_trained.tflite")
     interpreter.allocate_tensors()
     input_details = interpreter.get_input_details()
     output_details = interpreter.get_output_details()
